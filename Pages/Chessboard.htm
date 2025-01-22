@@ -1,0 +1,43 @@
+<div id="content">
+    <h1 id="content-title">Шахматное поле</h1>
+<h1 id="content-url" style="display:none;">Lighting/Colors</h1>
+<p>
+  Рассмотрим как с помощью цикла нарисовать шахматное поле. Шахматное поле представляет собой сетку из черных и белых квадратиков 8 на 8.
+</p>
+<img src="/img/chessboard.png">
+
+<p>
+    Для того чтобы нарисовать двухмерное шахмаотное поле воспользуемся вложенным циклом. Первый цикл будет пробегаться по столбцам, второй по строкам. Каждый цикл будет выполнять 8 итераций. Цвет текущего квадрата может быть либо черный либо белый, при переходе к каждой следующей клетке в строке он меняется на противоположный. При переходе на новую строку, он также меняется на противоположный. Введем специальные bool переемнную , которая будет хранить текущий выводимый цвет ячейки.  
+</p>
+
+<pre><code class=" hljs cpp">
+<span class="hljs-keyword">bool</span> isBlack = <span class="hljs-keyword">false</span>;
+<span class="hljs-keyword">int</span> CllSize=<span class="hljs-number">50</span>;
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">8</span>; i++) {
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">8</span>; j++) {
+        isBlack = !isBlack;
+        gr.FillRectangle(
+            isBlack ? Brushes.Black : Brushes.White, <span class="hljs-comment">// текущий цвет клетки</span>
+            i * CellSize,  <span class="hljs-comment">// начальная позиция по X</span>
+            j * CellSize, <span class="hljs-comment">// начальная позиция по Y</span>
+            CellSize, CellSize
+        ); <span class="hljs-comment">// ширина клетки по X и Y </span>
+}}
+</code></pre>
+
+<p>
+  Вставив и запустив данный пример мы увидим следующую картинку:
+</p>
+
+<img src="https://fel88.com/img/lighting/light_reflection.png" class="clean">
+
+<p>
+    Данный пример наглядно показывает что для раборты с 2х мерными массивами или сетками удобно использовать 2 цикла (один вложен в другой). Тем самым индексаторы пробегаются по каждому элементы 2х мерной структуры данных, в данном случае Шахматному полю. В дальнейшем эта техникак пригодится нам для обработки двухмерных массивов, вроде годовой температуры по месяцам и дням и так далее.
+</p>
+
+
+<p>
+ Дополнительные задания:
+ 1. Переделать отрисовку поля таким орбразом чтобы не использовать bool переемнную , а использовать только индексаторы i/j
+</p>
+      </div>

@@ -1,0 +1,18 @@
+<root>
+	<template>
+		<section id="header"/>
+		<section id="menu"/>
+		<section id="content"/>
+		<section id="footer"/>
+
+	</template>	
+	<sections>
+		<section id="menu"/>
+</sections>
+	<pages>
+		<page path="Index.htm"/>
+		<page path="/Basic/Chessboard.htm">
+			<resource path="Resources/img/chessboard.png"/>
+		</page>
+	</pages>
+</root>
