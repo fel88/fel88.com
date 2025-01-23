@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chessboard", "Chessboard\Chessboard.csproj", "{EBA1494C-EA2C-4DA8-B8A3-D3B6B770DBD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hover_rectangle", "Hover_rectangle\Hover_rectangle.csproj", "{3D20F962-F7FA-48D8-8513-5802446AB974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EBA1494C-EA2C-4DA8-B8A3-D3B6B770DBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBA1494C-EA2C-4DA8-B8A3-D3B6B770DBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBA1494C-EA2C-4DA8-B8A3-D3B6B770DBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D20F962-F7FA-48D8-8513-5802446AB974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D20F962-F7FA-48D8-8513-5802446AB974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D20F962-F7FA-48D8-8513-5802446AB974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D20F962-F7FA-48D8-8513-5802446AB974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
