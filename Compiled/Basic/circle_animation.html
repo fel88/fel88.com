@@ -91,21 +91,20 @@
               
         // });
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <a href="https://fel88.com/">
+    На главную
 <div id="header">
 </div>
 </a>
 
 <div id="supercontainer">
     <!-- 728x90/320x50 -->
-    <div id="header_ad">
-	<div id="waldo-tag-6194"></div>    </div>
+   
     <div id="rightad_container">
         <div id="rightad">       
-			<div id="waldo-tag-1715"></div>        </div>
+			       </div>
 
        
 		
@@ -151,13 +150,26 @@ $('#menu-item143').mousedown(function() { MenuClick(143, true) });
 </script>   
     <div id="nav">
          <div id="social">
-            <a href="https://github.com/fel88" target="_blank">
+            <a href="https://github.com/fel88/fel88.com" target="_blank">
                     <img src="https://fel88.com/img/github.png" class="social_ico">
             </a>
-        
+            <p>
+        <a href="">следующий урок</a>
+    </p>
+    <p>
+        <a href="">предыдущий урок</a>
+    </p>
           
         </div>
-         
+    	
+
+
+    	<div id="menu_book">
+            
+        </div>
+       <div id="donate">
+           
+        </div>       
 		
 		
 					<div id="lefttwotenthad">
@@ -174,72 +186,88 @@ $('#menu-item143').mousedown(function() { MenuClick(143, true) });
         </div>-->
 		    </div>
     
-   <div id="content">
-    <h1>Добро пожаловать на мой сайт!</h1>
+    <div id="content">
+    <h1 id="content-title">Анимация. Летающий шарик по кругу</h1>
+<h1 id="content-url" style="display:none;">Lighting/Colors</h1>
 <p>
-    В ходе курса будут созданы различные тестовые графические приложения с целью изучения базовых операторов и конструкций программирования. Все примеры написаны на языке C#, но большинство конструкция вроде циклов, условных операраторов и так далее являются универсальными для большинства языков программирования. Поэтому знания полученные здесь могут быть адаптированы и для других языков в будущем. Основной задачей является легкость, доступность и наглядность изучения на первом этапе. Язык C# и графические мини-программы идеально подходят для этих задач. 
+
+  Для расчета текущих координат на окружности нам потребуются простейшие тригонометрические функции такие как синус и косинус. </p>
+  <pre><code class=" hljs cpp">
+  Координата Х = ЦентрХ + Радиус * Косинус (Угол)
+  Координата Y = ЦентрY + Радиус * Синус (Угол)
     
+</code></pre><p>
+  Объявим переменные для текущего состояния анимации: angle - текущий угол в градусах для шарика на круге. radius - радиус круга по которому летает объект, circleWidth - радиус отрисовываемого шарика который летает по окружности
+</p>
+<pre><code class=" hljs cpp">double angle = 0;
+float radius = 100;
+float circleWidth = 10;
+</code></pre>
+<p>
+    Расчитаем центр нашего окна используя ClientSize
+    Далее на каждом шаге отрисовки будет прибавлять +0.5 градуса к текущему положению шарика, если значение угла становится больше 360, то будем вычитать 360 градусов, для этого восползуемся оператором остаток от деления %. Перевод в радианы осуществляется путем домножения градусов на PI/180
+</p>
+<pre><code class=" hljs cpp">
+var centerX = ClientSize.Width / 2;
+var centerY = ClientSize.Height / 2;
+
+angle += 0.5;
+angle %= 360;
+
+var radians = angle / 180.0 * Math.PI;
+
+var circleX = (float)(centerX + radius * Math.Cos(radians));
+var circleY = (float)(centerY + radius * Math.Sin(radians));
+
+gr.DrawEllipse(Pens.Black, centerX - radius, centerY - radius, radius * 2, radius * 2);
+gr.FillEllipse(Brushes.Blue, circleX - circleWidth, circleY - circleWidth, circleWidth * 2, circleWidth * 2);
     
-</p>
-
-<h2>Кому подойдет данный курс?</h2>
+</code></pre>
 <p>
-   Данный сайт содержит набор уроков по программированию и электронике. Подхоит для новичков примерно от 12 лет кто хочет попробовать изучиь программирование через графический подход. 
+    В дальнейшем движение по кругу используя синус и косинус будет использоваться множество разных. Необходимо знать и понимать как они работают.
 </p>
 
-<h2>К чему нужно стремится</h2>
+
 <p>
-    Каждый урок содержит дополнительные задания, которые нужно обязательно сделать. Вы должны стремится создать страничку на сайте github, и выкладыывать туда все свои разработки. На выходе после курса у вас будет небольшое портфолио для будущего работодателя в случае если вы планируете искать работу в будущем. 
+  Вставив и запустив данный пример мы увидим следующую анимацию:
 </p>
 
-<h2>Зачем проходить этот курс?</h2>
+<img src="https://fel88.com/img/circle_animation.gif" class="clean">
+
 <p>
-    По окончанию курса вы сможете разрабатывать и понимать как устроены различные графические приложения в том числе различные мини-игры (Зума, шарики, космическая леталка/стрелялка, арканоид, змейка, тетрис, шахматы и даже простейшая RTS стратегия с выделением юнитов и добычей ресурсов и т.д. и т.п.)
-  <p>  Курс абсолютно бесплатен.</p>
-  <p>  Успешного обучения!
-</p>
-
-
-
-<h2>Об авторе</h2>
-<p>
-    
-            <a href="https://github.com/fel88" style="text-decoration:none" target="_blank">
-                    <img src="https://fel88.com/img/github.png" class="social_ico">
-                    fel88
-            </a>
-        
-      
-
-    <a href="tg://resolve?domain=fel88" style="text-decoration:none"><i class="fa fa-telegram" style="font-size:24px"></i>
-    Telegram</a>
-</p>
-
-
-<h2>Приступить к занятиям </h2>
-<p>
-    <a href="https://fel88.com/Basic/chessboard.html">Шахматное поле</a><br/>
-    <a href="https://fel88.com/Basic/rectangle_hover.html">Ховеринг кнопки</a><br/>
-    <a href="https://fel88.com/Basic/circle_animation.html">Движение по кругу</a><br/>
-</p>
-
-
-
   
+</p>
+<p>
+  Исходный код данного примера вы можете найти <a href="https://github.com/fel88/fel88.com/blob/main/Codes/Samples/Circle_animation/Form1.cs" target="_blank">здесь</a> 
+  </p>
 
- </div>
+<h2>Упражнения</h2>
+<ul>
+  <li>Сделать несколько летающих шариков
+
+    </li>
+    <li>Сделать несколько летающих объектов (шарик, квадратик), с разными цветами и разной скоростью
+
+    </li>
+    <li>Сделать модель планетарной системы. Несколько летающих шариков-планет разного размера и каждый на своей "орбите" с разным радиусом
+
+    </li>
+    <li>Вместо шарика сделать вторую окружность центр которой летает вместо шарика, а шарик сделать летающим по орбите второй окружности
+    </li>
+  
+</ul>
+
+      </div>
     
-
     <div id="hover">
         HI
     </div>
-    
-    
+	
+	
 <!-- 728x90/320x50 sticky footer -->
 <div id="waldo-tag-6196"></div><div id="disqus_thread"></div>
 
 </div> <!-- container div -->
-
 
 
 </div> <!-- super container div -->
