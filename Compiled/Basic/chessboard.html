@@ -1,0 +1,253 @@
+
+
+ <!DOCTYPE html>
+<html lang="en"> 
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8"/>
+    <title>fel88.com - Programming, Electronics</title>	<!--<title>Learn OpenGL, extensive tutorial resource for learning Modern OpenGL</title>-->
+    <link rel="shortcut icon" type="image/ico" href="https://fel88.com/favicon.ico"  />
+    <meta name="description" content="Learn OpenGL . com provides good and clear modern 3.3+ OpenGL tutorials with clear examples. A great resource to learn modern OpenGL aimed at beginners.">
+	<meta name="fragment" content="!"> 
+ 
+
+	<script>
+	
+				var googletag = googletag || {};
+				googletag.cmd = googletag.cmd || [];
+					</script>
+	<script type="text/javascript" src="http://cdn.thisiswaldo.com/static/js/1681.js"></script>	<script src="https://fel88.com/js/jquery-1.11.0.min.js"></script>
+	<script src="https://fel88.com/js/hoverintent.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://fel88.com/layout.css">
+    <link rel="stylesheet" type="text/css" href="https://fel88.com/js/styles/obsidian.css">
+    <script src="https://fel88.com/js/highlight.pack.js"></script>    
+    <script src="https://fel88.com/js/functions.js"></script>
+    <script type="text/javascript" src="https://fel88.com/js/mathjax/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script>
+    // Has to be loaded last due to content bug 
+    MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>  
+        $(document).ready(function() {
+            // check if user visited from the old # based urls, re-direct to ?p= form
+            if(window.location.hash)
+            {
+                var name = window.location.hash.substring(2);
+                // name = name.replace(/-/g," ");
+                var index = name.indexOf('#'); // Remove any hash fragments from the url (Disquss adds hash fragments for comments, but results in 404 pages)
+                if(index >= 0)
+                    name = name.substring(0, index);
+                
+                window.location.href = "https://fel88.com/" + name;
+            } else {
+                    // Check if data has been succesfully loaded, if so: change title bar as ajax hash fragment
+                    var title = $('#content-url').text();
+                  
+					// place video tag 
+					 if(title != '' ) {
+											//var videoad = "%3Cdiv id=\'waldo-tag-14070\'%3E %3Cscript%3Egoogletag.cmd.push(function() {googletag.display(\'waldo-tag-14070\'); }); %3C/script%3E%3C/div%3E";
+						//$('#content p:nth-of-type(3)').after(unescape(videoad));
+										}
+					
+                    // Adjust ads for correct bottom positioning based on content size
+                    // window.setTimeout(function() {  
+                        // AdPositioning();
+                     // }, 3000);
+                  
+                  
+                    // set API resets after time-out (once content is properly loaded)
+                    window.setTimeout(function() {  
+                        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);    
+                        
+                        var page_url = title == "" ? "http://www.fel88.com/" : "http://www.fel88.com/" + title;
+                   
+                           // Refresh callbacks on <function> tags
+                        SetFunctionTagCallbacks();        
+                    }, 1000);
+                                        
+                    // Zet ook de juiste button op 'selected'
+                    $('#nav li span, #nav li a').removeClass('selected');                
+                    if(title != '')
+                    {                    
+                        $('#nav li[id=\'' + title + '\']').children('span, a').addClass('selected');
+                    }
+                    // En open menu waar nodig
+                    var parents = $('#nav span.selected, #nav a.selected').parents('li').children('span.closed, a.closed');
+                    var index = 0;
+                    for(index = parents.length - 1; index >= 0; index--)
+                    {             
+                        
+                        var id = $(parents[index]).attr("id").replace( /^\D+/g, '');
+                        MenuClick(id, false);
+                    }                          
+                
+            }
+        });
+        
+              
+        // });
+    </script>
+</head>
+<body>
+<a href="https://fel88.com/">
+    На главную
+<div id="header">
+</div>
+</a>
+
+<div id="supercontainer">
+    <!-- 728x90/320x50 -->
+   
+    <div id="rightad_container">
+        <div id="rightad">       
+			       </div>
+
+       
+		
+		<!--<div id="rightonetenthad">
+
+        </div>-->
+        
+        <!--<div id="rightthreetenthad">
+
+        </div>-->
+		
+				
+		<!--<div id="rightseventhtenthdad">
+
+        </div>-->
+
+        		
+    </div>
+    <div id="container">
+        <div id="loading"></div>
+<script> 
+$(document).ready(function() {
+$('#menu-item4').mousedown(function() { MenuClick(4, true) });
+$('#menu-item48').mousedown(function() { MenuClick(48, true) });
+$('#menu-item56').mousedown(function() { MenuClick(56, true) });
+$('#menu-item63').mousedown(function() { MenuClick(63, true) });
+$('#menu-item100').mousedown(function() { MenuClick(100, true) });
+$('#menu-item102').mousedown(function() { MenuClick(102, true) });
+$('#menu-item113').mousedown(function() { MenuClick(113, true) });
+$('#menu-item116').mousedown(function() { MenuClick(116, true) });
+$('#menu-item78').mousedown(function() { MenuClick(78, true) });
+$('#menu-item81').mousedown(function() { MenuClick(81, true) });
+$('#menu-item85').mousedown(function() { MenuClick(85, true) });
+$('#menu-item125').mousedown(function() { MenuClick(125, true) });
+$('#menu-item128').mousedown(function() { MenuClick(128, true) });
+$('#menu-item129').mousedown(function() { MenuClick(129, true) });
+$('#menu-item133').mousedown(function() { MenuClick(133, true) });
+$('#menu-item134').mousedown(function() { MenuClick(134, true) });
+$('#menu-item138').mousedown(function() { MenuClick(138, true) });
+$('#menu-item142').mousedown(function() { MenuClick(142, true) });
+$('#menu-item143').mousedown(function() { MenuClick(143, true) });
+}); 
+</script>   
+    <div id="nav">
+         <div id="social">
+            <a href="https://github.com/fel88/fel88.com" target="_blank">
+                    <img src="https://fel88.com/img/github.png" class="social_ico">
+            </a>
+            <p>
+        <a href="">следующий урок</a>
+    </p>
+    <p>
+        <a href="">предыдущий урок</a>
+    </p>
+          
+        </div>
+    	
+
+
+    	<div id="menu_book">
+            
+        </div>
+       <div id="donate">
+           
+        </div>       
+		
+		
+					<div id="lefttwotenthad">
+						<div id="waldo-tag-2245"></div>		
+					</div>
+						
+		<!--<div id="leftfourthtenthad">
+
+        </div>-->
+		
+				
+		<!--<div id="lefteighttenthad">
+
+        </div>-->
+		    </div>
+    
+    <div id="content">
+    <h1 id="content-title">Шахматное поле</h1>
+<h1 id="content-url" style="display:none;">Lighting/Colors</h1>
+<p>
+  Рассмотрим как с помощью цикла нарисовать шахматное поле. Шахматное поле представляет собой сетку из черных и белых квадратиков 8 на 8.
+</p>
+<img src="https://fel88.com/img/chessboard.png">
+
+<p>
+    Для того чтобы нарисовать двухмерное шахмаотное поле воспользуемся вложенным циклом. Первый цикл будет пробегаться по столбцам, второй по строкам. Каждый цикл будет выполнять 8 итераций. Цвет текущего квадрата может быть либо черный либо белый, при переходе к каждой следующей клетке в строке он меняется на противоположный. При переходе на новую строку, он также меняется на противоположный. Введем специальные bool переемнную , которая будет хранить текущий выводимый цвет ячейки.  
+</p>
+
+<pre><code class=" hljs cpp">
+<span class="hljs-keyword">bool</span> isBlack = <span class="hljs-keyword">false</span>;
+<span class="hljs-keyword">int</span> CllSize=<span class="hljs-number">50</span>;
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">8</span>; i++) {
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">8</span>; j++) {
+        isBlack = !isBlack;
+        gr.FillRectangle(
+            isBlack ? Brushes.Black : Brushes.White, <span class="hljs-comment">// текущий цвет клетки</span>
+            i * CellSize,  <span class="hljs-comment">// начальная позиция по X</span>
+            j * CellSize, <span class="hljs-comment">// начальная позиция по Y</span>
+            CellSize, CellSize
+        ); <span class="hljs-comment">// ширина клетки по X и Y </span>
+}}
+</code></pre>
+
+<p>
+  Вставив и запустив данный пример мы увидим следующую картинку:
+</p>
+
+<img src="https://fel88.com/img/chessboard_generated.png" class="clean">
+
+<p>
+    Данный пример наглядно показывает что для раборты с 2х мерными массивами или сетками удобно использовать 2 цикла (один вложен в другой). Тем самым индексаторы пробегаются по каждому элементы 2х мерной структуры данных, в данном случае Шахматному полю. В дальнейшем эта техникак пригодится нам для обработки двухмерных массивов, вроде годовой температуры по месяцам и дням и так далее.
+</p>
+<p>
+  Исходный код данного примера вы можете найти <a href="https://github.com/fel88/fel88.com/blob/main/Codes/Samples/Chessboard/Form1.cs" target="_blank">здесь</a> 
+  </p>
+
+<h2>Упражнения</h2>
+<ul>
+  <li>Переделать отрисовку поля таким орбразом чтобы не использовать bool переменную , а использовать только индексаторы i и j
+
+    </li>
+  
+</ul>
+
+      </div>
+    
+    <div id="hover">
+        HI
+    </div>
+	
+	
+<!-- 728x90/320x50 sticky footer -->
+<div id="waldo-tag-6196"></div><div id="disqus_thread"></div>
+
+</div> <!-- container div -->
+
+
+</div> <!-- super container div -->
+</body>
+
+</html>
