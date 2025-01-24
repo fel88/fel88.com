@@ -9,6 +9,8 @@
     <title>fel88.com - Programming, Electronics</title>	<!--<title>Learn OpenGL, extensive tutorial resource for learning Modern OpenGL</title>-->
     <link rel="shortcut icon" type="image/ico" href="https://fel88.com/favicon.ico"  />
     <meta name="description" content="Learn OpenGL . com provides good and clear modern 3.3+ OpenGL tutorials with clear examples. A great resource to learn modern OpenGL aimed at beginners.">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  
 	<meta name="fragment" content="!"> 
  
 
@@ -24,6 +26,32 @@
     <script src="https://fel88.com/js/highlight.pack.js"></script>    
     <script src="https://fel88.com/js/functions.js"></script>
     <script type="text/javascript" src="https://fel88.com/js/mathjax/MathJax.js?config=TeX-AMS_HTML"></script>
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+        var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+       $( ".accordion" ).accordion({
+            icons: icons,
+            heightStyle: "content" ,
+            collapsible: true,
+            active: false 
+
+    });
+           $( ".toggle" ).button().on( "click", function() {
+      if ( $( ".accordion" ).accordion( "option", "icons" ) ) {
+        $( ".accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( ".accordion" ).accordion( "option", "icons", icons );
+      }
+    });
+  } );
+  </script>
     <script>
     // Has to be loaded last due to content bug 
     MathJax.Hub.Config({
@@ -176,15 +204,77 @@ $('#menu-item143').mousedown(function() { MenuClick(143, true) });
     
    <div id="content">
     <h1>Добро пожаловать на мой сайт!</h1>
-<p>
+<p> Данный сайт содержит набор уроков по программированию и электронике. 
     В ходе курса будут созданы различные тестовые графические приложения с целью изучения базовых операторов и конструкций программирования. Все примеры написаны на языке C#, но большинство конструкция вроде циклов, условных операраторов и так далее являются универсальными для большинства языков программирования. Поэтому знания полученные здесь могут быть адаптированы и для других языков в будущем. Основной задачей является легкость, доступность и наглядность изучения на первом этапе. Язык C# и графические мини-программы идеально подходят для этих задач. 
     
     
 </p>
 
+<h2>Содержание курса</h2>
+ <p></p>
+<div class="accordion">
+  <h3>Основы программирования</h3>
+  <div>
+<div class="accordion">
+  <h3>Подготовка к работе</h3>
+  <div>
+    <p>
+   
+    </p>
+  </div> 
+ <h3>Основы</h3>
+  <div>
+    <p>
+    <a href="https://fel88.com/Basic/chessboard.html">Шахматное поле</a> </p>    
+   
+  </div> 
+   <h3>Анимация</h3>
+  <div>
+    
+    <p><a href="https://fel88.com/Basic/rectangle_hover.html">Ховеринг кнопки</a> </p>
+    <p><a href="https://fel88.com/Basic/circle_animation.html">Движение по кругу</a> </p>
+   
+  </div> 
+ <h3>Построение интерфейсов</h3>
+  <div>
+    
+  
+  </div> 
+  <h3>SkiaSharp</h3>
+  <div>
+    
+  
+  </div>
+  <h3>Мини-игры</h3>
+  <div>
+    
+  
+  </div> 
+  <h3>3D графика. Основы</h3>
+  <div>
+    
+  
+  </div> 
+  </div> 
+
+</div>
+  <h3>Электроника</h3>
+  <div>
+    <p>
+  
+    </p>
+  </div>
+  <h3>Проекты</h3>
+  <div>
+   
+  </div>
+
+</div>
+
+
 <h2>Кому подойдет данный курс?</h2>
 <p>
-   Данный сайт содержит набор уроков по программированию и электронике. Подхоит для новичков примерно от 12 лет кто хочет попробовать изучиь программирование через графический подход. 
+  Подходит для новичков примерно от 12 лет кто хочет попробовать изучиь программирование через графический подход. 
 </p>
 
 <h2>К чему нужно стремится</h2>
@@ -209,18 +299,18 @@ $('#menu-item143').mousedown(function() { MenuClick(143, true) });
                     fel88
             </a>
         
-      
-
+      </p>
+<p>
+ Также провожу индивидуальные занятия по программрованию, по всем вопросам пишите в ТГ<br/>
     <a href="tg://resolve?domain=fel88" style="text-decoration:none"><i class="fa fa-telegram" style="font-size:24px"></i>
     Telegram</a>
+
 </p>
 
 
 <h2>Приступить к занятиям </h2>
 <p>
-    <a href="https://fel88.com/Basic/chessboard.html">Шахматное поле</a><br/>
-    <a href="https://fel88.com/Basic/rectangle_hover.html">Ховеринг кнопки</a><br/>
-    <a href="https://fel88.com/Basic/circle_animation.html">Движение по кругу</a><br/>
+   
 </p>
 
 
@@ -236,7 +326,7 @@ $('#menu-item143').mousedown(function() { MenuClick(143, true) });
     
     
 <!-- 728x90/320x50 sticky footer -->
-<div id="waldo-tag-6196"></div><div id="disqus_thread"></div>
+
 
 </div> <!-- container div -->
 

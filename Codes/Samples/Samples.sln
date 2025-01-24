@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hover_rectangle", "Hover_re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circle_animation", "Circle_animation\Circle_animation.csproj", "{3F3F421C-D5C6-4422-BF68-1D41BA413D41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ball_animation", "Ball_animation\Ball_animation.csproj", "{B8D1A060-D061-46EE-967F-AF7AE6A81BDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bricks_wall_animation", "Bricks_wall_animation\Bricks_wall_animation.csproj", "{5CAD8B73-D82E-4157-A48C-1372803933EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{3F3F421C-D5C6-4422-BF68-1D41BA413D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3F421C-D5C6-4422-BF68-1D41BA413D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3F421C-D5C6-4422-BF68-1D41BA413D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D1A060-D061-46EE-967F-AF7AE6A81BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D1A060-D061-46EE-967F-AF7AE6A81BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D1A060-D061-46EE-967F-AF7AE6A81BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D1A060-D061-46EE-967F-AF7AE6A81BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAD8B73-D82E-4157-A48C-1372803933EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAD8B73-D82E-4157-A48C-1372803933EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAD8B73-D82E-4157-A48C-1372803933EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAD8B73-D82E-4157-A48C-1372803933EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
