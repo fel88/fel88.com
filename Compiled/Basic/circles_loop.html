@@ -125,29 +125,7 @@
     </div>
     <div id="container">
         <div id="loading"></div>
-<script> 
-$(document).ready(function() {
-$('#menu-item4').mousedown(function() { MenuClick(4, true) });
-$('#menu-item48').mousedown(function() { MenuClick(48, true) });
-$('#menu-item56').mousedown(function() { MenuClick(56, true) });
-$('#menu-item63').mousedown(function() { MenuClick(63, true) });
-$('#menu-item100').mousedown(function() { MenuClick(100, true) });
-$('#menu-item102').mousedown(function() { MenuClick(102, true) });
-$('#menu-item113').mousedown(function() { MenuClick(113, true) });
-$('#menu-item116').mousedown(function() { MenuClick(116, true) });
-$('#menu-item78').mousedown(function() { MenuClick(78, true) });
-$('#menu-item81').mousedown(function() { MenuClick(81, true) });
-$('#menu-item85').mousedown(function() { MenuClick(85, true) });
-$('#menu-item125').mousedown(function() { MenuClick(125, true) });
-$('#menu-item128').mousedown(function() { MenuClick(128, true) });
-$('#menu-item129').mousedown(function() { MenuClick(129, true) });
-$('#menu-item133').mousedown(function() { MenuClick(133, true) });
-$('#menu-item134').mousedown(function() { MenuClick(134, true) });
-$('#menu-item138').mousedown(function() { MenuClick(138, true) });
-$('#menu-item142').mousedown(function() { MenuClick(142, true) });
-$('#menu-item143').mousedown(function() { MenuClick(143, true) });
-}); 
-</script>   
+   
     <div id="nav">
          <div id="social">
             <a href="https://github.com/fel88/fel88.com" target="_blank">
@@ -197,17 +175,22 @@ DrawEllipse(Pens.Black, CenterX - Radius2, CenterY - Radius2, 2 * Radius2, 2 * R
 DrawEllipse(Pens.Black, CenterX - Radius3, CenterY - Radius3, 2 * Radius3, 2 * Radius3);
  .... // и так далее в зависисмости сколько крпугов нужно вывести
 </code></pre><p>
-  Как мы видим количество строчек инструкций кода строго равно количеству выводимых кругов. Этот подход не универсальный, т.к. если мне потребуется изменить количество выводимых кругов, то мне придется переписывать программу и компилировать ее заново. Вместо этого давайте воспользуемся циклом со счетчиком for. Данный цикл присутсвует почти во всех язык программирования (JavaScript, C++, Java и т.д.)
+  Как мы видим количество строчек инструкций кода строго равно количеству выводимых кругов. Этот подход не универсальный, т.к. он статичный. Если мне потребуется изменить количество выводимых кругов, то мне придется переписывать программу и компилировать ее заново. А если потребуется менять количество кругов динамически в ходе работы программы, то этого не удастся достичь в-принципе. Вместо этого давайте воспользуемся гибким способом с использованием цикла for (цикл со счетчиком). Данный цикл присутсвует почти во всех язык программирования (JavaScript, C++, Java и т.д.)
 </p> <pre><code class=" hljs cpp">int N = 10;
 for (int i = 0; i < N; i++)
     DrawEllipse(Pens.Black, CenterX - radius, CenterY - radius, 2 * radius, 2 * radius);      
 </code></pre>
+<h3>Цикл for</h3>
+<note> Цикл for имеет три секции, инициализацию, условие выхода, и счетчик.<br/>
+    for (<начальное условик>)
+</note>
+
 <p>
-  Объвим необходимые переменные
+  Объявим необходимые переменные
 </p>
 
 <pre><code class=" hljs cpp">float Radius = 50;//стартовый радиус первого выводимого круга
-float Step = 10;// шаг приращения радуса каждого следующего выводимого круга
+float Step = 10;// шаг приращения радиуса каждого следующего выводимого круга
 int Qty = 15; // количество выводимых кругов
 </code></pre>
 <p>
@@ -219,15 +202,12 @@ var centerY = ClientSize.Height / 2;
 
 var radius = Radius;
 
-for (int i = 0; i < Qty; i++) //выпоним цикл Qty раз
+for (int i = 0; i < Qty; i++) //выполним цикл Qty раз
 {
     gr.DrawEllipse(Pens.Black, centerX - radius, centerY - radius, radius * 2, radius * 2);
     radius += Step; // на каждой итерации цикла увеличиваем наш радиус на Step
 }
 </code></pre>
-<p>
-    В дальнейшем движение по кругу используя синус и косинус будет использоваться множество разных. Необходимо знать и понимать как они работают.
-</p>
 
 
 <p>
@@ -240,7 +220,7 @@ for (int i = 0; i < Qty; i++) //выпоним цикл Qty раз
   
 </p>
 <p>
-    Как вы видите использования цикла позволяет выполнять один или группу операторов несколько раз тем самым деля код более читаемым, гибким и лаконичным.
+    Как вы видите использования цикла позволяет выполнять один или группу операторов несколько раз тем самым делая код более читаемым, гибким и лаконичным.
   Исходный код данного примера вы можете найти <a href="https://github.com/fel88/fel88.com/blob/main/Codes/Samples/Circles_loop/Form1.cs" target="_blank">здесь</a> 
   </p>
 
