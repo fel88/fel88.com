@@ -1,0 +1,456 @@
+
+
+ <!DOCTYPE html>
+<html lang="en"> 
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8"/>
+    <title>fel88.com - Programming, Electronics</title>	<!--<title>Learn OpenGL, extensive tutorial resource for learning Modern OpenGL</title>-->
+    <link rel="shortcut icon" type="image/ico" href="https://fel88.com/favicon.ico"  />
+    <meta name="description" content="Learn OpenGL . com provides good and clear modern 3.3+ OpenGL tutorials with clear examples. A great resource to learn modern OpenGL aimed at beginners.">
+	<meta name="fragment" content="!"> 
+ 
+
+	<script>
+	
+				var googletag = googletag || {};
+				googletag.cmd = googletag.cmd || [];
+					</script>
+	<script type="text/javascript" src="http://cdn.thisiswaldo.com/static/js/1681.js"></script>	<script src="https://fel88.com/js/jquery-1.11.0.min.js"></script>
+	<script src="https://fel88.com/js/hoverintent.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://fel88.com/layout.css">
+    <link rel="stylesheet" type="text/css" href="https://fel88.com/js/styles/obsidian.css">
+    <script src="https://fel88.com/js/highlight.pack.js"></script>    
+    <script src="https://fel88.com/js/functions.js"></script>
+    <script type="text/javascript" src="https://fel88.com/js/mathjax/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script>
+    // Has to be loaded last due to content bug 
+    MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>  
+        $(document).ready(function() {
+            // check if user visited from the old # based urls, re-direct to ?p= form
+            if(window.location.hash)
+            {
+                var name = window.location.hash.substring(2);
+                // name = name.replace(/-/g," ");
+                var index = name.indexOf('#'); // Remove any hash fragments from the url (Disquss adds hash fragments for comments, but results in 404 pages)
+                if(index >= 0)
+                    name = name.substring(0, index);
+                
+                window.location.href = "https://fel88.com/" + name;
+            } else {
+                    // Check if data has been succesfully loaded, if so: change title bar as ajax hash fragment
+                    var title = $('#content-url').text();
+                  
+					// place video tag 
+					 if(title != '' ) {
+											//var videoad = "%3Cdiv id=\'waldo-tag-14070\'%3E %3Cscript%3Egoogletag.cmd.push(function() {googletag.display(\'waldo-tag-14070\'); }); %3C/script%3E%3C/div%3E";
+						//$('#content p:nth-of-type(3)').after(unescape(videoad));
+										}
+					
+                    // Adjust ads for correct bottom positioning based on content size
+                    // window.setTimeout(function() {  
+                        // AdPositioning();
+                     // }, 3000);
+                  
+                  
+                    // set API resets after time-out (once content is properly loaded)
+                    window.setTimeout(function() {  
+                        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);    
+                        
+                        var page_url = title == "" ? "http://www.fel88.com/" : "http://www.fel88.com/" + title;
+                   
+                           // Refresh callbacks on <function> tags
+                        SetFunctionTagCallbacks();        
+                    }, 1000);
+                                        
+                    // Zet ook de juiste button op 'selected'
+                    $('#nav li span, #nav li a').removeClass('selected');                
+                    if(title != '')
+                    {                    
+                        $('#nav li[id=\'' + title + '\']').children('span, a').addClass('selected');
+                    }
+                    // En open menu waar nodig
+                    var parents = $('#nav span.selected, #nav a.selected').parents('li').children('span.closed, a.closed');
+                    var index = 0;
+                    for(index = parents.length - 1; index >= 0; index--)
+                    {             
+                        
+                        var id = $(parents[index]).attr("id").replace( /^\D+/g, '');
+                        MenuClick(id, false);
+                    }                          
+                
+            }
+        });
+        
+              
+        // });
+    </script>
+</head>
+<body>
+<a href="https://fel88.com/">
+    На главную
+<div id="header">
+</div>
+</a>
+
+<div id="supercontainer">
+    <!-- 728x90/320x50 -->
+   
+    <div id="rightad_container">
+        <div id="rightad">       
+			       </div>
+
+       
+		
+		<!--<div id="rightonetenthad">
+
+        </div>-->
+        
+        <!--<div id="rightthreetenthad">
+
+        </div>-->
+		
+				
+		<!--<div id="rightseventhtenthdad">
+
+        </div>-->
+
+        		
+    </div>
+    <div id="container">
+        <div id="loading"></div>
+  
+    <div id="nav">
+         <div id="social">
+            <a href="https://github.com/fel88/fel88.com" target="_blank">
+                    <img src="https://fel88.com/img/github.png" class="social_ico">
+            </a>
+          
+          
+        </div>
+    	
+
+
+    	<div id="menu_book">
+            
+        </div>
+       <div id="donate">
+           
+        </div>       
+		
+		
+					<div id="lefttwotenthad">
+						<div id="waldo-tag-2245"></div>		
+					</div>
+						
+		<!--<div id="leftfourthtenthad">
+
+        </div>-->
+		
+				
+		<!--<div id="lefteighttenthad">
+
+        </div>-->
+		    </div>
+    
+    <div id="content">
+    <h1 id="content-title">Змейка</h1>
+<h1 id="content-url" style="display:none;">Lighting/Colors</h1>
+<p>
+
+Создадим мини-игру змейка. 
+</p>
+ 
+<p>
+  Для хранения змейки воспользуемся однонаправленным связанным списком. Объявим класс SnakeNode, который будет хранить координаты текущего элемента змейки и указатель на следующий элемент. Использование односвязанного списка удобно по ряду причин которые будут рассмотрены ниже. 
+</p>
+<note>Односвязанный список хранит указатель только на следующий элемент. Для хранения списка используется его вершина (Head), для доступа ко всем остальным элементам нужно совершить обход по ссылкам по докнца списка.</note>
+<pre><code class=" hljs cpp">public class SnakeNode
+{
+    public SnakeNode Next; // указатель на следующий элемент змейки
+    // координаты
+    public int X;
+    public int Y;
+}
+</code></pre>
+<p> 
+   Для яблока объявим класс Apple
+</p>
+<pre><code class=" hljs cpp">public class Apple
+{
+    public int X;
+    public int Y;
+}
+</code></pre>
+<p>
+   Обновим перечисление MoveDirection которое будет определять сторону движения головы змейки на следующем ходу
+</p>
+<pre><code class=" hljs cpp">public enum MoveDirection
+{
+     Left, Right, Top, Bottom
+}
+</code></pre>
+<p>
+   Объявим переменные необходимые для работы программы:
+</p>
+<pre><code class=" hljs cpp">const int MaxApples = 10; // количество яблок на поле
+int Rows => (int)(ClientRectangle.Height / CellSize); // количество строк
+int Cols => (int)(ClientRectangle.Width / CellSize); // количество столбцов
+bool gameOver = false; // флаг окончания игры
+SnakeNode Head = new SnakeNode(); // голова змейки
+public List<Apple> Apples = new List<Apple>(); // список всех яблок
+MoveDirection dir; // текущее направление змейки
+float CellSize = 30; // размер ячейки нашей игры 
+Random Random = new Random(); // генератор случайных чисел
+</code></pre>
+
+
+<p>
+   Сделаем функцию NewApple которая будет генерировать новое яблоко на игровом поле.  Воспользуемся циклом с постусловием do..while. Случайным образом найдем позицию на карте, которая не занята ни змейкой ни другим яблоком и добавим новое яблоко в список яблок Apples.
+</p>
+<pre><code class=" hljs cpp">public void NewApple() //сгенерировать новое яблоко и добавить его на карту
+{
+    int x = 0;
+    int y = 0;
+    do 
+    {
+        x = Random.Next(1, Cols - 1);
+        y = Random.Next(1, Rows - 1);
+    }
+    while (Apples.Any(z => z.X == x && z.Y == y) || SnakeHas(x, y));
+
+    Apples.Add(new Apple() { X = x, Y = y });
+}
+
+private bool SnakeHas(int x, int y) // функция проверки что данная клектка поля занята змейкой
+{
+        var node = Head;
+        while (node != null)
+        {
+            if (node.X == x && node.Y == y)
+                return true;
+
+            node = node.Next;
+        }
+        return false;
+}
+</code></pre>
+
+<p>
+   Добавим функцию проверки на пересечения новой предполагаемой позиции головы. Сперва проверим на пересечение с границей лабиринта, далее проверим что новая голова не будет пересекаться ни с одним из элементов змейки, кроме последнего, т.к. последний элемент сдвинется при соврешении хода.
+</p>
+<pre><code class=" hljs cpp">private bool CheckCollisions(SnakeNode head)
+{
+    if (head.X == 0 || head.Y == 0 || head.X == Cols - 1 || head.Y == Rows - 1)                            
+        return true;            
+
+    var node = Head;
+    while (node != null)
+    {
+        if (node.X == head.X && node.Y == head.Y)
+            return true;
+        
+        node = node.Next;
+    }
+
+    return false;
+}</code></pre>
+
+<p>
+   Добавим обработчик кнопок , для этого перегрузим встроенную в Form функцию ProcessCmdKey
+</p>
+<pre><code class=" hljs cpp">protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+{
+      switch (keyData)
+      {
+          case Keys.Left:
+              if (dir != MoveDirection.Right)
+                  dir = MoveDirection.Left;
+              break;
+          case Keys.Right:
+              if (dir != MoveDirection.Left)
+                  dir = MoveDirection.Right;
+              break;
+          case Keys.Up:
+              if (dir != MoveDirection.Bottom)
+                  dir = MoveDirection.Top;
+              break;
+          case Keys.Down:
+              if (dir != MoveDirection.Top)
+                  dir = MoveDirection.Bottom;
+              break;
+      }
+      return base.ProcessCmdKey(ref msg, keyData);
+} </code></pre>
+
+<p>
+   Рассмотри функцию обновления сцены. Создадим новый элмент змейки, который будет новой головой в случае успеха. Если змейка врезалась в препятствие то игра окончена, выставим флаг gameOver. Иначе, заменим Head на новый элемент и сошлемся на старую голову змейки. 
+   Как было сказано ранее для хранения змейки удобно использовать односвязанный список. В частности для сдвига змейки на одну клетку вперед достаточно создать новый SnakeNode задав для него ссылку на следующий элемент Next равный старому Head. И обновить указатель Head на вновь созданный элемент SnakeNode. При перемещении змейки все элементы остаются на своих местах кроме первого и последних элментов. Последний элемент должнен быть удален, для этого нужно пройтись до конца односвязанного списка и удалить последний элемент путем задания предпоследнему элементу Next = null. 
+</p>
+<note>Поскольку последний элемент змейки экземпляр класса SnakeNode останется без ссылок на него, спустя некоторое время он будет собран GC (сборщиком мусора) среды CLR и память которую он занимал освободится.</note>
+<pre><code class=" hljs cpp">SnakeNode newHead = new SnakeNode(); // создадим новый узел для предполагаемой позиции головы змейки на следующем ходу
+
+// в начале зададим новой голове координаты старой головы
+newHead.X = Head.X;
+newHead.Y = Head.Y;
+
+switch (dir) // проверим в какую сторону аправлена голова змейки и сделаем соответствующее приращение координат
+{
+    case MoveDirection.Left:
+        newHead.X--;
+        break;
+    case MoveDirection.Right:
+        newHead.X++;
+        break;
+    case MoveDirection.Top:
+        newHead.Y--;
+        break;
+    case MoveDirection.Bottom:
+        newHead.Y++;
+        break;
+}
+
+if (CheckCollisions(newHead)) // теперь проверим пересечение новой позиции головы с объектами на карте
+{
+    gameOver = true; // если произошло столкновение то выставим флаг окончания игры
+    return;
+}
+
+// если столкновения не произошло
+newHead.Next = Head; // свяжем новый элемент головы со страрой головой
+Head = newHead; // обнови указатель Head начала змейки на новый
+ </code></pre>
+
+<p>
+  После того как мы добавили новую голову змейки, нам нужно решить что мы будем делать с последним элементом змейки. Возможны два варианта, либо мы съели яблоко на текущем ходу, и тогда нам не треуется удалять хвост змейки. В противном случае если мы не съели яблоко то мы должны удалить хвости змейки. Для этого дойдем до предпоследнего элемента змейки и сотрем ему Next задав его равным null. Тем самым отсоеденим хвост змейки оставив его без ссылок.
+</p>
+ <pre><code class=" hljs cpp">bool removeLastNode = true;
+if (Apples.Any(z => z.X == Head.X && z.Y == Head.Y))
+{
+    Apples.RemoveAll(z => z.X == Head.X && z.Y == Head.Y);
+    NewApple();
+    removeLastNode = false;
+}
+
+if (!removeLastNode)
+    return;
+
+//remove last node
+var node = Head;
+while (true)
+{
+    if (node.Next != null && node.Next.Next == null)
+    {
+        node.Next = null;
+        break;
+    }
+    node = node.Next;
+}
+ </code></pre>
+
+
+<p>
+   Добавим функцию сброса игры ResetGame
+</p>
+<pre><code class=" hljs cpp">private void ResetGame()
+{
+        Apples.Clear();
+        Head = new SnakeNode();
+        gameOver = false;
+        Head.X = (int)(ClientRectangle.Width / CellSize / 2);
+        Head.Y = (int)(ClientRectangle.Height / CellSize / 2);
+
+        var w = (int)(ClientRectangle.Width % CellSize);
+        var h = (int)(ClientRectangle.Height % CellSize);
+        Size = new Size(Size.Width - w, Size.Height - h);
+
+        dir = MoveDirection.Left;
+
+        for (int i = 0; i < MaxApples; i++)
+            NewApple();
+
+} </code></pre>
+
+<p>
+   Добавим функции отрисовки всех элементов нашей игры:
+</p>
+<pre><code class=" hljs cpp">private void DrawSnake(Graphics gr) // нарисовать всю змейку целиком
+{
+      DrawNode(Head, gr, CellSize, Brushes.Orange);
+      var node = Head.Next;
+      while (node != null)
+      {
+          DrawNode(node, gr, CellSize * 0.9f, Brushes.LightGreen);
+          node = node.Next;
+      }
+}
+
+public void DrawNode(SnakeNode node, Graphics gr, float size, Brush brush) // нарисовать элемент змейки
+{
+    gr.DrawEllipse(Pens.Black, node.X * CellSize + (CellSize - size) / 2, node.Y * CellSize + (CellSize - size) / 2, size, size);
+    gr.FillEllipse(brush, node.X * CellSize + (CellSize - size) / 2, node.Y * CellSize + (CellSize - size) / 2, size, size);
+}
+
+public void DrawWall(Graphics gr, int x, int y) //нарисовать один элемент стены
+{
+    gr.DrawRectangle(Pens.Black, x * CellSize, y * CellSize, CellSize, CellSize);
+    gr.FillRectangle(Brushes.Thistle, x * CellSize, y * CellSize, CellSize, CellSize);
+}
+
+public void DrawAllWalls(Graphics gr) // нарисовать всю стену целиком
+{
+    for (int i = 0; i < Cols; i++)
+    {
+        DrawWall(gr, i, 0);
+        DrawWall(gr, i, Rows - 1);
+    }
+    for (int i = 0; i < Rows; i++)
+    {
+        DrawWall(gr, 0, i);
+        DrawWall(gr, Cols - 1, i);
+    }
+}
+
+  </code></pre>
+
+
+<p>
+  Запустив данный пример мы увидим следующую анимацию:
+</p>
+
+<img src="https://fel88.com/img/snake.gif" class="clean">
+
+<p>
+  
+</p>
+<p>
+  Исходный код данного примера вы можете найти <a href="https://github.com/fel88/fel88.com/blob/main/Codes/Samples/Snake/Form1.cs" target="_blank">здесь</a> 
+  </p>
+
+<h2>Упражнения</h2>
+<ul>
+   
+</ul>
+
+      </div>
+    
+    <div id="hover">
+        HI
+    </div>
+	
+
+
+
+</div> <!-- container div -->
+
+
+</div> <!-- super container div -->
+</body>
+
+</html>

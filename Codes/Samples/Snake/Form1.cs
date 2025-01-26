@@ -107,7 +107,10 @@ namespace Snake
             }
 
             if (CheckCollisions(newHead))
+            {
+                gameOver = true;
                 return;
+            }
 
             newHead.Next = Head;
             Head = newHead;
@@ -188,20 +191,15 @@ namespace Snake
 
         private bool CheckCollisions(SnakeNode head)
         {
-            if (head.X == 0 || head.Y == 0 || head.X == Cols - 1 || head.Y == Rows - 1)
-            {
-                gameOver = true;
-                return true;
-            }
+            if (head.X == 0 || head.Y == 0 || head.X == Cols - 1 || head.Y == Rows - 1)                            
+                return true;            
 
             var node = Head;
             while (node != null)
             {
                 if (node.X == head.X && node.Y == head.Y)
-                {
-                    gameOver = true;
                     return true;
-                }
+                
                 node = node.Next;
             }
 
