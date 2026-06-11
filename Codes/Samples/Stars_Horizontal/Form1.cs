@@ -14,22 +14,31 @@ namespace Stars_Horizontal
             InitStars();
             SizeChanged += Form1_SizeChanged;
             timer.Tick += (sender, e) =>
-            {                
-                    Invalidate();
+            {
+                Invalidate();
             };
             timer.Interval = 1;
             timer.Start();
             DoubleBuffered = true;
         }
 
-        private void Form1_SizeChanged(object? sender, EventArgs e)
-        {
-            InitStars();
-        }
+        const int N = 400;
+
+        float[] starsX = new float[N];
+        float[] starsY = new float[N];
+        float[] starsSize = new float[N];
+        float[] starsSpeed = new float[N];
 
         Timer timer = new Timer();
 
         Random rand = new Random();
+
+
+        private void Form1_SizeChanged(object? sender, EventArgs e)
+        {
+            InitStars();
+        }
+      
         private void InitStars()
         {
             var width = ClientSize.Width;
@@ -41,25 +50,21 @@ namespace Stars_Horizontal
                 starsSpeed[i] = rand.Next(10, 100) / 10f;
                 starsSize[i] = rand.Next(1, 4);
             }
-        }
+        }    
 
-        const int N = 400;
-
-        float[] starsX = new float[N];
-        float[] starsY = new float[N];
-        float[] starsSize = new float[N];
-        float[] starsSpeed = new float[N];
-
-        
         private void Form1_Paint(object? sender, PaintEventArgs e)
-        {            
+        {
             var gr = e.Graphics;
             gr.Clear(Color.Black);
             for (int i = 0; i < N; i++)
             {
-                gr.FillEllipse(Brushes.Silver, starsX[i], starsY[i], starsSize[i], starsSize[i]);
+                // update i-th star's position
                 starsX[i] -= starsSpeed[i];
-                if (starsX[i] < 0) starsX[i] = Width;
+                if (starsX[i] < 0)
+                    starsX[i] = Width;
+
+                // draw i-th star
+                gr.FillEllipse(Brushes.Silver, starsX[i], starsY[i], starsSize[i], starsSize[i]);              
             }
         }
     }
