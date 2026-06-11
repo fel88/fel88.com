@@ -1,0 +1,28 @@
+/*
+ * Put your custom CSS code here
+ */
+
+.note {
+    display:block;
+    margin:20px;
+    padding:15px;
+    background-color: #D8F5D8;
+    color: #444;
+    border-radius: 5px;
+    border: 2px solid #AFDFAF;
+}
+/*
+:root {
+    --bg-color: #eee;
+    --text-color: #000000;
+}
+
+html.dark-mode {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}*/

@@ -1,0 +1,157 @@
+[
+    {
+        "name": "Основы программирования",
+        "position": "mainMenu;footerMenu",
+        "items": [
+            {
+                "id": 1781119591321,
+                "label": "Основы",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 5,
+                "cssClass": "",
+                "isHidden": false,
+                "items": [
+                    {
+                        "id": 1781162353514,
+                        "label": "Первые шаги",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 17,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": [
+                            {
+                                "id": 1781162857986,
+                                "label": "Черепашка",
+                                "title": "",
+                                "type": "page",
+                                "target": "_self",
+                                "rel": "",
+                                "link": 20,
+                                "cssClass": "",
+                                "isHidden": false,
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1781122869520,
+                        "label": "Циклы",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 7,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": [
+                            {
+                                "id": 1781122887252,
+                                "label": "Круги",
+                                "title": "",
+                                "type": "page",
+                                "target": "_self",
+                                "rel": "",
+                                "link": 4,
+                                "cssClass": "",
+                                "isHidden": true,
+                                "items": []
+                            },
+                            {
+                                "id": 1781122905832,
+                                "label": "Шахматное поле",
+                                "title": "",
+                                "type": "page",
+                                "target": "_self",
+                                "rel": "",
+                                "link": 6,
+                                "cssClass": "",
+                                "isHidden": true,
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1781123938383,
+                        "label": "Анимация",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 9,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": [
+                            {
+                                "id": 1781123955328,
+                                "label": "Ховер прямоугольника",
+                                "title": "",
+                                "type": "page",
+                                "target": "_self",
+                                "rel": "",
+                                "link": 8,
+                                "cssClass": "",
+                                "isHidden": false,
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1781162490594,
+                        "label": "Функции",
+                        "title": "",
+                        "type": "page",
+                        "target": "_self",
+                        "rel": "",
+                        "link": 18,
+                        "cssClass": "",
+                        "isHidden": false,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id": 1781119579500,
+                "label": "Основы программирования",
+                "title": "",
+                "type": "separator",
+                "target": "_self",
+                "rel": "",
+                "link": "",
+                "cssClass": "",
+                "isHidden": true,
+                "items": []
+            },
+            {
+                "id": 1781125412972,
+                "label": "Мини-игры",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 12,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1781128602650,
+                "label": "О курсе",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 10,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            }
+        ],
+        "maxLevels": "-1;1"
+    }
+]
