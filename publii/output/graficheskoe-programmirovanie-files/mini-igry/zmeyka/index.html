@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Змейка - Графическое программирование</title><meta name="description" content="Создадим мини-игру змейка. Для хранения змейки воспользуемся однонаправленным связанным списком. Объявим класс SnakeNode, который будет хранить координаты текущего элемента змейки и указатель на следующий элемент."><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="stylesheet" href="https://fel88.com/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://fel88.com/mini-igry/zmeyka/"><link rel="alternate" type="application/atom+xml" href="https://fel88.com/feed.xml" title="Графическое программирование - RSS"><link rel="alternate" type="application/json" href="https://fel88.com/feed.json" title="Графическое программирование - JSON"><meta property="og:title" content="Змейка"><meta property="og:site_name" content="Графическое программирование"><meta property="og:description" content="Создадим мини-игру змейка. Для хранения змейки воспользуемся однонаправленным связанным списком. Объявим класс SnakeNode, который будет хранить координаты текущего элемента змейки и указатель на следующий элемент."><meta property="og:url" content="https://fel88.com/mini-igry/zmeyka/"><meta property="og:type" content="article"><link rel="preload" href="https://fel88.com/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://fel88.com/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://fel88.com/assets/css/style.css?v=fda4506b82aa6c14da0348745ff41f3b"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://fel88.com/mini-igry/zmeyka/"},"headline":"Змейка","datePublished":"2026-06-11T00:03+03:00","dateModified":"2026-06-11T02:10+03:00","description":"Создадим мини-игру змейка. Для хранения змейки воспользуемся однонаправленным связанным списком. Объявим класс SnakeNode, который будет хранить координаты текущего элемента змейки и указатель на следующий элемент.","author":{"@type":"Person","name":"fel88","url":"https://fel88.com/authors/fel88/"},"publisher":{"@type":"Organization","name":"fel88"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><style>.ti{fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}</style></head><body class="page-template"><div class="container container--center"><header class="header"><div class="header__logo"><a class="logo" href="https://fel88.com/">Графическое программирование</a></div><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li class="has-submenu"><a href="https://fel88.com/osnovy/" target="_self" aria-haspopup="true">Основы</a><ul class="navbar__submenu level-2" aria-hidden="true"><li class="has-submenu"><a href="https://fel88.com/osnovy/pervye-shagi/" target="_self" aria-haspopup="true">Первые шаги</a><ul class="navbar__submenu level-3" aria-hidden="true"><li><a href="https://fel88.com/osnovy/pervye-shagi/cherepashka/" target="_self">Черепашка</a></li></ul></li><li><a href="https://fel88.com/cikly/" target="_self">Циклы</a></li><li class="has-submenu"><a href="https://fel88.com/animaciya/" target="_self" aria-haspopup="true">Анимация</a><ul class="navbar__submenu level-3" aria-hidden="true"><li><a href="https://fel88.com/animaciya/animaciya-hover-pryamougolnika/" target="_self">Ховер прямоугольника</a></li></ul></li><li class="has-submenu"><a href="https://fel88.com/massivy/" target="_self" aria-haspopup="true">Массивы</a><ul class="navbar__submenu level-3" aria-hidden="true"><li><a href="https://fel88.com/labirinty/" target="_self">Лабиринты</a></li></ul></li><li><a href="https://fel88.com/funkcii-graphics/" target="_self">Функции</a></li></ul></li><li><a href="https://fel88.com/mini-igry/" target="_self">Мини-игры</a></li><li><a href="https://fel88.com/" target="_self">О курсе</a></li></ul></nav></header><main class="content page"><article class="post"><header><h1 class="post__title">Змейка</h1></header><div class="post__entry"><div><span style="font-size: inherit;">Создадим мини-игру змейка.</span></div><div><div class="note">Для хранения змейки воспользуемся однонаправленным связанным списком. Объявим класс SnakeNode, который будет хранить координаты текущего элемента змейки и указатель на следующий элемент. Использование односвязанного списка удобно по ряду причин которые будут рассмотрены ниже. Односвязанный список хранит указатель только на следующий элемент. Для хранения списка используется его вершина (Head), для доступа ко всем остальным элементам нужно совершить обход по ссылкам по докнца списка.<code class="hljs cpp hljs"><br></code></div><pre class="language-csharp"><code>public class SnakeNode
+{
+    public SnakeNode Next; // указатель на следующий элемент змейки
+    // координаты
+    public int X;
+    public int Y;
+}</code></pre><p>Для яблока объявим класс Apple</p><pre class="language-csharp"><code>public class Apple
+{
+    public int X;
+    public int Y;
+}</code></pre><p>Обновим перечисление MoveDirection которое будет определять сторону движения головы змейки на следующем ходу</p><pre><code class="hljs cpp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> MoveDirection
+{
+     Left, Right, Top, Bottom
+}
+</code></pre><p>Объявим переменные необходимые для работы программы:<code class="hljs cpp hljs"><br></code></p><pre class="language-csharp"><code>const int MaxApples = 10; // количество яблок на поле
+int Rows =&gt; (int)(ClientRectangle.Height / CellSize); // количество строк
+int Cols =&gt; (int)(ClientRectangle.Width / CellSize); // количество столбцов
+bool gameOver = false; // флаг окончания игры
+SnakeNode Head = new SnakeNode(); // голова змейки
+public List Apples = new List(); // список всех яблок
+MoveDirection dir; // текущее направление змейки
+float CellSize = 30; // размер ячейки нашей игры 
+Random Random = new Random(); // генератор случайных чисел</code></pre><p>Сделаем функцию NewApple которая будет генерировать новое яблоко на игровом поле. Воспользуемся циклом с постусловием do..while. Случайным образом найдем позицию на карте, которая не занята ни змейкой ни другим яблоком и добавим новое яблоко в список яблок Apples.</p><pre><code class="hljs cpp hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> NewApple() <span class="hljs-comment">//сгенерировать новое яблоко и добавить его на карту</span>
+{
+    <span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">do</span> 
+    {
+        x = Random.Next(<span class="hljs-number">1</span>, Cols - <span class="hljs-number">1</span>);
+        y = Random.Next(<span class="hljs-number">1</span>, Rows - <span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">while</span> (Apples.Any(z =&gt; z.X == x &amp;&amp; z.Y == y) || SnakeHas(x, y));
+
+    Apples.Add(<span class="hljs-keyword">new</span> Apple() { X = x, Y = y });
+}
+
+<span class="hljs-keyword">private</span> <span class="hljs-keyword">bool</span> SnakeHas(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y) <span class="hljs-comment">// функция проверки что данная клектка поля занята змейкой</span>
+{
+        var node = Head;
+        <span class="hljs-keyword">while</span> (node != null)
+        {
+            <span class="hljs-keyword">if</span> (node.X == x &amp;&amp; node.Y == y)
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+
+            node = node.Next;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+}
+</code></pre><p>Добавим функцию проверки на пересечения новой предполагаемой позиции головы. Сперва проверим на пересечение с границей лабиринта, далее проверим что новая голова не будет пересекаться ни с одним из элементов змейки, кроме последнего, т.к. последний элемент сдвинется при соврешении хода.</p><pre><code class="hljs cpp hljs"><span class="hljs-keyword">private</span> <span class="hljs-keyword">bool</span> CheckCollisions(SnakeNode head)
+{
+    <span class="hljs-keyword">if</span> (head.X == <span class="hljs-number">0</span> || head.Y == <span class="hljs-number">0</span> || head.X == Cols - <span class="hljs-number">1</span> || head.Y == Rows - <span class="hljs-number">1</span>)                            
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;            
+
+    var node = Head;
+    <span class="hljs-keyword">while</span> (node != null)
+    {
+        <span class="hljs-keyword">if</span> (node.X == head.X &amp;&amp; node.Y == head.Y)
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        
+        node = node.Next;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+}</code></pre><p>Добавим обработчик кнопок , для этого перегрузим встроенную в Form функцию ProcessCmdKey</p><pre class="language-csharp"><code>protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+{
+      switch (keyData)
+      {
+          case Keys.Left:
+              if (dir != MoveDirection.Right)
+                  dir = MoveDirection.Left;
+              break;
+          case Keys.Right:
+              if (dir != MoveDirection.Left)
+                  dir = MoveDirection.Right;
+              break;
+          case Keys.Up:
+              if (dir != MoveDirection.Bottom)
+                  dir = MoveDirection.Top;
+              break;
+          case Keys.Down:
+              if (dir != MoveDirection.Top)
+                  dir = MoveDirection.Bottom;
+              break;
+      }
+      return base.ProcessCmdKey(ref msg, keyData);
+} </code></pre><p>Рассмотри функцию обновления сцены. Создадим новый элмент змейки, который будет новой головой в случае успеха. Если змейка врезалась в препятствие то игра окончена, выставим флаг gameOver. Иначе, заменим Head на новый элемент и сошлемся на старую голову змейки. Как было сказано ранее для хранения змейки удобно использовать односвязанный список. В частности для сдвига змейки на одну клетку вперед достаточно создать новый SnakeNode задав для него ссылку на следующий элемент Next равный старому Head. И обновить указатель Head на вновь созданный элемент SnakeNode. При перемещении змейки все элементы остаются на своих местах кроме первого и последних элментов. Последний элемент должнен быть удален, для этого нужно пройтись до конца односвязанного списка и удалить последний элемент путем задания предпоследнему элементу Next = null.</p><div class="note">Поскольку последний элемент змейки экземпляр класса SnakeNode останется без ссылок на него, спустя некоторое время он будет собран GC (сборщиком мусора) среды CLR и память которую он занимал освободится.</div><div><pre class="language-csharp"><code>SnakeNode newHead = new SnakeNode(); // создадим новый узел для предполагаемой позиции головы змейки на следующем ходу
+
+// в начале зададим новой голове координаты старой головы
+newHead.X = Head.X;
+newHead.Y = Head.Y;
+
+switch (dir) // проверим в какую сторону аправлена голова змейки и сделаем соответствующее приращение координат
+{
+    case MoveDirection.Left:
+        newHead.X--;
+        break;
+    case MoveDirection.Right:
+        newHead.X++;
+        break;
+    case MoveDirection.Top:
+        newHead.Y--;
+        break;
+    case MoveDirection.Bottom:
+        newHead.Y++;
+        break;
+}
+
+if (CheckCollisions(newHead)) // теперь проверим пересечение новой позиции головы с объектами на карте
+{
+    gameOver = true; // если произошло столкновение то выставим флаг окончания игры
+    return;
+}
+
+// если столкновения не произошло
+newHead.Next = Head; // свяжем новый элемент головы со страрой головой
+Head = newHead; // обнови указатель Head начала змейки на новый</code></pre></div><p>После того как мы добавили новую голову змейки, нам нужно решить что мы будем делать с последним элементом змейки. Возможны два варианта, либо мы съели яблоко на текущем ходу, и тогда нам не треуется удалять хвост змейки. В противном случае если мы не съели яблоко то мы должны удалить хвости змейки. Для этого дойдем до предпоследнего элемента змейки и сотрем ему Next задав его равным null. Тем самым отсоеденим хвост змейки оставив его без ссылок.</p><pre><code class="hljs cpp hljs"><span class="hljs-keyword">bool</span> removeLastNode = <span class="hljs-keyword">true</span>;
+<span class="hljs-keyword">if</span> (Apples.Any(z =&gt; z.X == Head.X &amp;&amp; z.Y == Head.Y))
+{
+    Apples.RemoveAll(z =&gt; z.X == Head.X &amp;&amp; z.Y == Head.Y);
+    NewApple();
+    removeLastNode = <span class="hljs-keyword">false</span>;
+}
+
+<span class="hljs-keyword">if</span> (!removeLastNode)
+    <span class="hljs-keyword">return</span>;
+
+<span class="hljs-comment">//remove last node</span>
+var node = Head;
+<span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>)
+{
+    <span class="hljs-keyword">if</span> (node.Next != null &amp;&amp; node.Next.Next == null)
+    {
+        node.Next = null;
+        <span class="hljs-keyword">break</span>;
+    }
+    node = node.Next;
+}
+ </code></pre><p>Добавим функцию сброса игры ResetGame</p><pre><code class="hljs cpp hljs"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> ResetGame()
+{
+        Apples.Clear();
+        Head = <span class="hljs-keyword">new</span> SnakeNode();
+        gameOver = <span class="hljs-keyword">false</span>;
+        Head.X = (<span class="hljs-keyword">int</span>)(ClientRectangle.Width / CellSize / <span class="hljs-number">2</span>);
+        Head.Y = (<span class="hljs-keyword">int</span>)(ClientRectangle.Height / CellSize / <span class="hljs-number">2</span>);
+
+        var w = (<span class="hljs-keyword">int</span>)(ClientRectangle.Width % CellSize);
+        var h = (<span class="hljs-keyword">int</span>)(ClientRectangle.Height % CellSize);
+        Size = <span class="hljs-keyword">new</span> Size(Size.Width - w, Size.Height - h);
+
+        dir = MoveDirection.Left;
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; MaxApples; i++)
+            NewApple();
+
+} </code></pre><p>Добавим функции отрисовки всех элементов нашей игры:</p><pre class="language-csharp"><code>private void DrawSnake(Graphics gr) // нарисовать всю змейку целиком
+{
+      DrawNode(Head, gr, CellSize, Brushes.Orange);
+      var node = Head.Next;
+      while (node != null)
+      {
+          DrawNode(node, gr, CellSize * 0.9f, Brushes.LightGreen);
+          node = node.Next;
+      }
+}
+
+public void DrawNode(SnakeNode node, Graphics gr, float size, Brush brush) // нарисовать элемент змейки
+{
+    gr.DrawEllipse(Pens.Black, node.X * CellSize + (CellSize - size) / 2, node.Y * CellSize + (CellSize - size) / 2, size, size);
+    gr.FillEllipse(brush, node.X * CellSize + (CellSize - size) / 2, node.Y * CellSize + (CellSize - size) / 2, size, size);
+}
+
+public void DrawWall(Graphics gr, int x, int y) //нарисовать один элемент стены
+{
+    gr.DrawRectangle(Pens.Black, x * CellSize, y * CellSize, CellSize, CellSize);
+    gr.FillRectangle(Brushes.Thistle, x * CellSize, y * CellSize, CellSize, CellSize);
+}
+
+public void DrawAllWalls(Graphics gr) // нарисовать всю стену целиком
+{
+    for (int i = 0; i &lt; Cols; i++)
+    {
+        DrawWall(gr, i, 0);
+        DrawWall(gr, i, Rows - 1);
+    }
+    for (int i = 0; i &lt; Rows; i++)
+    {
+        DrawWall(gr, 0, i);
+        DrawWall(gr, Cols - 1, i);
+    }
+}
+ </code></pre><p>Запустив данный пример мы увидим следующую анимацию:</p><figure class="post__image post__image--center"><img loading="lazy" src="https://fel88.com/media/posts/11/snake.gif" alt="" width="782" height="482"></figure><p>Исходный код данного примера вы можете найти <a href="https://github.com/fel88/fel88.com/blob/main/Codes/Samples/Snake/Form1.cs" target="_blank" rel="noopener">здесь</a></p><h2>Упражнения</h2></div></div></article></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2026 Powered by Publii CMS :: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Theme</a> ported by the <a href="https://getpublii.com/customization-service/" target="_blank" rel="noopener">Publii Team</a></p></div></div></footer></div><script defer="defer" src="https://fel88.com/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><div id="social">            <a href="https://github.com/fel88" target="_blank">                    <img src="https://fel88.com/img/github.png" class="social_ico">             </a>                           </div><div id="dark-mode-toggle" class="dark-mode-toggle" style="display:none; cursor:pointer; padding:10px;"><span>Toggle Theme</span></div><script>/* const toggleButton = document.getElementById('dark-mode-toggle');
+    const htmlElement = document.documentElement;
+    
+    // Check for saved preference, otherwise use system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        htmlElement.classList.add('dark-mode');
+    }
+
+    // Toggle theme on button click
+    toggleButton.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark-mode');
+        
+        // Save preference to local storage
+        if (htmlElement.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });*/</script><script defer="defer" src="https://fel88.com/media/plugins/syntaxHighlighter/prism.js"></script></body></html>

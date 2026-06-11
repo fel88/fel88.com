@@ -5,7 +5,7 @@ namespace Gradient
         public Form1()
         {
             InitializeComponent();
-            DrawDiagGradient();
+            DrawHorizontalGradient();
         }
 
         public void DrawHorizontalGradient()
@@ -14,7 +14,7 @@ namespace Gradient
             for (int i = 0; i < ClientSize.Width; i++)
             {
                 double koef = (i) / (double)ClientSize.Width;
-                Color color = Color.FromArgb(0, (int)(koef * 255), 0);
+                Color color = Color.FromArgb((int)(koef * 255), 0, 0);
                 for (int j = 0; j < ClientSize.Height; j++)
                 {
                     bmp.SetPixel(i, j, color);

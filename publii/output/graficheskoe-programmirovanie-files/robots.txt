@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://fel88.com/sitemap.xml
