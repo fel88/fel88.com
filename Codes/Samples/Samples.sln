@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{AFC02E6D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake", "Snake\Snake.csproj", "{EF31193A-6E75-484A-95AE-974D96EB4E6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbow", "Rainbow\Rainbow.csproj", "{16317B3A-1BBB-401E-A4F6-D387C90F9436}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{EF31193A-6E75-484A-95AE-974D96EB4E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF31193A-6E75-484A-95AE-974D96EB4E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF31193A-6E75-484A-95AE-974D96EB4E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16317B3A-1BBB-401E-A4F6-D387C90F9436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16317B3A-1BBB-401E-A4F6-D387C90F9436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16317B3A-1BBB-401E-A4F6-D387C90F9436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16317B3A-1BBB-401E-A4F6-D387C90F9436}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +75,9 @@ Global
 		{5CAD8B73-D82E-4157-A48C-1372803933EB} = {62D8C617-8021-421C-BE75-7BBB231B9941}
 		{DD17F4DC-7D5D-44E4-8B3E-BFF21E87DF35} = {AFC02E6D-676F-4823-BED5-21A0009D75ED}
 		{EF31193A-6E75-484A-95AE-974D96EB4E6B} = {C9277F33-A910-46D4-A3D4-FD7BCA197A15}
+		{16317B3A-1BBB-401E-A4F6-D387C90F9436} = {AFC02E6D-676F-4823-BED5-21A0009D75ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2F7DA77-7F38-43C3-A17E-7FF323CDA37C}
 	EndGlobalSection
 EndGlobal
