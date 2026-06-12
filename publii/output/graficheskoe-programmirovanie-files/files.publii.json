@@ -252,7 +252,7 @@
     {
         "path": "/cikly/index.html",
         "type": "file",
-        "md5": "9c596e26600d5c7d5ad627bd7c2ee735"
+        "md5": "18e190d115ea154adab53e532efd8c0f"
     },
     {
         "path": "cikly/krugi-cikl",
@@ -337,7 +337,7 @@
     {
         "path": "index.html",
         "type": "file",
-        "md5": "cff2646ef5e9b1cd8e7a8396a9184d84"
+        "md5": "b4129e67fa0331014ce655794b4276fb"
     },
     {
         "path": "labirinty",
@@ -695,6 +695,66 @@
         "md5": "e87b404a4d6edc88766a48c49cc1b1a6"
     },
     {
+        "path": "media/posts/39",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/39/ngon.png",
+        "type": "file",
+        "md5": "0ea9f3250f68e04698fddfae5846ef1a"
+    },
+    {
+        "path": "/media/posts/39/ngon_step1.png",
+        "type": "file",
+        "md5": "4fd9a892707b2d6be5e999d69ac00671"
+    },
+    {
+        "path": "media/posts/39/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/39/responsive/ngon-lg.png",
+        "type": "file",
+        "md5": "1f672cc09c31fa47e32b25648d9b6b67"
+    },
+    {
+        "path": "/media/posts/39/responsive/ngon-md.png",
+        "type": "file",
+        "md5": "1f672cc09c31fa47e32b25648d9b6b67"
+    },
+    {
+        "path": "/media/posts/39/responsive/ngon-sm.png",
+        "type": "file",
+        "md5": "fcd8df17d0e3378466affbbb42a4fc0d"
+    },
+    {
+        "path": "/media/posts/39/responsive/ngon-xs.png",
+        "type": "file",
+        "md5": "1823a3b483688996ce432201b0f5aaf6"
+    },
+    {
+        "path": "/media/posts/39/responsive/ngon_step1-lg.png",
+        "type": "file",
+        "md5": "9d270f57a5a15ef648cd0e2fd3544ad1"
+    },
+    {
+        "path": "/media/posts/39/responsive/ngon_step1-md.png",
+        "type": "file",
+        "md5": "9d270f57a5a15ef648cd0e2fd3544ad1"
+    },
+    {
+        "path": "/media/posts/39/responsive/ngon_step1-sm.png",
+        "type": "file",
+        "md5": "51488c9fed664ada0ae95b9ef6315813"
+    },
+    {
+        "path": "/media/posts/39/responsive/ngon_step1-xs.png",
+        "type": "file",
+        "md5": "5416898d6f4013e7dd2e4d02e4618f80"
+    },
+    {
         "path": "media/posts/4",
         "type": "directory",
         "md5": false
@@ -872,7 +932,7 @@
     {
         "path": "/narisovat-mnogougolnik-ngon/index.html",
         "type": "file",
-        "md5": "497b1a424a6848b29015c009c2cd6eb8"
+        "md5": "6806da58426dfdb17d15be91c7e0cbe2"
     },
     {
         "path": "o-kurse",
@@ -952,7 +1012,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "a1221cf59c5742a4bb7e4e9931feece6"
+        "md5": "896d61ebaf449cdcefb8c0a1e83cedb2"
     },
     {
         "path": "sitemap.xsl",
