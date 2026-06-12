@@ -6,6 +6,7 @@ namespace Star
         {
             InitializeComponent();
             Paint += Form1_Paint;
+            DoubleBuffered = true;
             ClientSize = new Size(500, 500);
         }
 
@@ -19,12 +20,13 @@ namespace Star
             double radius2 = 60;
             var centerX = ClientRectangle.Width / 2;
             var centerY = ClientRectangle.Height / 2;
-            int n = 10;
-            var step = 360 / n;
+            int n = 5;
+            var step = 360.0f / (n * 2);
             bool even = false;
-            for (int i = 0; i <= 360; i += step)
+            for (int i = 0; i <= n * 2; i++)
             {
-                var radians = (i - step / 2) * Math.PI / 180.0;
+                float ang = i * step;
+                var radians = ang * Math.PI / 180.0 - Math.PI / 2;
                 even = !even;
                 var radius = even ? radius1 : radius2;
                 var x = centerX + radius * Math.Cos(radians);

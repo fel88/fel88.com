@@ -22,6 +22,7 @@ namespace Ngon
             var centerY = ClientRectangle.Height / 2;
             int n = 6;
             var step = 360 / n;
+
             const int cornerSize = 3;
             for (int i = 0; i <= 360; i += step)
             {
@@ -30,7 +31,7 @@ namespace Ngon
                 var y = centerY + radius * Math.Sin(radians);
                 PointF point = new PointF((float)x, (float)y);
 
-                gr.DrawRectangle(Pens.Yellow, (float)x - cornerSize, (float)y - cornerSize, 2 * cornerSize, 2 * cornerSize);
+                //gr.DrawRectangle(Pens.Yellow, (float)x - cornerSize, (float)y - cornerSize, 2 * cornerSize, 2 * cornerSize);
                 if (prevPoint != null)
                     gr.DrawLine(Pens.White, prevPoint.Value, point);
 
