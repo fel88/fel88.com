@@ -47,7 +47,7 @@
     {
         "path": "/animaciya/animaciya-otskok-sharika-ot-sten/index.html",
         "type": "file",
-        "md5": "0ecea3415d5f7d3e52901d1ed6ff9f40"
+        "md5": "009bdb9f9fcdd6101f3b93a16d56dc6e"
     },
     {
         "path": "animaciya/animaciya-zapolnenie-steny-kirpichami",
@@ -580,9 +580,19 @@
         "md5": false
     },
     {
-        "path": "/media/posts/14/ball_bounce_animation.gif",
+        "path": "/media/posts/14/ball_horizontal.gif",
         "type": "file",
-        "md5": "19b18d29c30e810285d6a9054ce99250"
+        "md5": "50790bb0aa6d0579071cbc5006f95e6c"
+    },
+    {
+        "path": "/media/posts/14/bounce.gif",
+        "type": "file",
+        "md5": "b0bbd1543aa5c1ed173f99fcc54f1258"
+    },
+    {
+        "path": "/media/posts/14/bounce2d.gif",
+        "type": "file",
+        "md5": "680b711451ef269faef3cde5d21090ea"
     },
     {
         "path": "media/posts/15",
@@ -1232,7 +1242,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "e9f6d7ba4e37fb45b11c062778754a0f"
+        "md5": "44bd6431e03356a4553289f939bdb658"
     },
     {
         "path": "sitemap.xsl",
@@ -1277,7 +1287,7 @@
     {
         "path": "/ternarnyy-operator/index.html",
         "type": "file",
-        "md5": "588592e8964778c7528f995382df7e80"
+        "md5": "ba2ffbdafde7bfd4061794fd79323263"
     },
     {
         "path": "testovaya-statya-1",
