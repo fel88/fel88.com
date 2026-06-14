@@ -1113,7 +1113,7 @@ input[type=radio] {
   margin-top: calc(var(--baseline) * 5);
 }
 .post__entry {
-  margin-top: calc(var(--baseline) * 7.5);
+  margin-top: calc(var(--baseline) * 2.5);
 }
 .post__entry > :nth-child(1) {
   margin-top: 0;
