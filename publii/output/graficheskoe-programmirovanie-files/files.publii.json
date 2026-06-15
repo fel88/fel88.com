@@ -2,27 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "aeeb98a0fd0c57378ef37fa6f5e4ccfb"
-    },
-    {
-        "path": "algoritm-deykstry",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/algoritm-deykstry/index.html",
-        "type": "file",
-        "md5": "5add9aea051ca42a1c0a10e6c9ae3469"
-    },
-    {
-        "path": "algoritmy",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/algoritmy/index.html",
-        "type": "file",
-        "md5": "f5bd2ee79201ac0a9da3851b3f1001c4"
+        "md5": "6515f9b5212215945ad526c30598a323"
     },
     {
         "path": "assets",
@@ -122,7 +102,7 @@
     {
         "path": "/authors/fel88/index.html",
         "type": "file",
-        "md5": "68e99d2114519d71096cabdb2f9f7103"
+        "md5": "a47431ffe6ffc82117a7570c605e8338"
     },
     {
         "path": "feed.json",
@@ -140,6 +120,36 @@
         "md5": false
     },
     {
+        "path": "glavnaya/algoritmy",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "glavnaya/algoritmy/algoritm-deykstry",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/algoritmy/algoritm-deykstry/index.html",
+        "type": "file",
+        "md5": "297f13c5e7ebd21393d2cab0ef4bb428"
+    },
+    {
+        "path": "/glavnaya/algoritmy/index.html",
+        "type": "file",
+        "md5": "c051132a37895a25b0a0d2a33c626bb6"
+    },
+    {
+        "path": "glavnaya/algoritmy/poisk-v-shirinu-volnovoy-poisk",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/algoritmy/poisk-v-shirinu-volnovoy-poisk/index.html",
+        "type": "file",
+        "md5": "49244948b0be29ae791f6f84a94fa75e"
+    },
+    {
         "path": "glavnaya/animaciya",
         "type": "directory",
         "md5": false
@@ -152,7 +162,7 @@
     {
         "path": "/glavnaya/animaciya/animaciya-letayushchiy-sharik-po-krugu/index.html",
         "type": "file",
-        "md5": "4b1439e6a87c26e6df902d04e5cd281f"
+        "md5": "49cec671db9453dde589f655d8b453f7"
     },
     {
         "path": "glavnaya/animaciya/animaciya-otskok-sharika-ot-sten",
@@ -162,7 +172,7 @@
     {
         "path": "/glavnaya/animaciya/animaciya-otskok-sharika-ot-sten/index.html",
         "type": "file",
-        "md5": "7dca2dec99d0cabe8969b68aded97cf6"
+        "md5": "69cf384ad0635fe52a3f03973a1b2300"
     },
     {
         "path": "glavnaya/animaciya/animaciya-zapolnenie-steny-kirpichami",
@@ -172,12 +182,12 @@
     {
         "path": "/glavnaya/animaciya/animaciya-zapolnenie-steny-kirpichami/index.html",
         "type": "file",
-        "md5": "b4851ae1742c744bf7d4f3629f69f30c"
+        "md5": "f7f9d6a9ddb33bf88c8376b1a5345ffa"
     },
     {
         "path": "/glavnaya/animaciya/index.html",
         "type": "file",
-        "md5": "141d9effed8cdfd5848bf8cb9f956ecd"
+        "md5": "22fa22cd273389974f6d9d1decce8590"
     },
     {
         "path": "glavnaya/animaciya/zvezdy-2d",
@@ -187,7 +197,7 @@
     {
         "path": "/glavnaya/animaciya/zvezdy-2d/index.html",
         "type": "file",
-        "md5": "f763a62af3ae620acaf34d2968f907b7"
+        "md5": "62f03f528c5c4ac82449996f04f09e63"
     },
     {
         "path": "glavnaya/animaciya/zvezdy-3d",
@@ -197,7 +207,7 @@
     {
         "path": "/glavnaya/animaciya/zvezdy-3d/index.html",
         "type": "file",
-        "md5": "44f20751a609a9b075b80564c7ad3e99"
+        "md5": "7cb6fb637a45516ae95924d5cbfad074"
     },
     {
         "path": "glavnaya/cikly",
@@ -212,7 +222,7 @@
     {
         "path": "/glavnaya/cikly/cikl-dowhile-cikl-s-postusloviem/index.html",
         "type": "file",
-        "md5": "2cfb2eff92c7dfbf8d8672445832f017"
+        "md5": "c7d6927fe63d7b3eb942b47c43389a11"
     },
     {
         "path": "glavnaya/cikly/cikl-for-cikl-so-schetchikom",
@@ -222,7 +232,7 @@
     {
         "path": "/glavnaya/cikly/cikl-for-cikl-so-schetchikom/index.html",
         "type": "file",
-        "md5": "8e8011b3df012f0629c181da06d372b9"
+        "md5": "b56c93e8e9084c5d8373bc8096716591"
     },
     {
         "path": "glavnaya/cikly/cikl-while-cikl-s-predusloviem",
@@ -232,7 +242,7 @@
     {
         "path": "/glavnaya/cikly/cikl-while-cikl-s-predusloviem/index.html",
         "type": "file",
-        "md5": "63c2fc7eec6b8440d4d0673a70978e86"
+        "md5": "fa72fa21c6f3f81ff3c4e81f020b6cc2"
     },
     {
         "path": "glavnaya/cikly/flagi",
@@ -242,7 +252,7 @@
     {
         "path": "/glavnaya/cikly/flagi/index.html",
         "type": "file",
-        "md5": "4304fc57d6f56aff08c92d7e75a14ef1"
+        "md5": "fea30055e0480141d2844989b39e6d21"
     },
     {
         "path": "glavnaya/cikly/gradient",
@@ -252,12 +262,12 @@
     {
         "path": "/glavnaya/cikly/gradient/index.html",
         "type": "file",
-        "md5": "331b0046c9091a94b8bfd1ffadcf5953"
+        "md5": "84e0a701b2235b3f80c50a4973abbcd9"
     },
     {
         "path": "/glavnaya/cikly/index.html",
         "type": "file",
-        "md5": "533c7dac2af192352f88ead836c18607"
+        "md5": "4495e79b75d38a240fcac4953d9dd86e"
     },
     {
         "path": "glavnaya/cikly/krugi-cikl",
@@ -267,7 +277,7 @@
     {
         "path": "/glavnaya/cikly/krugi-cikl/index.html",
         "type": "file",
-        "md5": "1ae3d838fdc54d6023eff54ca8125eae"
+        "md5": "7d0f67929bfebfea51689ede1753a567"
     },
     {
         "path": "glavnaya/cikly/narisovat-spiral",
@@ -277,7 +287,7 @@
     {
         "path": "/glavnaya/cikly/narisovat-spiral/index.html",
         "type": "file",
-        "md5": "18901c55393974bd32b1b4bad472ebc6"
+        "md5": "1d2251ba4df02bf2b7dd052cb0928007"
     },
     {
         "path": "glavnaya/cikly/risuem-kirpichnuyu-stenu",
@@ -287,7 +297,7 @@
     {
         "path": "/glavnaya/cikly/risuem-kirpichnuyu-stenu/index.html",
         "type": "file",
-        "md5": "22c4630b227ed626f723ef090dc54879"
+        "md5": "3ad4a5999730dc9047681e2786a8f4fb"
     },
     {
         "path": "glavnaya/cikly/shahmatnoe-pole",
@@ -297,7 +307,7 @@
     {
         "path": "/glavnaya/cikly/shahmatnoe-pole/index.html",
         "type": "file",
-        "md5": "23d392482c37d88dcbb128babef2011a"
+        "md5": "4ed17db44bf26e7437d4d83396902d90"
     },
     {
         "path": "glavnaya/cikly/zvezda",
@@ -307,7 +317,7 @@
     {
         "path": "/glavnaya/cikly/zvezda/index.html",
         "type": "file",
-        "md5": "26ce0279b0619a31a2849b3d5f49c64b"
+        "md5": "0e0e0b5bd4ac0dc77f7c60ec9b6c80ed"
     },
     {
         "path": "glavnaya/funkcii-graphics",
@@ -322,7 +332,7 @@
     {
         "path": "/glavnaya/funkcii-graphics/drawline/index.html",
         "type": "file",
-        "md5": "90b6cbab8969e8ee4a017aa9900f5c4a"
+        "md5": "e337b2f1f531f94a6d9c62c4efe2190c"
     },
     {
         "path": "glavnaya/funkcii-graphics/fillpolygon",
@@ -332,7 +342,7 @@
     {
         "path": "/glavnaya/funkcii-graphics/fillpolygon/index.html",
         "type": "file",
-        "md5": "2700d4f612b575c6507b2f991ec838d3"
+        "md5": "d8f58da151c25fee6a6a328e28ef0521"
     },
     {
         "path": "glavnaya/funkcii-graphics/fillrectangle",
@@ -342,12 +352,12 @@
     {
         "path": "/glavnaya/funkcii-graphics/fillrectangle/index.html",
         "type": "file",
-        "md5": "d151fa27a2a0dc4c009c1abdbde47898"
+        "md5": "8d78dec80ac74927a4d1d167bf75ad7e"
     },
     {
         "path": "/glavnaya/funkcii-graphics/index.html",
         "type": "file",
-        "md5": "e598060cbc63d8299f7a359931d0a537"
+        "md5": "7fcadbc945900a5f56c87ab5fe3ebe4d"
     },
     {
         "path": "glavnaya/geometriya",
@@ -362,7 +372,7 @@
     {
         "path": "/glavnaya/geometriya/demo-scena/index.html",
         "type": "file",
-        "md5": "526b896b1cb9b8d652c1b4287621f5a1"
+        "md5": "0a1c52e90500ceecd7d81480979fe980"
     },
     {
         "path": "glavnaya/geometriya/gdi-gdi",
@@ -372,7 +382,7 @@
     {
         "path": "/glavnaya/geometriya/gdi-gdi/index.html",
         "type": "file",
-        "md5": "b1321d9a1fe56c5ba2ba7aef2d132437"
+        "md5": "e3c0a0d5ab407d9fa2c6dac092298b35"
     },
     {
         "path": "glavnaya/geometriya/grafika",
@@ -387,12 +397,12 @@
     {
         "path": "/glavnaya/geometriya/grafika/dizering/index.html",
         "type": "file",
-        "md5": "0b71b909346b982a8f8a1ed15a0904d6"
+        "md5": "1777e168741a28ac33d562b73a06bc30"
     },
     {
         "path": "/glavnaya/geometriya/grafika/index.html",
         "type": "file",
-        "md5": "0a1d3c3a944b3935df0a9d85b3fc90d0"
+        "md5": "73e7342ecb2b08996edbaf9a81e382b4"
     },
     {
         "path": "glavnaya/geometriya/grafika/klipping",
@@ -402,7 +412,7 @@
     {
         "path": "/glavnaya/geometriya/grafika/klipping/index.html",
         "type": "file",
-        "md5": "4c286478453cc8c32904d024f2e1ba9d"
+        "md5": "67a64098f0f048d42510ae33c1deef6f"
     },
     {
         "path": "glavnaya/geometriya/grafika/sheydery",
@@ -412,7 +422,7 @@
     {
         "path": "/glavnaya/geometriya/grafika/sheydery/index.html",
         "type": "file",
-        "md5": "db7692fa38576e2f9a29aeabba2f8824"
+        "md5": "0815de16b5f5ba30cb7065034d949e05"
     },
     {
         "path": "glavnaya/geometriya/grafika/sistema-koordinat",
@@ -422,12 +432,12 @@
     {
         "path": "/glavnaya/geometriya/grafika/sistema-koordinat/index.html",
         "type": "file",
-        "md5": "8d22675e48ab192127303c6f4e7141e3"
+        "md5": "e0d261a450fee07d80e1973a1c2dfac5"
     },
     {
         "path": "/glavnaya/geometriya/index.html",
         "type": "file",
-        "md5": "38afc771331b4ffc404357dfd08a3369"
+        "md5": "55c1ec1e7ec2f11fbc4c5c5aa693d299"
     },
     {
         "path": "glavnaya/geometriya/shablony-prilozheniya",
@@ -437,7 +447,7 @@
     {
         "path": "/glavnaya/geometriya/shablony-prilozheniya/index.html",
         "type": "file",
-        "md5": "24a0f95b3a14e4721fe98a535d33bc13"
+        "md5": "cb96db098514dbaac77258a4a3efd0da"
     },
     {
         "path": "glavnaya/geometriya/shablony-prilozheniya/shablon-prilozheniya-s-taymerom-animacii",
@@ -447,7 +457,7 @@
     {
         "path": "/glavnaya/geometriya/shablony-prilozheniya/shablon-prilozheniya-s-taymerom-animacii/index.html",
         "type": "file",
-        "md5": "4ca3bc567b266c23de8034409a70bb80"
+        "md5": "5b8aee80bf2780b67f155954c037d075"
     },
     {
         "path": "glavnaya/geometriya/shablony-prilozheniya/shablon-staticheskoy-otrisovki",
@@ -457,7 +467,7 @@
     {
         "path": "/glavnaya/geometriya/shablony-prilozheniya/shablon-staticheskoy-otrisovki/index.html",
         "type": "file",
-        "md5": "ca61e5304eccfc8e1501e67d876e7812"
+        "md5": "8cbcb90c3d42e4106ecad8aa1ff26567"
     },
     {
         "path": "glavnaya/graficheskiy-interfeys",
@@ -467,7 +477,7 @@
     {
         "path": "/glavnaya/graficheskiy-interfeys/index.html",
         "type": "file",
-        "md5": "ecfc8789a7e17f61ded3e3f70a09191c"
+        "md5": "1b8c9d6a840a710cd55b81bdde6cad86"
     },
     {
         "path": "glavnaya/graficheskiy-interfeys/knopka",
@@ -477,7 +487,7 @@
     {
         "path": "/glavnaya/graficheskiy-interfeys/knopka/index.html",
         "type": "file",
-        "md5": "f1fb4f1b3279a40df8d8091780def00a"
+        "md5": "2b35abf4b80ed733ed7914b6bdc396d8"
     },
     {
         "path": "glavnaya/interaktivnye-mehaniki",
@@ -492,7 +502,7 @@
     {
         "path": "/glavnaya/interaktivnye-mehaniki/animaciya-hover-pryamougolnika/index.html",
         "type": "file",
-        "md5": "bdd6d7da8c05dffb7a8785b80abf64d2"
+        "md5": "f30bf5e2d56648cab7d256c5adc44d40"
     },
     {
         "path": "glavnaya/interaktivnye-mehaniki/drag-pryamougolnika",
@@ -502,7 +512,7 @@
     {
         "path": "/glavnaya/interaktivnye-mehaniki/drag-pryamougolnika/index.html",
         "type": "file",
-        "md5": "5ebcab5478e53e370ae71970df288a08"
+        "md5": "dc63bb58ed46bca7bf0f5e571b9a6aa1"
     },
     {
         "path": "glavnaya/interaktivnye-mehaniki/dvizhenie-sharika-v-storonu-kursora",
@@ -512,12 +522,12 @@
     {
         "path": "/glavnaya/interaktivnye-mehaniki/dvizhenie-sharika-v-storonu-kursora/index.html",
         "type": "file",
-        "md5": "8bf929f72d6f9471ed8374320657cdd0"
+        "md5": "725a444d40e886bd24190f8775d649d6"
     },
     {
         "path": "/glavnaya/interaktivnye-mehaniki/index.html",
         "type": "file",
-        "md5": "5126245edca061dac4de438c0dbe039f"
+        "md5": "45f7743348a451af5f7278ab176dbb47"
     },
     {
         "path": "glavnaya/massivy",
@@ -527,7 +537,7 @@
     {
         "path": "/glavnaya/massivy/index.html",
         "type": "file",
-        "md5": "b6ef4a6c6f57ae882bc118223ed49dc3"
+        "md5": "fd75284b589dad4e014b8f0100d7fe8b"
     },
     {
         "path": "glavnaya/massivy/labirinty",
@@ -537,7 +547,7 @@
     {
         "path": "/glavnaya/massivy/labirinty/index.html",
         "type": "file",
-        "md5": "b248868ca82623692df45a2635deb8c2"
+        "md5": "3345ded8028157ee338ee7566322fb3d"
     },
     {
         "path": "glavnaya/massivy/maksimalnoe-chislo-v-massive",
@@ -547,7 +557,7 @@
     {
         "path": "/glavnaya/massivy/maksimalnoe-chislo-v-massive/index.html",
         "type": "file",
-        "md5": "370fc5017fd1ae60ec6d4081f979dd1b"
+        "md5": "44d1081b32837f4140042d2878c2671a"
     },
     {
         "path": "glavnaya/massivy/poisk-uchenika-s-maksimalnym-rostom",
@@ -557,7 +567,7 @@
     {
         "path": "/glavnaya/massivy/poisk-uchenika-s-maksimalnym-rostom/index.html",
         "type": "file",
-        "md5": "e533aa49ca3368e1e7f0ae240391768a"
+        "md5": "fa88f29b398c8c476fc1045b9e911c0b"
     },
     {
         "path": "glavnaya/massivy/stroki",
@@ -567,7 +577,7 @@
     {
         "path": "/glavnaya/massivy/stroki/index.html",
         "type": "file",
-        "md5": "a45ddafc9a275555fde5c845195ece60"
+        "md5": "7c6646ab2783d1928ca612d4c66b7c3c"
     },
     {
         "path": "glavnaya/massivy/stroki/palindrom-proverka-stroki",
@@ -577,7 +587,7 @@
     {
         "path": "/glavnaya/massivy/stroki/palindrom-proverka-stroki/index.html",
         "type": "file",
-        "md5": "097a51ae1c29a336bcefd5059dbb5d56"
+        "md5": "ccbd6b42608cf4c04056650aff3f06db"
     },
     {
         "path": "glavnaya/mini-igry",
@@ -587,7 +597,7 @@
     {
         "path": "/glavnaya/mini-igry/index.html",
         "type": "file",
-        "md5": "6c0550e832dddfa4cdfaac08d904b62d"
+        "md5": "b17e6c6c98152d2ce91c5d5484468404"
     },
     {
         "path": "glavnaya/mini-igry/zmeyka",
@@ -597,7 +607,7 @@
     {
         "path": "/glavnaya/mini-igry/zmeyka/index.html",
         "type": "file",
-        "md5": "45cf13b81cb352db4a5f770dfe2462c8"
+        "md5": "a53fefbaf45598c9562226a50aaf8fb7"
     },
     {
         "path": "glavnaya/mini-igry/zuma",
@@ -607,7 +617,7 @@
     {
         "path": "/glavnaya/mini-igry/zuma/index.html",
         "type": "file",
-        "md5": "e1424cc10c254656f6778d321e70560e"
+        "md5": "ceebd5f401f485c05644e1cf95b55cc1"
     },
     {
         "path": "glavnaya/pervye-shagi",
@@ -622,12 +632,12 @@
     {
         "path": "/glavnaya/pervye-shagi/cherepashka/index.html",
         "type": "file",
-        "md5": "21f322d8aa2b3e9b1e4f1fd5844d7658"
+        "md5": "4a22766247c698bde029b56db266bad6"
     },
     {
         "path": "/glavnaya/pervye-shagi/index.html",
         "type": "file",
-        "md5": "7ac6990aced140049b14d244c33628f8"
+        "md5": "5c3482f4064af0158812d530a5435f4f"
     },
     {
         "path": "glavnaya/prostaya-otrisovka",
@@ -637,7 +647,7 @@
     {
         "path": "/glavnaya/prostaya-otrisovka/index.html",
         "type": "file",
-        "md5": "a32300742343ade5da2f8de687614f7d"
+        "md5": "fd86b8aacf1bc10b37d1adcdfb858697"
     },
     {
         "path": "glavnaya/prostaya-otrisovka/raduga",
@@ -647,7 +657,7 @@
     {
         "path": "/glavnaya/prostaya-otrisovka/raduga/index.html",
         "type": "file",
-        "md5": "1f54199a9cb986b42b05645ce3217861"
+        "md5": "ea1c3b6c75c5d13978d21a3e408161c9"
     },
     {
         "path": "glavnaya/prostaya-otrisovka/risuem-liniyu",
@@ -657,7 +667,7 @@
     {
         "path": "/glavnaya/prostaya-otrisovka/risuem-liniyu/index.html",
         "type": "file",
-        "md5": "b75c7b23b81de2f764427735df7e99a1"
+        "md5": "e56526104a979de7ca63e634661866f8"
     },
     {
         "path": "glavnaya/prostaya-otrisovka/risuem-proizvolnyy-mnogougolnik",
@@ -667,7 +677,7 @@
     {
         "path": "/glavnaya/prostaya-otrisovka/risuem-proizvolnyy-mnogougolnik/index.html",
         "type": "file",
-        "md5": "66cd5b7c83e9a377827bd50c438a244c"
+        "md5": "304836406db316e49ad4f022037c8861"
     },
     {
         "path": "glavnaya/vetvleniya",
@@ -677,7 +687,7 @@
     {
         "path": "/glavnaya/vetvleniya/index.html",
         "type": "file",
-        "md5": "a8e4b3c1a268079c40a5109f2fb8fc46"
+        "md5": "0c5e5afb10ace02d58311e307440f042"
     },
     {
         "path": "glavnaya/vetvleniya/operator-switch",
@@ -687,7 +697,7 @@
     {
         "path": "/glavnaya/vetvleniya/operator-switch/index.html",
         "type": "file",
-        "md5": "976001818af9943755e00af7960ad8f5"
+        "md5": "88eb4bc620d39303ce176431620300ef"
     },
     {
         "path": "glavnaya/vetvleniya/ternarnyy-operator",
@@ -697,7 +707,7 @@
     {
         "path": "/glavnaya/vetvleniya/ternarnyy-operator/index.html",
         "type": "file",
-        "md5": "45dca0c99cadefe4e8187658bcda9a22"
+        "md5": "7184da5bb0b1a69595fcd7b1cc1539b7"
     },
     {
         "path": "glavnaya/vetvleniya/uslovnyy-operator-2",
@@ -707,7 +717,7 @@
     {
         "path": "/glavnaya/vetvleniya/uslovnyy-operator-2/index.html",
         "type": "file",
-        "md5": "a23c2a218e26a77dbe082d1a89adcac6"
+        "md5": "cf4fc2bdf187fcaa0e09a23cf6724923"
     },
     {
         "path": "glavnaya/vetvleniya/uslovnyy-operator-2/proverka-popadaniya-tochki-v-pryamougolnik",
@@ -717,12 +727,12 @@
     {
         "path": "/glavnaya/vetvleniya/uslovnyy-operator-2/proverka-popadaniya-tochki-v-pryamougolnik/index.html",
         "type": "file",
-        "md5": "28c0561b3667a12c6e8599fe4f749621"
+        "md5": "08332632f6067a5fdcbf2d80b9418912"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "df563151483c076b8c2e7b475c23b568"
+        "md5": "a1c939a301cc58a4b74501370048bbe7"
     },
     {
         "path": "kollekcii",
@@ -732,7 +742,7 @@
     {
         "path": "/kollekcii/index.html",
         "type": "file",
-        "md5": "c75a47b96467f8601717e408f6fdb122"
+        "md5": "de27a3e33ca7c3cccd72df105fdf685d"
     },
     {
         "path": "kollekcii/spisok-listlesstgreater",
@@ -742,7 +752,7 @@
     {
         "path": "/kollekcii/spisok-listlesstgreater/index.html",
         "type": "file",
-        "md5": "6613a5cb92d84ae01eb9ea5b335f6d36"
+        "md5": "fcbe740e29421ca552e6e3b9b6ff833d"
     },
     {
         "path": "mdi-prilozheniya",
@@ -752,7 +762,7 @@
     {
         "path": "/mdi-prilozheniya/index.html",
         "type": "file",
-        "md5": "a1c97a5328f61232a08057fcced1f64b"
+        "md5": "9d41188bc70c4d45d210cec3f55d7d16"
     },
     {
         "path": "media",
@@ -1977,7 +1987,7 @@
     {
         "path": "/narisovat-mnogougolnik-ngon/index.html",
         "type": "file",
-        "md5": "522bb1145ed85d5e89e37fbe85052f27"
+        "md5": "4615f97130589bcb0f168b5aeedcf21a"
     },
     {
         "path": "o-kurse",
@@ -1987,7 +1997,7 @@
     {
         "path": "/o-kurse/index.html",
         "type": "file",
-        "md5": "f7d84191a1f134e0f3f3fdc13ad32dea"
+        "md5": "c1206c743f5e30a8a2cc403fb78fa932"
     },
     {
         "path": "operator-ostatok-ot-deleniya",
@@ -1997,17 +2007,7 @@
     {
         "path": "/operator-ostatok-ot-deleniya/index.html",
         "type": "file",
-        "md5": "335e2c920060d04f708885f7eb7f3d3b"
-    },
-    {
-        "path": "poisk-v-shirinu-volnovoy-poisk",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/poisk-v-shirinu-volnovoy-poisk/index.html",
-        "type": "file",
-        "md5": "8f10edb5a6db7651c0207e2eb457038e"
+        "md5": "9fee7d65bc7fe967c9e770c34ebc51b0"
     },
     {
         "path": "radiany-i-gradusy",
@@ -2017,7 +2017,7 @@
     {
         "path": "/radiany-i-gradusy/index.html",
         "type": "file",
-        "md5": "aa40c4d7139a150a1bbbff467b536a1a"
+        "md5": "1b89adfd694e2dffceee3faa8b5eea6a"
     },
     {
         "path": "robots.txt",
@@ -2027,7 +2027,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "b6e901ce796b96e1ca01c7f93bcbac80"
+        "md5": "1fb3db00cde516bc33e109b82948aef7"
     },
     {
         "path": "sitemap.xsl",
@@ -2042,7 +2042,7 @@
     {
         "path": "/slozhenie-vseh-chisel-ot-0-do-n/index.html",
         "type": "file",
-        "md5": "c9e8be6f7a18be3db5ae3c4402181966"
+        "md5": "b00c7e8c063808578542b202391dc4cb"
     },
     {
         "path": "struktury-dannyh",
@@ -2052,7 +2052,7 @@
     {
         "path": "/struktury-dannyh/index.html",
         "type": "file",
-        "md5": "67e47ffc7aa98ba25ebc0cfe24ae5516"
+        "md5": "a26e8bd9388a8d544707d10bb0dc271f"
     },
     {
         "path": "tags",
@@ -2062,7 +2062,7 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "dda16dbf5e10df23b984442936d93310"
+        "md5": "b7884caf9cc665ba66283fdd1b134b3b"
     },
     {
         "path": "testovaya-statya-1",
@@ -2072,7 +2072,7 @@
     {
         "path": "/testovaya-statya-1/index.html",
         "type": "file",
-        "md5": "7ea1b8eb8dfa749695ac3ca0f95093bf"
+        "md5": "c2349c70e7565cdcadb0c8dec44b4447"
     },
     {
         "path": "zakrashivanie-krugami",
@@ -2082,6 +2082,6 @@
     {
         "path": "/zakrashivanie-krugami/index.html",
         "type": "file",
-        "md5": "1cec8d4e3a8f6ad0ff1433482352e29e"
+        "md5": "40d0e7b31da51b3e2ed3d28c759d8ff3"
     }
 ]
