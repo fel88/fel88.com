@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "ce20896632a0fefabf0908e5130092cc"
+        "md5": "e7f392bd9f736c7b1e4b3d3aae09716b"
     },
     {
         "path": "algoritm-deykstry",
@@ -12,7 +12,7 @@
     {
         "path": "/algoritm-deykstry/index.html",
         "type": "file",
-        "md5": "7b65ec03751960bb843e99a53ea2478a"
+        "md5": "7ecb1e03f988018118480469f1a97e06"
     },
     {
         "path": "algoritmy",
@@ -22,77 +22,7 @@
     {
         "path": "/algoritmy/index.html",
         "type": "file",
-        "md5": "f2dd268479106754d61efc06701a0a83"
-    },
-    {
-        "path": "animaciya",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "animaciya/animaciya-letayushchiy-sharik-po-krugu",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/animaciya/animaciya-letayushchiy-sharik-po-krugu/index.html",
-        "type": "file",
-        "md5": "4754dea61aefc4f46fcc338056338071"
-    },
-    {
-        "path": "animaciya/animaciya-otskok-sharika-ot-sten",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/animaciya/animaciya-otskok-sharika-ot-sten/index.html",
-        "type": "file",
-        "md5": "9cae5a60a445ae5d3adb28338e875d3b"
-    },
-    {
-        "path": "animaciya/animaciya-zapolnenie-steny-kirpichami",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/animaciya/animaciya-zapolnenie-steny-kirpichami/index.html",
-        "type": "file",
-        "md5": "f2460408a2d5f362e4cff84f46c649be"
-    },
-    {
-        "path": "animaciya/dvizhenie-sharika-v-storonu-kursora",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/animaciya/dvizhenie-sharika-v-storonu-kursora/index.html",
-        "type": "file",
-        "md5": "1ba6f6231f8627d23101790c0020afc1"
-    },
-    {
-        "path": "/animaciya/index.html",
-        "type": "file",
-        "md5": "557ec99d5261efd83e0c630f99bbf715"
-    },
-    {
-        "path": "animaciya/zvezdy-2d",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/animaciya/zvezdy-2d/index.html",
-        "type": "file",
-        "md5": "86788db0d399e316116e88275ee4186a"
-    },
-    {
-        "path": "animaciya/zvezdy-3d",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/animaciya/zvezdy-3d/index.html",
-        "type": "file",
-        "md5": "ff7b1d363ea72e2c773f71a2afa4ce28"
+        "md5": "127f917c4c5d59f424e8451e4fa836aa"
     },
     {
         "path": "assets",
@@ -192,27 +122,7 @@
     {
         "path": "/authors/fel88/index.html",
         "type": "file",
-        "md5": "ad796428abde9e92faafebf7e92d6153"
-    },
-    {
-        "path": "demo-scena",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/demo-scena/index.html",
-        "type": "file",
-        "md5": "2fb78c7a21383e53742f1e9bb8ff0af1"
-    },
-    {
-        "path": "drag-pryamougolnika",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/drag-pryamougolnika/index.html",
-        "type": "file",
-        "md5": "00817e9b117c8f9baa0533bd45ccd498"
+        "md5": "41d15fc54d80c09ea9988bed47eb8cd6"
     },
     {
         "path": "feed.json",
@@ -232,7 +142,7 @@
     {
         "path": "/fillrectangle/index.html",
         "type": "file",
-        "md5": "51405d0fd522713695a9c13c1da5851e"
+        "md5": "dc3cc34afc25cf91348786265c6432bd"
     },
     {
         "path": "funkcii-graphics",
@@ -242,7 +152,7 @@
     {
         "path": "/funkcii-graphics/index.html",
         "type": "file",
-        "md5": "8e3a541cfb5fe02db4e08b90d2a40cac"
+        "md5": "209db2e6ccac1780b7a9875014aebac1"
     },
     {
         "path": "gdi-gdi",
@@ -257,57 +167,492 @@
     {
         "path": "/gdi-gdi/fillpolygon/index.html",
         "type": "file",
-        "md5": "f8676b02e07886a505b49388ffa658bf"
+        "md5": "fb9847a514f306fdc64eaf948f32da25"
     },
     {
         "path": "/gdi-gdi/index.html",
         "type": "file",
-        "md5": "d248b2aaab8df2d47ea47a537fb6a479"
+        "md5": "723abcb3835ef0da610dbe76ab0a68e0"
     },
     {
-        "path": "geometriya",
+        "path": "glavnaya",
         "type": "directory",
         "md5": false
     },
     {
-        "path": "/geometriya/index.html",
-        "type": "file",
-        "md5": "b690dc3d04a7b9fd0f8064805fbba1c6"
-    },
-    {
-        "path": "graficheskiy-interfeys",
+        "path": "glavnaya/animaciya",
         "type": "directory",
         "md5": false
     },
     {
-        "path": "/graficheskiy-interfeys/index.html",
-        "type": "file",
-        "md5": "6c554e646a290df925ea48ebf006442c"
-    },
-    {
-        "path": "graficheskiy-interfeys/knopka",
+        "path": "glavnaya/animaciya/animaciya-letayushchiy-sharik-po-krugu",
         "type": "directory",
         "md5": false
     },
     {
-        "path": "/graficheskiy-interfeys/knopka/index.html",
+        "path": "/glavnaya/animaciya/animaciya-letayushchiy-sharik-po-krugu/index.html",
         "type": "file",
-        "md5": "2f40f0c1645cd242d00c8fa0fecbd4eb"
+        "md5": "3f5ddef0b47097556b8756399a81d25c"
+    },
+    {
+        "path": "glavnaya/animaciya/animaciya-otskok-sharika-ot-sten",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/animaciya/animaciya-otskok-sharika-ot-sten/index.html",
+        "type": "file",
+        "md5": "2fecd48c7eb858709029000bb91c8687"
+    },
+    {
+        "path": "glavnaya/animaciya/animaciya-zapolnenie-steny-kirpichami",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/animaciya/animaciya-zapolnenie-steny-kirpichami/index.html",
+        "type": "file",
+        "md5": "1bf4ab842a5eb3475e2ef47907349646"
+    },
+    {
+        "path": "/glavnaya/animaciya/index.html",
+        "type": "file",
+        "md5": "3678e3fc6c76d90a37190b9fa805758c"
+    },
+    {
+        "path": "glavnaya/animaciya/zvezdy-2d",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/animaciya/zvezdy-2d/index.html",
+        "type": "file",
+        "md5": "e8647e5d950bf4b4735874e85994b832"
+    },
+    {
+        "path": "glavnaya/animaciya/zvezdy-3d",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/animaciya/zvezdy-3d/index.html",
+        "type": "file",
+        "md5": "6aec6baedec91a6574d201c9d9aca54d"
+    },
+    {
+        "path": "glavnaya/cikly",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "glavnaya/cikly/cikl-dowhile-cikl-s-postusloviem",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/cikl-dowhile-cikl-s-postusloviem/index.html",
+        "type": "file",
+        "md5": "fd21c3237b36e2f08e7e9c23674ae278"
+    },
+    {
+        "path": "glavnaya/cikly/cikl-for-cikl-so-schetchikom",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/cikl-for-cikl-so-schetchikom/index.html",
+        "type": "file",
+        "md5": "829c5d079230eac4ae5bc9a8b21db5b3"
+    },
+    {
+        "path": "glavnaya/cikly/cikl-while-cikl-s-predusloviem",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/cikl-while-cikl-s-predusloviem/index.html",
+        "type": "file",
+        "md5": "38478e0542db6e12390dcf46455efe68"
+    },
+    {
+        "path": "glavnaya/cikly/flagi",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/flagi/index.html",
+        "type": "file",
+        "md5": "76dc82ad4561683353dd15c6f6ca4218"
+    },
+    {
+        "path": "glavnaya/cikly/gradient",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/gradient/index.html",
+        "type": "file",
+        "md5": "dfc6e880d43db61ad13ad829c145ca77"
+    },
+    {
+        "path": "/glavnaya/cikly/index.html",
+        "type": "file",
+        "md5": "70b0ca508751a05abdb99e86e62f54cc"
+    },
+    {
+        "path": "glavnaya/cikly/krugi-cikl",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/krugi-cikl/index.html",
+        "type": "file",
+        "md5": "24d7ba4b5167b019678e4d943d528057"
+    },
+    {
+        "path": "glavnaya/cikly/narisovat-spiral",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/narisovat-spiral/index.html",
+        "type": "file",
+        "md5": "f3a09af7676e4caaa684ba9ff917a5da"
+    },
+    {
+        "path": "glavnaya/cikly/risuem-kirpichnuyu-stenu",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/risuem-kirpichnuyu-stenu/index.html",
+        "type": "file",
+        "md5": "88021fcc061258ed3e6a433feed0f1f9"
+    },
+    {
+        "path": "glavnaya/cikly/shahmatnoe-pole",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/shahmatnoe-pole/index.html",
+        "type": "file",
+        "md5": "0c58f0adcc4d0ffa91d2b79e0ec87d3b"
+    },
+    {
+        "path": "glavnaya/cikly/zvezda",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/zvezda/index.html",
+        "type": "file",
+        "md5": "c5a4ddc78650699fa1a76bec02edfcb3"
+    },
+    {
+        "path": "glavnaya/geometriya",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "glavnaya/geometriya/demo-scena",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/demo-scena/index.html",
+        "type": "file",
+        "md5": "586e8b997aec7cded5b85c2a5b18de2d"
+    },
+    {
+        "path": "glavnaya/geometriya/grafika",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "glavnaya/geometriya/grafika/dizering",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/grafika/dizering/index.html",
+        "type": "file",
+        "md5": "08c639df6540e249aa149ebcfad76d17"
+    },
+    {
+        "path": "/glavnaya/geometriya/grafika/index.html",
+        "type": "file",
+        "md5": "60388a4d685a29d4f3ea4e1968f98173"
+    },
+    {
+        "path": "glavnaya/geometriya/grafika/klipping",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/grafika/klipping/index.html",
+        "type": "file",
+        "md5": "2e48cbbf26d91aaa8f8c00a18848912a"
+    },
+    {
+        "path": "glavnaya/geometriya/grafika/sheydery",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/grafika/sheydery/index.html",
+        "type": "file",
+        "md5": "dd565e2e0b2b65f322ccec6025ac559c"
+    },
+    {
+        "path": "/glavnaya/geometriya/index.html",
+        "type": "file",
+        "md5": "f1395b8cba3f4198c206b3820b76e533"
+    },
+    {
+        "path": "glavnaya/graficheskiy-interfeys",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/graficheskiy-interfeys/index.html",
+        "type": "file",
+        "md5": "e79870361d859d1b1aee7e4f1cc1bece"
+    },
+    {
+        "path": "glavnaya/graficheskiy-interfeys/knopka",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/graficheskiy-interfeys/knopka/index.html",
+        "type": "file",
+        "md5": "ab7b55a5578a5104ca184e5a167a7c06"
+    },
+    {
+        "path": "glavnaya/interaktivnye-mehaniki",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "glavnaya/interaktivnye-mehaniki/animaciya-hover-pryamougolnika",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/interaktivnye-mehaniki/animaciya-hover-pryamougolnika/index.html",
+        "type": "file",
+        "md5": "9db4b04adedca783c6e099dab59cfd1c"
+    },
+    {
+        "path": "glavnaya/interaktivnye-mehaniki/drag-pryamougolnika",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/interaktivnye-mehaniki/drag-pryamougolnika/index.html",
+        "type": "file",
+        "md5": "0e1a452668ff10bbaa6b5604b6f9745f"
+    },
+    {
+        "path": "glavnaya/interaktivnye-mehaniki/dvizhenie-sharika-v-storonu-kursora",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/interaktivnye-mehaniki/dvizhenie-sharika-v-storonu-kursora/index.html",
+        "type": "file",
+        "md5": "caf09986f91f7e5b22c702467fac6c1e"
+    },
+    {
+        "path": "/glavnaya/interaktivnye-mehaniki/index.html",
+        "type": "file",
+        "md5": "08eabfd8589f0d769a03967f31663cc6"
+    },
+    {
+        "path": "glavnaya/massivy",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/massivy/index.html",
+        "type": "file",
+        "md5": "2eb4ec97e29ae3d2b3dd056b570e2ab5"
+    },
+    {
+        "path": "glavnaya/massivy/labirinty",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/massivy/labirinty/index.html",
+        "type": "file",
+        "md5": "fac4ed64ed219befe53f9c711b776051"
+    },
+    {
+        "path": "glavnaya/massivy/maksimalnoe-chislo-v-massive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/massivy/maksimalnoe-chislo-v-massive/index.html",
+        "type": "file",
+        "md5": "cbf3687b96bc708b72b101e3e7333ea1"
+    },
+    {
+        "path": "glavnaya/massivy/stroki",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/massivy/stroki/index.html",
+        "type": "file",
+        "md5": "0560475a1ed6c4b2689cf7ef4f65e51f"
+    },
+    {
+        "path": "glavnaya/massivy/stroki/palindrom-proverka-stroki",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/massivy/stroki/palindrom-proverka-stroki/index.html",
+        "type": "file",
+        "md5": "66d47584c7329a214d94e6d51a4753d9"
+    },
+    {
+        "path": "glavnaya/mini-igry",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/mini-igry/index.html",
+        "type": "file",
+        "md5": "31723a0d41f61d07efe5fb426c3c5fed"
+    },
+    {
+        "path": "glavnaya/mini-igry/zmeyka",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/mini-igry/zmeyka/index.html",
+        "type": "file",
+        "md5": "d47bc6d57f61266a4308fe28f32ef812"
+    },
+    {
+        "path": "glavnaya/mini-igry/zuma",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/mini-igry/zuma/index.html",
+        "type": "file",
+        "md5": "188ade60576acf0ab4cbac612ff92336"
+    },
+    {
+        "path": "glavnaya/pervye-shagi",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "glavnaya/pervye-shagi/cherepashka",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/pervye-shagi/cherepashka/index.html",
+        "type": "file",
+        "md5": "881aaf6478cb711e7a66c339ec24ba76"
+    },
+    {
+        "path": "/glavnaya/pervye-shagi/index.html",
+        "type": "file",
+        "md5": "ae8015a141c200659b34c994edcf4e31"
+    },
+    {
+        "path": "glavnaya/prostaya-otrisovka",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/prostaya-otrisovka/index.html",
+        "type": "file",
+        "md5": "fe0af0b125c8f19a6dce09793806e0fa"
+    },
+    {
+        "path": "glavnaya/prostaya-otrisovka/raduga",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/prostaya-otrisovka/raduga/index.html",
+        "type": "file",
+        "md5": "93cda96616b9ecd58e7d8f5496227a70"
+    },
+    {
+        "path": "glavnaya/prostaya-otrisovka/risuem-proizvolnyy-mnogougolnik",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/prostaya-otrisovka/risuem-proizvolnyy-mnogougolnik/index.html",
+        "type": "file",
+        "md5": "5b58c0657ddac2d7d765c40547934d24"
+    },
+    {
+        "path": "glavnaya/vetvleniya",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/vetvleniya/index.html",
+        "type": "file",
+        "md5": "6d827399e45264fce78912b215b28e8a"
+    },
+    {
+        "path": "glavnaya/vetvleniya/operator-switch",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/vetvleniya/operator-switch/index.html",
+        "type": "file",
+        "md5": "705f700110f3f22c8d2f33aa0fd534db"
+    },
+    {
+        "path": "glavnaya/vetvleniya/ternarnyy-operator",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/vetvleniya/ternarnyy-operator/index.html",
+        "type": "file",
+        "md5": "9237c77d1320a80420040f9ace4596c0"
+    },
+    {
+        "path": "glavnaya/vetvleniya/uslovnyy-operator-2",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/vetvleniya/uslovnyy-operator-2/index.html",
+        "type": "file",
+        "md5": "074fa7acc4e5665b739ef5435a9b3957"
+    },
+    {
+        "path": "glavnaya/vetvleniya/uslovnyy-operator-2/proverka-popadaniya-tochki-v-pryamougolnik",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/vetvleniya/uslovnyy-operator-2/proverka-popadaniya-tochki-v-pryamougolnik/index.html",
+        "type": "file",
+        "md5": "59bf8b39ef989371ad552d36b813f7ba"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "adb42229fb33a62e623ea57e8ae5a090"
-    },
-    {
-        "path": "klipping",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/klipping/index.html",
-        "type": "file",
-        "md5": "333361d211548d5a46b495533546797f"
+        "md5": "4d5b281ee379f8071bee223d930cb6d8"
     },
     {
         "path": "kollekcii",
@@ -317,7 +662,7 @@
     {
         "path": "/kollekcii/index.html",
         "type": "file",
-        "md5": "b487718a6ae87c878c9d0c758e879963"
+        "md5": "25cc642a3e3f6ac8b1cea8f6875fc802"
     },
     {
         "path": "kollekcii/spisok-listlesstgreater",
@@ -327,57 +672,7 @@
     {
         "path": "/kollekcii/spisok-listlesstgreater/index.html",
         "type": "file",
-        "md5": "8f707a2442d9f302962e65ca3caea76c"
-    },
-    {
-        "path": "labirinty",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/labirinty/index.html",
-        "type": "file",
-        "md5": "b6f6c8b801a0b938c64d18552e9263e5"
-    },
-    {
-        "path": "maksimalnoe-chislo-v-massive",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/maksimalnoe-chislo-v-massive/index.html",
-        "type": "file",
-        "md5": "a1499000f024c2b9bd439b8054278309"
-    },
-    {
-        "path": "massivy",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/massivy/index.html",
-        "type": "file",
-        "md5": "db1f4ac773fb91179b716e9bee3531fd"
-    },
-    {
-        "path": "massivy/stroki",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/massivy/stroki/index.html",
-        "type": "file",
-        "md5": "d1991f29b5c19baff6c654bc99694310"
-    },
-    {
-        "path": "massivy/stroki/palindrom-proverka-stroki",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/massivy/stroki/palindrom-proverka-stroki/index.html",
-        "type": "file",
-        "md5": "393514ff6f3bf925aebbf6f05e861c95"
+        "md5": "d651e6d1c1e76c29bc88c56f9044a05b"
     },
     {
         "path": "media",
@@ -728,6 +1023,101 @@
         "path": "/media/posts/23/responsive/gradient_horiz-xs.png",
         "type": "file",
         "md5": "e87b404a4d6edc88766a48c49cc1b1a6"
+    },
+    {
+        "path": "media/posts/24",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/24/maze0.png",
+        "type": "file",
+        "md5": "ccf8bf2f3df9eca809428de111178207"
+    },
+    {
+        "path": "/media/posts/24/maze1-2.png",
+        "type": "file",
+        "md5": "5de8faea074e8942e32df0324de0fa48"
+    },
+    {
+        "path": "media/posts/24/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/24/responsive/maze0-lg.png",
+        "type": "file",
+        "md5": "dc3fa1dcaba6eb6cd397897b3505f5b3"
+    },
+    {
+        "path": "/media/posts/24/responsive/maze0-md.png",
+        "type": "file",
+        "md5": "dc3fa1dcaba6eb6cd397897b3505f5b3"
+    },
+    {
+        "path": "/media/posts/24/responsive/maze0-sm.png",
+        "type": "file",
+        "md5": "70887ec44c84ea2d8be300bfe41a5cef"
+    },
+    {
+        "path": "/media/posts/24/responsive/maze0-xs.png",
+        "type": "file",
+        "md5": "c55f572b0c19e92635f37a744227488a"
+    },
+    {
+        "path": "/media/posts/24/responsive/maze1-2-lg.png",
+        "type": "file",
+        "md5": "9c2aa360f33473d68a678595809a7ff1"
+    },
+    {
+        "path": "/media/posts/24/responsive/maze1-2-md.png",
+        "type": "file",
+        "md5": "9c2aa360f33473d68a678595809a7ff1"
+    },
+    {
+        "path": "/media/posts/24/responsive/maze1-2-sm.png",
+        "type": "file",
+        "md5": "1099d48e80424b0368d55764988817ec"
+    },
+    {
+        "path": "/media/posts/24/responsive/maze1-2-xs.png",
+        "type": "file",
+        "md5": "a3d71430225fb0820ceefece4642858a"
+    },
+    {
+        "path": "media/posts/27",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/27/pixel-art-mystical-background_52683-87349.png",
+        "type": "file",
+        "md5": "68c2e1ec392ac11f231a3c214dd25844"
+    },
+    {
+        "path": "media/posts/27/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/27/responsive/pixel-art-mystical-background_52683-87349-lg.png",
+        "type": "file",
+        "md5": "ad81192afca937926f2d35799df54833"
+    },
+    {
+        "path": "/media/posts/27/responsive/pixel-art-mystical-background_52683-87349-md.png",
+        "type": "file",
+        "md5": "ad81192afca937926f2d35799df54833"
+    },
+    {
+        "path": "/media/posts/27/responsive/pixel-art-mystical-background_52683-87349-sm.png",
+        "type": "file",
+        "md5": "66413ce1a159975f4d96912370d78b7d"
+    },
+    {
+        "path": "/media/posts/27/responsive/pixel-art-mystical-background_52683-87349-xs.png",
+        "type": "file",
+        "md5": "66e6c241efe683d53a3a45b1c6c61aae"
     },
     {
         "path": "media/posts/39",
@@ -1412,7 +1802,7 @@
     {
         "path": "/narisovat-mnogougolnik-ngon/index.html",
         "type": "file",
-        "md5": "e6c329a47c14f879044acd664cfd22b8"
+        "md5": "fefc1a49399d2c85d8b58ee86e0f5b79"
     },
     {
         "path": "o-kurse",
@@ -1422,7 +1812,7 @@
     {
         "path": "/o-kurse/index.html",
         "type": "file",
-        "md5": "fa880254aa805669ca2bbd4517fbe771"
+        "md5": "a1d1e2dc0ffc47e24607d246f745004e"
     },
     {
         "path": "operator-ostatok-ot-deleniya",
@@ -1432,77 +1822,7 @@
     {
         "path": "/operator-ostatok-ot-deleniya/index.html",
         "type": "file",
-        "md5": "f85b39e1cce3a0c7288056bf1c9bd6df"
-    },
-    {
-        "path": "operator-switch",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/operator-switch/index.html",
-        "type": "file",
-        "md5": "fb4d5d1f3e3e6e937c2c8cac7838b772"
-    },
-    {
-        "path": "osnovy",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/osnovy/index.html",
-        "type": "file",
-        "md5": "8cef59c2c9811ccecad471cf007da9e4"
-    },
-    {
-        "path": "osnovy/pervye-shagi",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "osnovy/pervye-shagi/cherepashka",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/osnovy/pervye-shagi/cherepashka/index.html",
-        "type": "file",
-        "md5": "5a98a0a57185e569680cbf29bd707465"
-    },
-    {
-        "path": "/osnovy/pervye-shagi/index.html",
-        "type": "file",
-        "md5": "c744f28c3b257b1b2a7d45b505b92336"
-    },
-    {
-        "path": "osnovy/vetvleniya",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/osnovy/vetvleniya/index.html",
-        "type": "file",
-        "md5": "2f4e4e081d15b260549d444235951460"
-    },
-    {
-        "path": "osnovy/vetvleniya/uslovnyy-operator-2",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "osnovy/vetvleniya/uslovnyy-operator-2/animaciya-hover-pryamougolnika",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/osnovy/vetvleniya/uslovnyy-operator-2/animaciya-hover-pryamougolnika/index.html",
-        "type": "file",
-        "md5": "329e176fcf722524d5000429c420cf0f"
-    },
-    {
-        "path": "/osnovy/vetvleniya/uslovnyy-operator-2/index.html",
-        "type": "file",
-        "md5": "25d09082ffb6b10f93e67ac877842847"
+        "md5": "5e82f79b7cbc3923dd36b897eed7c988"
     },
     {
         "path": "poisk-v-shirinu-volnovoy-poisk",
@@ -1512,27 +1832,7 @@
     {
         "path": "/poisk-v-shirinu-volnovoy-poisk/index.html",
         "type": "file",
-        "md5": "a766c334706f65e852f25f94ce6a8060"
-    },
-    {
-        "path": "prostaya-otrisovka",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/prostaya-otrisovka/index.html",
-        "type": "file",
-        "md5": "beca44ea78a13a20d257481ffeeb315a"
-    },
-    {
-        "path": "prostaya-otrisovka/raduga",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/prostaya-otrisovka/raduga/index.html",
-        "type": "file",
-        "md5": "d25dfd314ecc7bacf50b7aeba42967c1"
+        "md5": "be670dfae9033adae09b5ab9f4c82836"
     },
     {
         "path": "radiany-i-gradusy",
@@ -1542,17 +1842,7 @@
     {
         "path": "/radiany-i-gradusy/index.html",
         "type": "file",
-        "md5": "6e3837aecca010a7d6514e0d2a564045"
-    },
-    {
-        "path": "risuem-proizvolnyy-mnogougolnik",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/risuem-proizvolnyy-mnogougolnik/index.html",
-        "type": "file",
-        "md5": "c16bdc607c3af73ded92bbf0d442b410"
+        "md5": "d67099eb8442857617c7ba276b3347cb"
     },
     {
         "path": "robots.txt",
@@ -1560,19 +1850,9 @@
         "md5": "202c8fc64dbbcf5580943ddfddbc6b7f"
     },
     {
-        "path": "sheydery",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/sheydery/index.html",
-        "type": "file",
-        "md5": "7f7f457101a25d7fbbca95931087ec24"
-    },
-    {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "d9199b0a83dde504eaae0f1166fe6ecf"
+        "md5": "666dd1c9d566fc176e193f73e897d23e"
     },
     {
         "path": "sitemap.xsl",
@@ -1587,142 +1867,7 @@
     {
         "path": "/slozhenie-vseh-chisel-ot-0-do-n/index.html",
         "type": "file",
-        "md5": "797f1114aa896f3ca88fca19e7352abb"
-    },
-    {
-        "path": "soderzhanie",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "soderzhanie/cikly",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "soderzhanie/cikly/cikl-dowhile-cikl-s-postusloviem",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/cikl-dowhile-cikl-s-postusloviem/index.html",
-        "type": "file",
-        "md5": "4544783df40fdccafbd72735bcf0b44b"
-    },
-    {
-        "path": "soderzhanie/cikly/cikl-for-cikl-so-schetchikom",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/cikl-for-cikl-so-schetchikom/index.html",
-        "type": "file",
-        "md5": "4cbdfcb8d15195e6e1dc8457bb148c13"
-    },
-    {
-        "path": "soderzhanie/cikly/cikl-while-cikl-s-predusloviem",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/cikl-while-cikl-s-predusloviem/index.html",
-        "type": "file",
-        "md5": "844efcc71380a014368ccb03b5386cd8"
-    },
-    {
-        "path": "soderzhanie/cikly/flagi",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/flagi/index.html",
-        "type": "file",
-        "md5": "08927353fc6e658cee8fb9d3b5b40a9e"
-    },
-    {
-        "path": "soderzhanie/cikly/gradient",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/gradient/index.html",
-        "type": "file",
-        "md5": "67514a34d20fbe6ddfa3aed290ec5ae1"
-    },
-    {
-        "path": "/soderzhanie/cikly/index.html",
-        "type": "file",
-        "md5": "ae77955b320e9f10002bbac2b8e17b2a"
-    },
-    {
-        "path": "soderzhanie/cikly/krugi-cikl",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/krugi-cikl/index.html",
-        "type": "file",
-        "md5": "2b8a91afc3619b2b0fdaf3ceb7cc70e4"
-    },
-    {
-        "path": "soderzhanie/cikly/narisovat-spiral",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/narisovat-spiral/index.html",
-        "type": "file",
-        "md5": "4b1020418f6d8b67f4da840621649845"
-    },
-    {
-        "path": "soderzhanie/cikly/shahmatnoe-pole",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/shahmatnoe-pole/index.html",
-        "type": "file",
-        "md5": "a28ec9ae54b3f70ca12695e0f8af935f"
-    },
-    {
-        "path": "soderzhanie/cikly/zvezda",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/cikly/zvezda/index.html",
-        "type": "file",
-        "md5": "c8ae2323f335ef49c61279849f4005ef"
-    },
-    {
-        "path": "soderzhanie/mini-igry",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/mini-igry/index.html",
-        "type": "file",
-        "md5": "089adf62155bcae3318b9f84c7e4e79c"
-    },
-    {
-        "path": "soderzhanie/mini-igry/zmeyka",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/mini-igry/zmeyka/index.html",
-        "type": "file",
-        "md5": "9d0cdea18f181fbd3d46a65c0912475b"
-    },
-    {
-        "path": "soderzhanie/mini-igry/zuma",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/soderzhanie/mini-igry/zuma/index.html",
-        "type": "file",
-        "md5": "77de952f9a6d86c8d830925811d6ce5f"
+        "md5": "baf6c2264f9acb3bb3e6d016e75f6e5c"
     },
     {
         "path": "struktury-dannyh",
@@ -1732,7 +1877,7 @@
     {
         "path": "/struktury-dannyh/index.html",
         "type": "file",
-        "md5": "36466bc2c899412fb68b720b339506b5"
+        "md5": "ae9cbd002a9eb52287b211ca7d556ce4"
     },
     {
         "path": "tags",
@@ -1742,17 +1887,7 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "b2816fedda0653e7839dd2fc0577811f"
-    },
-    {
-        "path": "ternarnyy-operator",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/ternarnyy-operator/index.html",
-        "type": "file",
-        "md5": "f238303802de82bd7da7f4bd952a0352"
+        "md5": "e5fd6effb8582c1dfb8ca83a52a0a76a"
     },
     {
         "path": "testovaya-statya-1",
@@ -1762,7 +1897,7 @@
     {
         "path": "/testovaya-statya-1/index.html",
         "type": "file",
-        "md5": "ff8a21649961d7fe65f71786618fc91a"
+        "md5": "ee9bb7df40d1fa3e5807bfdc49a5b123"
     },
     {
         "path": "zakrashivanie-krugami",
@@ -1772,6 +1907,6 @@
     {
         "path": "/zakrashivanie-krugami/index.html",
         "type": "file",
-        "md5": "68e5c2426d89c826e66dc7b693e036f8"
+        "md5": "72b2690387a8a6c9bfac0edfe699823c"
     }
 ]
