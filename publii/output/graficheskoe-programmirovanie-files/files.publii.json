@@ -267,7 +267,7 @@
     {
         "path": "/glavnaya/cikly/index.html",
         "type": "file",
-        "md5": "4495e79b75d38a240fcac4953d9dd86e"
+        "md5": "c30bd1088b4dbed239abff8547aa5cdd"
     },
     {
         "path": "glavnaya/cikly/krugi-cikl",
@@ -278,6 +278,16 @@
         "path": "/glavnaya/cikly/krugi-cikl/index.html",
         "type": "file",
         "md5": "7d0f67929bfebfea51689ede1753a567"
+    },
+    {
+        "path": "glavnaya/cikly/narisovat-mnogougolnik-ngon",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/cikly/narisovat-mnogougolnik-ngon/index.html",
+        "type": "file",
+        "md5": "2aca7e01666e6522dd178bd032089c92"
     },
     {
         "path": "glavnaya/cikly/narisovat-spiral",
@@ -317,7 +327,7 @@
     {
         "path": "/glavnaya/cikly/zvezda/index.html",
         "type": "file",
-        "md5": "0e0e0b5bd4ac0dc77f7c60ec9b6c80ed"
+        "md5": "03e71a4603ade7a09c04679490530bf8"
     },
     {
         "path": "glavnaya/funkcii-graphics",
@@ -390,6 +400,16 @@
         "md5": false
     },
     {
+        "path": "glavnaya/geometriya/grafika/approksimaciya-okruzhnosti-poliliniey",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/grafika/approksimaciya-okruzhnosti-poliliniey/index.html",
+        "type": "file",
+        "md5": "99db5fe9a967785cfa8ec6da424ef7b3"
+    },
+    {
         "path": "glavnaya/geometriya/grafika/dizering",
         "type": "directory",
         "md5": false
@@ -402,7 +422,7 @@
     {
         "path": "/glavnaya/geometriya/grafika/index.html",
         "type": "file",
-        "md5": "73e7342ecb2b08996edbaf9a81e382b4"
+        "md5": "e19afb5890e24b9ac913c86f3dc64e2a"
     },
     {
         "path": "glavnaya/geometriya/grafika/klipping",
@@ -567,7 +587,7 @@
     {
         "path": "/glavnaya/massivy/poisk-uchenika-s-maksimalnym-rostom/index.html",
         "type": "file",
-        "md5": "fa88f29b398c8c476fc1045b9e911c0b"
+        "md5": "c0b25998e341e479816f088ff6f2b7de"
     },
     {
         "path": "glavnaya/massivy/stroki",
@@ -1225,6 +1245,11 @@
         "md5": "4fd9a892707b2d6be5e999d69ac00671"
     },
     {
+        "path": "/media/posts/39/regular_ngon_60.png",
+        "type": "file",
+        "md5": "bee7a9eff409688936dadf38e8da2f95"
+    },
+    {
         "path": "media/posts/39/responsive",
         "type": "directory",
         "md5": false
@@ -1268,6 +1293,26 @@
         "path": "/media/posts/39/responsive/ngon_step1-xs.png",
         "type": "file",
         "md5": "5416898d6f4013e7dd2e4d02e4618f80"
+    },
+    {
+        "path": "/media/posts/39/responsive/regular_ngon_60-lg.png",
+        "type": "file",
+        "md5": "acfe377af1c6fe032160036d68482399"
+    },
+    {
+        "path": "/media/posts/39/responsive/regular_ngon_60-md.png",
+        "type": "file",
+        "md5": "acfe377af1c6fe032160036d68482399"
+    },
+    {
+        "path": "/media/posts/39/responsive/regular_ngon_60-sm.png",
+        "type": "file",
+        "md5": "ba2f3c5b94731d383bd6d5f05b7dcc8a"
+    },
+    {
+        "path": "/media/posts/39/responsive/regular_ngon_60-xs.png",
+        "type": "file",
+        "md5": "528864a5166f3a0f279c206b1084766b"
     },
     {
         "path": "media/posts/4",
@@ -1980,16 +2025,6 @@
         "md5": "34fbe045bbcc873ed18d1da82e1207e1"
     },
     {
-        "path": "narisovat-mnogougolnik-ngon",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/narisovat-mnogougolnik-ngon/index.html",
-        "type": "file",
-        "md5": "4615f97130589bcb0f168b5aeedcf21a"
-    },
-    {
         "path": "o-kurse",
         "type": "directory",
         "md5": false
@@ -2017,7 +2052,7 @@
     {
         "path": "/radiany-i-gradusy/index.html",
         "type": "file",
-        "md5": "1b89adfd694e2dffceee3faa8b5eea6a"
+        "md5": "db63bfd349c1bf5fde5ecb66db75d4dc"
     },
     {
         "path": "robots.txt",
@@ -2027,7 +2062,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "1fb3db00cde516bc33e109b82948aef7"
+        "md5": "fd3c810fd09cfd2ea73f456251a44b71"
     },
     {
         "path": "sitemap.xsl",

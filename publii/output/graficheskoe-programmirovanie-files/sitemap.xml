@@ -53,6 +53,9 @@
 <loc>https://fel88.com/glavnaya/cikly/krugi-cikl/</loc>
 </url>
 <url>
+<loc>https://fel88.com/glavnaya/cikly/narisovat-mnogougolnik-ngon/</loc>
+</url>
+<url>
 <loc>https://fel88.com/glavnaya/cikly/narisovat-spiral/</loc>
 </url>
 <url>
@@ -87,6 +90,9 @@
 </url>
 <url>
 <loc>https://fel88.com/glavnaya/geometriya/grafika/</loc>
+</url>
+<url>
+<loc>https://fel88.com/glavnaya/geometriya/grafika/approksimaciya-okruzhnosti-poliliniey/</loc>
 </url>
 <url>
 <loc>https://fel88.com/glavnaya/geometriya/grafika/dizering/</loc>
@@ -199,18 +205,6 @@
 <lastmod>2026-06-15T22:25:50+03:00</lastmod>
 </url>
 <url>
-<loc>https://fel88.com/narisovat-mnogougolnik-ngon/</loc>
-<lastmod>2026-06-13T23:20:54+03:00</lastmod>
-<image:image>
-<image:loc>https://fel88.com/media/posts/39/ngon_step1.png</image:loc>
-<image:title><![CDATA[]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://fel88.com/media/posts/39/ngon.png</image:loc>
-<image:title><![CDATA[]]></image:title>
-</image:image>
-</url>
-<url>
 <loc>https://fel88.com/o-kurse/</loc>
 <lastmod>2026-06-12T13:37:37+03:00</lastmod>
 <image:image>
@@ -228,7 +222,7 @@
 </url>
 <url>
 <loc>https://fel88.com/radiany-i-gradusy/</loc>
-<lastmod>2026-06-13T10:05:56+03:00</lastmod>
+<lastmod>2026-06-16T09:40:03+03:00</lastmod>
 <image:image>
 <image:loc>https://fel88.com/media/posts/51/math_sin_hint.png</image:loc>
 <image:title><![CDATA[]]></image:title>

@@ -21,12 +21,13 @@ namespace Ngon
             var centerX = ClientRectangle.Width / 2;
             var centerY = ClientRectangle.Height / 2;
             int n = 6;
-            var step = 360 / n;
+            var step = 360.0 / n;
 
             const int cornerSize = 3;
-            for (int i = 0; i <= 360; i += step)
+            for (int i = 0; i <= n; i++)
             {
-                var radians = i * Math.PI / 180.0;
+                var angle = i * step;
+                var radians = angle * Math.PI / 180.0;
                 var x = centerX + radius * Math.Cos(radians);
                 var y = centerY + radius * Math.Sin(radians);
                 PointF point = new PointF((float)x, (float)y);
@@ -38,5 +39,5 @@ namespace Ngon
                 prevPoint = point;
             }
         }
-    }
+    }    
 }
