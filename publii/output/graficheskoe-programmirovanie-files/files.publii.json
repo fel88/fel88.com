@@ -105,6 +105,16 @@
         "md5": "69e113c920c1f05ec8d3fac72283193c"
     },
     {
+        "path": "clamp",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/clamp/index.html",
+        "type": "file",
+        "md5": "8409100c160ba55b90a2b6659074b19d"
+    },
+    {
         "path": "feed.json",
         "type": "file",
         "md5": "8f1f861e82244e1b63771b9713db6207"
@@ -197,7 +207,17 @@
     {
         "path": "/glavnaya/animaciya/index.html",
         "type": "file",
-        "md5": "6435d9cd156f5162adea342cdedc303d"
+        "md5": "c9840a950ed9d4828162ff77a599c854"
+    },
+    {
+        "path": "glavnaya/animaciya/monetka",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/animaciya/monetka/index.html",
+        "type": "file",
+        "md5": "6266ef95b78d27135ae5817827087ddb"
     },
     {
         "path": "glavnaya/animaciya/zvezdy-2d",
@@ -355,6 +375,16 @@
         "md5": false
     },
     {
+        "path": "glavnaya/funkcii-graphics/drawimage",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/funkcii-graphics/drawimage/index.html",
+        "type": "file",
+        "md5": "c7d115604d269e8ad6092e542acb949e"
+    },
+    {
         "path": "glavnaya/funkcii-graphics/drawline",
         "type": "directory",
         "md5": false
@@ -387,7 +417,7 @@
     {
         "path": "/glavnaya/funkcii-graphics/index.html",
         "type": "file",
-        "md5": "d201e9b927708a286db0eebfa784d096"
+        "md5": "fe449a5572b25e6a14b85e682a674188"
     },
     {
         "path": "glavnaya/geometriya",
@@ -478,6 +508,16 @@
         "path": "/glavnaya/geometriya/index.html",
         "type": "file",
         "md5": "a577e194a20f7caa5623e9c57c41ebc4"
+    },
+    {
+        "path": "glavnaya/geometriya/matematika",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/matematika/index.html",
+        "type": "file",
+        "md5": "4bbfd689fc23310a89c7ac173346091b"
     },
     {
         "path": "glavnaya/geometriya/shablony-prilozheniya",
@@ -677,7 +717,7 @@
     {
         "path": "/glavnaya/pervye-shagi/index.html",
         "type": "file",
-        "md5": "82a01286939abd92027227f286fa294a"
+        "md5": "25e876066061534d97d632f352c80043"
     },
     {
         "path": "glavnaya/pervye-shagi/sozdanie-pervoy-konsolnoy-programmy",
@@ -792,7 +832,17 @@
     {
         "path": "index.html",
         "type": "file",
-        "md5": "ef436de7047e769c85820f842500289e"
+        "md5": "b39a5b0de33036d4e5c667b039723fd9"
+    },
+    {
+        "path": "integralnyy-filtr",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/integralnyy-filtr/index.html",
+        "type": "file",
+        "md5": "9a6edd860ddf39eb6da70e7d78a990db"
     },
     {
         "path": "kollekcii",
@@ -823,6 +873,16 @@
         "path": "/konsol-vvod-vyvod/index.html",
         "type": "file",
         "md5": "866c549b97aee619e72fcb05a2ca7b6a"
+    },
+    {
+        "path": "lerp",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/lerp/index.html",
+        "type": "file",
+        "md5": "b5f7a8964a99eddd1371cb4c03c1abed"
     },
     {
         "path": "mdi-prilozheniya",
@@ -1063,6 +1123,41 @@
         "path": "/media/posts/16/responsive/rainbow-2-xs.png",
         "type": "file",
         "md5": "041ec82fa59e163e7a5ae7818328c2cf"
+    },
+    {
+        "path": "media/posts/17",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/17/photo_2026-06-17_09-03-39.jpg",
+        "type": "file",
+        "md5": "61f6749709f9e3793d4206f800510149"
+    },
+    {
+        "path": "media/posts/17/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/17/responsive/photo_2026-06-17_09-03-39-lg.jpg",
+        "type": "file",
+        "md5": "f65c300ae931f8733b49a527811d1777"
+    },
+    {
+        "path": "/media/posts/17/responsive/photo_2026-06-17_09-03-39-md.jpg",
+        "type": "file",
+        "md5": "f65c300ae931f8733b49a527811d1777"
+    },
+    {
+        "path": "/media/posts/17/responsive/photo_2026-06-17_09-03-39-sm.jpg",
+        "type": "file",
+        "md5": "4bc78310a781268a220e10bdb1d84a62"
+    },
+    {
+        "path": "/media/posts/17/responsive/photo_2026-06-17_09-03-39-xs.jpg",
+        "type": "file",
+        "md5": "21a23d448aa47c554a71ad2e2b329d66"
     },
     {
         "path": "media/posts/19",
@@ -2335,6 +2430,46 @@
         "md5": "e8a10f75805be1dd0fa50d8d329554b3"
     },
     {
+        "path": "media/posts/90",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/90/coin-2.gif",
+        "type": "file",
+        "md5": "34e1a4baaeffd43ec438cc16a71de3c2"
+    },
+    {
+        "path": "/media/posts/90/Coins.png",
+        "type": "file",
+        "md5": "5f2eb97a751437bd4f556c731952df43"
+    },
+    {
+        "path": "media/posts/90/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/90/responsive/Coins-lg.png",
+        "type": "file",
+        "md5": "36fda313b47a545b88f6f365ec125f19"
+    },
+    {
+        "path": "/media/posts/90/responsive/Coins-md.png",
+        "type": "file",
+        "md5": "36fda313b47a545b88f6f365ec125f19"
+    },
+    {
+        "path": "/media/posts/90/responsive/Coins-sm.png",
+        "type": "file",
+        "md5": "36fda313b47a545b88f6f365ec125f19"
+    },
+    {
+        "path": "/media/posts/90/responsive/Coins-xs.png",
+        "type": "file",
+        "md5": "36fda313b47a545b88f6f365ec125f19"
+    },
+    {
         "path": "media/website",
         "type": "directory",
         "md5": false
@@ -2402,7 +2537,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "631a473f6b0b31770ce5a9f18928c845"
+        "md5": "21183608077adda6026599beb3571424"
     },
     {
         "path": "sitemap.xsl",

@@ -5,6 +5,10 @@
 <loc>https://fel88.com/</loc>
 </url>
 <url>
+<loc>https://fel88.com/clamp/</loc>
+<lastmod>2026-06-17T05:20:43+03:00</lastmod>
+</url>
+<url>
 <loc>https://fel88.com/glavnaya/algoritmy/</loc>
 </url>
 <url>
@@ -27,6 +31,9 @@
 </url>
 <url>
 <loc>https://fel88.com/glavnaya/animaciya/chasy/</loc>
+</url>
+<url>
+<loc>https://fel88.com/glavnaya/animaciya/monetka/</loc>
 </url>
 <url>
 <loc>https://fel88.com/glavnaya/animaciya/zvezdy-2d/</loc>
@@ -77,6 +84,9 @@
 <loc>https://fel88.com/glavnaya/funkcii-graphics/</loc>
 </url>
 <url>
+<loc>https://fel88.com/glavnaya/funkcii-graphics/drawimage/</loc>
+</url>
+<url>
 <loc>https://fel88.com/glavnaya/funkcii-graphics/drawline/</loc>
 </url>
 <url>
@@ -111,6 +121,9 @@
 </url>
 <url>
 <loc>https://fel88.com/glavnaya/geometriya/grafika/sistema-koordinat/</loc>
+</url>
+<url>
+<loc>https://fel88.com/glavnaya/geometriya/matematika/</loc>
 </url>
 <url>
 <loc>https://fel88.com/glavnaya/geometriya/shablony-prilozheniya/</loc>
@@ -206,6 +219,10 @@
 <loc>https://fel88.com/glavnaya/vetvleniya/uslovnyy-operator-2/proverka-popadaniya-tochki-v-pryamougolnik/</loc>
 </url>
 <url>
+<loc>https://fel88.com/integralnyy-filtr/</loc>
+<lastmod>2026-06-17T05:20:56+03:00</lastmod>
+</url>
+<url>
 <loc>https://fel88.com/kollekcii/</loc>
 <lastmod>2026-06-14T09:48:24+03:00</lastmod>
 </url>
@@ -215,6 +232,10 @@
 <url>
 <loc>https://fel88.com/konsol-vvod-vyvod/</loc>
 <lastmod>2026-06-16T13:36:26+03:00</lastmod>
+</url>
+<url>
+<loc>https://fel88.com/lerp/</loc>
+<lastmod>2026-06-17T05:20:46+03:00</lastmod>
 </url>
 <url>
 <loc>https://fel88.com/mdi-prilozheniya/</loc>

@@ -18,6 +18,7 @@ namespace TilesAnimationCoin
 
         public void InitTileSet()
         {
+            // resource was taken from here: https://opengameart.org/content/rotating-coin
             var tileset = Bitmap.FromFile("Coins.png") as Bitmap;
 
             for (int i = 0; i < 8; i++)
