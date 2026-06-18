@@ -445,6 +445,36 @@
         "md5": false
     },
     {
+        "path": "glavnaya/geometriya/c",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/c/index.html",
+        "type": "file",
+        "md5": "5a2b149242418dc2bdc5b9d3174a7bf0"
+    },
+    {
+        "path": "glavnaya/geometriya/c/privedenie-tipov",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/c/privedenie-tipov/index.html",
+        "type": "file",
+        "md5": "4ae5d431c47e566c693f94967d20d00c"
+    },
+    {
+        "path": "glavnaya/geometriya/c/tipy-dannyh",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/c/tipy-dannyh/index.html",
+        "type": "file",
+        "md5": "149ab19e4530457b28ad82dc90967d8d"
+    },
+    {
         "path": "glavnaya/geometriya/demo-scena",
         "type": "directory",
         "md5": false
@@ -527,7 +557,7 @@
     {
         "path": "/glavnaya/geometriya/index.html",
         "type": "file",
-        "md5": "92bc7ac88094a99fbf798547168035ef"
+        "md5": "e1ec70ab1150f2a74eb892b9475a713b"
     },
     {
         "path": "glavnaya/geometriya/matematika",
@@ -717,7 +747,7 @@
     {
         "path": "/glavnaya/massivy/poisk-uchenika-s-maksimalnym-rostom/index.html",
         "type": "file",
-        "md5": "e5ace36062bf6fa40fdff1b48e4489d7"
+        "md5": "1ac038519598e9d5094a724a62601806"
     },
     {
         "path": "glavnaya/massivy/stroki",
@@ -727,7 +757,7 @@
     {
         "path": "/glavnaya/massivy/stroki/index.html",
         "type": "file",
-        "md5": "33133e928e2b0585f480c62b722cf2dd"
+        "md5": "6107637f562ad80598c6c8d146e650c4"
     },
     {
         "path": "glavnaya/massivy/stroki/palindrom-proverka-stroki",
@@ -837,7 +867,7 @@
     {
         "path": "/glavnaya/prostaya-otrisovka/raduga/index.html",
         "type": "file",
-        "md5": "25efb6bbfa5a2a122ddb4e4b833b8c2a"
+        "md5": "4e68a94d885278e826316f816acbb136"
     },
     {
         "path": "glavnaya/prostaya-otrisovka/risuem-liniyu",
@@ -920,9 +950,19 @@
         "md5": "27148e43cff459a77057671c7fde569a"
     },
     {
+        "path": "glavnaya/zaklyuchenie",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/zaklyuchenie/index.html",
+        "type": "file",
+        "md5": "fa2446934bf4e621e5fd275a868f1ffe"
+    },
+    {
         "path": "index.html",
         "type": "file",
-        "md5": "15391881660f15f9eb385791d64f9b16"
+        "md5": "4c0a21f5ac7da34bea2ec987ba5fd07f"
     },
     {
         "path": "integralnyy-filtr",
@@ -2947,7 +2987,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "ea505bda6d4585ae4fb228bbb938b041"
+        "md5": "ce4505b02cf3205226e9fc012f9d9391"
     },
     {
         "path": "sitemap.xsl",
@@ -2993,16 +3033,6 @@
         "path": "/testovaya-statya-1/index.html",
         "type": "file",
         "md5": "81a233cf8c6751f6470f002d065a48ac"
-    },
-    {
-        "path": "zaklyuchenie",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/zaklyuchenie/index.html",
-        "type": "file",
-        "md5": "542cbc63e34fe7a8c18fe2f6275e1040"
     },
     {
         "path": "zakrashivanie-krugami",
