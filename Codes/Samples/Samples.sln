@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paint", "Paint\Paint.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndlessSnake", "EndlessSnake\EndlessSnake.csproj", "{D50CF300-706D-413F-8F51-2CE96F46A09B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawText", "DrawText\DrawText.csproj", "{DE8B44D3-D2CD-45A4-92DD-85EE123551A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,6 +163,10 @@ Global
 		{D50CF300-706D-413F-8F51-2CE96F46A09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D50CF300-706D-413F-8F51-2CE96F46A09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D50CF300-706D-413F-8F51-2CE96F46A09B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8B44D3-D2CD-45A4-92DD-85EE123551A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8B44D3-D2CD-45A4-92DD-85EE123551A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8B44D3-D2CD-45A4-92DD-85EE123551A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8B44D3-D2CD-45A4-92DD-85EE123551A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -189,6 +195,7 @@ Global
 		{A85A4AF2-6F47-48D8-BBC3-0164E2B37FC8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{8620AA6B-41DF-4B1D-A089-D98740455107} = {AFC02E6D-676F-4823-BED5-21A0009D75ED}
 		{D50CF300-706D-413F-8F51-2CE96F46A09B} = {62D8C617-8021-421C-BE75-7BBB231B9941}
+		{DE8B44D3-D2CD-45A4-92DD-85EE123551A9} = {AFC02E6D-676F-4823-BED5-21A0009D75ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2F7DA77-7F38-43C3-A17E-7FF323CDA37C}

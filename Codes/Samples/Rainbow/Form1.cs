@@ -4,13 +4,13 @@ namespace Rainbow
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();            
             Paint += Form1_Paint;
         }
 
         private void Form1_Paint(object? sender, PaintEventArgs e)
         {
-            var h = ClientSize.Height / 7;
+            float h = ClientSize.Height / 7f;
             e.Graphics.FillRectangle(Brushes.Red, 0, 0, ClientSize.Width, h);
             e.Graphics.FillRectangle(Brushes.Orange, 0, h, ClientSize.Width, h);
             e.Graphics.FillRectangle(Brushes.Yellow, 0, 2 * h, ClientSize.Width, h);
