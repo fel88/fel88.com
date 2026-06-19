@@ -112,51 +112,52 @@ namespace MazeKeyboard
             }
         }
 
-
-
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        public void UpdateScene()
         {
-            return base.ProcessCmdKey(ref msg, keyData);
+            if (DateTime.Now.Subtract(lastMove).TotalMilliseconds <= 100)
+                return;
+
+            lastMove = DateTime.Now;
+            int newHeroX = heroX;
+            int newHeroY = heroY;
+
+            if (moveLeft && map[newHeroX - 1, newHeroY] == 0)
+                newHeroX--;
+
+            if (moveRight && map[newHeroX + 1, newHeroY] == 0)
+                newHeroX++;
+
+            if (moveUp && map[newHeroX, newHeroY - 1] == 0)
+                newHeroY--;
+
+            if (moveDown && map[newHeroX, newHeroY + 1] == 0)
+                newHeroY++;
+
+            if (map[newHeroX, newHeroY] == 0)
+            {
+                heroX = newHeroX;
+                heroY = newHeroY;
+            }
+        }
+
+        public void DrawHero(Graphics gr)
+        {
+            int heroSize = 24;
+            var gap = (CellSize - heroSize) / 2;
+            gr.FillEllipse(Brushes.LimeGreen, heroX * CellSize + gap, heroY * CellSize + gap, heroSize, heroSize);
+            gr.DrawEllipse(Pens.Green, heroX * CellSize + gap, heroY * CellSize + gap, heroSize, heroSize);
         }
 
         private void Form1_Paint(object? sender, PaintEventArgs e)
         {
-            e.Graphics.Clear(Color.Black);
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-
             var gr = e.Graphics;
-            if (DateTime.Now.Subtract(lastMove).TotalMilliseconds > 100)
-            {
-                lastMove = DateTime.Now;
-                int newHeroX = heroX;
-                int newHeroY = heroY;
+            gr.Clear(Color.Black);
+            gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-                if (moveLeft && map[newHeroX - 1, newHeroY] == 0)
-                    newHeroX--;
-
-                if (moveRight && map[newHeroX + 1, newHeroY] == 0)
-                    newHeroX++;
-
-                if (moveUp && map[newHeroX, newHeroY - 1] == 0)
-                    newHeroY--;
-
-                if (moveDown && map[newHeroX, newHeroY + 1] == 0)
-                    newHeroY++;
-
-                if (map[newHeroX, newHeroY] == 0)
-                {
-                    heroX = newHeroX;
-                    heroY = newHeroY;
-                }
-            }
-
-
+            UpdateScene();
+            //draw scene
             DrawMap(gr);
-            //draw hero
-            gr.FillEllipse(Brushes.LimeGreen, heroX * CellSize + 3, heroY * CellSize + 3, 24, 24);
-            gr.DrawEllipse(Pens.Green, heroX * CellSize + 3, heroY * CellSize + 3, 24, 24);
-
+            DrawHero(gr);
         }
 
         private void Timer_Tick(object? sender, EventArgs e)
