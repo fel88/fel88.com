@@ -697,7 +697,17 @@
     {
         "path": "/glavnaya/interaktivnye-mehaniki/index.html",
         "type": "file",
-        "md5": "d72567381e18c2ce3f37650fb34ee8e1"
+        "md5": "f9afd3d6e106333d5ce5c50487887ec1"
+    },
+    {
+        "path": "glavnaya/interaktivnye-mehaniki/labirint-klaviatura",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/interaktivnye-mehaniki/labirint-klaviatura/index.html",
+        "type": "file",
+        "md5": "2d1ad30b5c361161039a0bc005c1604c"
     },
     {
         "path": "glavnaya/interaktivnye-mehaniki/risovalka-paint",
@@ -1278,6 +1288,16 @@
         "path": "/media/posts/101/responsive/draw_text_4-xs.png",
         "type": "file",
         "md5": "2fddc5c1fc72010520bf8f68969a22ec"
+    },
+    {
+        "path": "media/posts/108",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/108/maze_keyboard.gif",
+        "type": "file",
+        "md5": "99f4db704bca94de395ba4589b490368"
     },
     {
         "path": "media/posts/11",
@@ -2987,7 +3007,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "09a702c8b41b8b57e2f2f631f75d9ef8"
+        "md5": "e40e75945de6ab9a9026e1953987a021"
     },
     {
         "path": "sitemap.xsl",

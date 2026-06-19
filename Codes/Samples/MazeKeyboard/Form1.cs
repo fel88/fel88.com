@@ -14,84 +14,76 @@ namespace MazeKeyboard
             DoubleBuffered = true;
             KeyUp += Form1_KeyUp;
             KeyDown += Form1_KeyDown;
-            Init();            
+            Init();
             // fit window size
             ClientSize = new Size((int)(CellSize * map.GetLength(0)), (int)(CellSize * map.GetLength(1)));
         }
 
-        private void Form1_KeyDown(object? sender, KeyEventArgs e)
-        {
+        #region Fields
+        float CellSize = 30;
+        Random Random = new Random();
+        int[,] map = new int[16, 16];
+        DateTime lastMove = DateTime.Now;
+        int heroX = 10;
+        int heroY = 10;
+        const int N = 80;
 
-            //  if (movePressed)
-            //   return;
-
-            //movePressed = true;
-            switch (e.KeyCode)
-            {
-                case Keys.Left:
-                    dir = MoveDirectoion.Left;
-                    moveLeft = true;
-
-                    break;
-                case Keys.Right:
-                    dir = MoveDirectoion.Right;
-                    moveRight = true;
-                    break;
-                case Keys.Up:
-                    dir = MoveDirectoion.Up;
-                    moveUp = true;
-                    break;
-                case Keys.Down:
-                    dir = MoveDirectoion.Down;
-                    moveDown = true;
-                    break;
-            }
-
-        }
         bool moveLeft;
         bool moveRight;
         bool moveUp;
         bool moveDown;
+        #endregion
+
+        private void Form1_KeyDown(object? sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Left:
+                    moveLeft = true;
+                    break;
+                case Keys.Right:
+                    moveRight = true;
+                    break;
+                case Keys.Up:
+                    moveUp = true;
+                    break;
+                case Keys.Down:
+                    moveDown = true;
+                    break;
+            }
+        }
+
 
         private void Form1_KeyUp(object? sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
             {
                 case Keys.Left:
-                    dir = MoveDirectoion.Left;
                     moveLeft = false;
-
                     break;
                 case Keys.Right:
-                    dir = MoveDirectoion.Right;
                     moveRight = false;
                     break;
                 case Keys.Up:
-                    dir = MoveDirectoion.Up;
                     moveUp = false;
                     break;
                 case Keys.Down:
-                    dir = MoveDirectoion.Down;
                     moveDown = false;
                     break;
             }
-            //if (!moveLeft && !moveDown && !moveRight && !moveUp)
-            //lastMove = DateTime.Now.AddMinutes(-1);
-
-
-
         }
-        public enum MoveDirectoion
-        {
-            None, Left, Right, Up, Down
-        }
-        MoveDirectoion dir;
 
-        Bitmap hero = null;
+
         public void Init()
         {
             InitBorder();
             RandomWallsInit();
+            // init hero position
+            do
+            {
+                heroX = Random.Next(1, map.GetLength(0) - 1);
+                heroY = Random.Next(1, map.GetLength(1) - 1);
+            } while (map[heroX, heroY] != 0);
         }
 
         public void InitBorder()
@@ -109,7 +101,7 @@ namespace MazeKeyboard
             }
         }
 
-        const int N = 80;
+
         public void RandomWallsInit()
         {
             for (int i = 0; i < N; i++)
@@ -119,17 +111,14 @@ namespace MazeKeyboard
                 map[x, y] = 1;
             }
         }
-        int heroX = 10;
-        int heroY = 10;
+
+
+
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        bool movePressed = false;
-        bool moveReleased = false;
-        DateTime lastMove = DateTime.Now;
         private void Form1_Paint(object? sender, PaintEventArgs e)
         {
             e.Graphics.Clear(Color.Black);
@@ -143,36 +132,19 @@ namespace MazeKeyboard
                 int newHeroX = heroX;
                 int newHeroY = heroY;
 
-                if (moveLeft)
+                if (moveLeft && map[newHeroX - 1, newHeroY] == 0)
+                    newHeroX--;
 
-                    if (map[newHeroX - 1, newHeroY] == 0)
-                    {
-                        newHeroX--;
-                    }
-                if (moveRight)
+                if (moveRight && map[newHeroX + 1, newHeroY] == 0)
+                    newHeroX++;
 
-                    if (map[newHeroX + 1, newHeroY] == 0)
-                    {
-                        newHeroX++;
+                if (moveUp && map[newHeroX, newHeroY - 1] == 0)
+                    newHeroY--;
 
-                    }
-                if (moveUp)
+                if (moveDown && map[newHeroX, newHeroY + 1] == 0)
+                    newHeroY++;
 
-                    if (map[newHeroX, newHeroY - 1] == 0)
-                    {
-                        newHeroY--;
-
-                    }
-                if (moveDown)
-
-                    if (map[newHeroX, newHeroY + 1] == 0)
-
-                    {
-                        newHeroY++;
-
-                    }
                 if (map[newHeroX, newHeroY] == 0)
-
                 {
                     heroX = newHeroX;
                     heroY = newHeroY;
@@ -181,7 +153,7 @@ namespace MazeKeyboard
 
 
             DrawMap(gr);
-            //gr.DrawImage(hero, new RectangleF(300,300,30,30),new RectangleF(0,0,hero.Width,hero.Height),GraphicsUnit.Pixel);
+            //draw hero
             gr.FillEllipse(Brushes.LimeGreen, heroX * CellSize + 3, heroY * CellSize + 3, 24, 24);
             gr.DrawEllipse(Pens.Green, heroX * CellSize + 3, heroY * CellSize + 3, 24, 24);
 
@@ -192,7 +164,6 @@ namespace MazeKeyboard
             Invalidate();
         }
 
-        int[,] map = new int[16, 16];
         public void DrawBrick(Graphics gr, int x, int y)
         {
             gr.FillRectangle(Brushes.Firebrick, x * CellSize, y * CellSize, CellSize, CellSize);
@@ -214,9 +185,7 @@ namespace MazeKeyboard
             }
         }
 
-        float CellSize = 30;
 
-        Random Random = new Random();
 
         public void DrawMap(Graphics gr)
         {
