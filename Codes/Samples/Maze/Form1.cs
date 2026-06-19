@@ -11,14 +11,22 @@ namespace Maze
             Paint += Form1_Paint;
 
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 200;
+            timer.Interval = 10;
             timer.Start();
             timer.Tick += Timer_Tick;
             DoubleBuffered = true;
+            
             Init();
+            
             // fit window size
             ClientSize = new Size((int)(CellSize * map.GetLength(0)), (int)(CellSize * map.GetLength(1)));
         }
+                     
+        
+        int[,] map = new int[16, 16];
+        const int N = 80;
+        float CellSize = 30;
+        Random Random = new Random();
 
         public void Init()
         {
@@ -40,8 +48,7 @@ namespace Maze
                 map[i, map.GetLength(1) - 1] = 1;
             }
         }
-
-        const int N = 40;
+    
         public void RandomWallsInit()
         {
             for (int i = 0; i < N; i++)
@@ -52,13 +59,16 @@ namespace Maze
             }
         }
 
+       
+
         private void Form1_Paint(object? sender, PaintEventArgs e)
         {
             e.Graphics.Clear(Color.Black);
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
+
             var gr = e.Graphics;
-            DrawMap(gr);
+            DrawMap(gr);            
         }
 
         private void Timer_Tick(object? sender, EventArgs e)
@@ -66,7 +76,7 @@ namespace Maze
             Invalidate();
         }
 
-        int[,] map = new int[16, 16];
+        
         public void DrawBrick(Graphics gr, int x, int y)
         {
             gr.FillRectangle(Brushes.Firebrick, x * CellSize, y * CellSize, CellSize, CellSize);
@@ -88,9 +98,7 @@ namespace Maze
             }
         }
 
-        float CellSize = 30;
-
-        Random Random = new Random();
+        
 
         public void DrawMap(Graphics gr)
         {
