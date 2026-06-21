@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawBlob", "DrawBlob\DrawBl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avg", "Avg\Avg.csproj", "{34E89F09-9C9A-4A15-877A-865F1154F9A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradientExt", "GradientExt\GradientExt.csproj", "{3714F5FC-F397-8829-61C1-35224FFB5800}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -191,6 +193,10 @@ Global
 		{34E89F09-9C9A-4A15-877A-865F1154F9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E89F09-9C9A-4A15-877A-865F1154F9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E89F09-9C9A-4A15-877A-865F1154F9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3714F5FC-F397-8829-61C1-35224FFB5800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3714F5FC-F397-8829-61C1-35224FFB5800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3714F5FC-F397-8829-61C1-35224FFB5800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3714F5FC-F397-8829-61C1-35224FFB5800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
