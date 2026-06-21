@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avg", "Avg\Avg.csproj", "{3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradientExt", "GradientExt\GradientExt.csproj", "{3714F5FC-F397-8829-61C1-35224FFB5800}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeWave", "MazeWave\MazeWave.csproj", "{1BE26C21-1E4D-4D94-93A9-BD8D1E97BF51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -197,6 +199,10 @@ Global
 		{3714F5FC-F397-8829-61C1-35224FFB5800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3714F5FC-F397-8829-61C1-35224FFB5800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3714F5FC-F397-8829-61C1-35224FFB5800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE26C21-1E4D-4D94-93A9-BD8D1E97BF51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE26C21-1E4D-4D94-93A9-BD8D1E97BF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE26C21-1E4D-4D94-93A9-BD8D1E97BF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE26C21-1E4D-4D94-93A9-BD8D1E97BF51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -230,6 +236,7 @@ Global
 		{E8543FE5-8642-4980-9700-3AC9DAA47933} = {AFC02E6D-676F-4823-BED5-21A0009D75ED}
 		{E7C4AD86-87F5-46B2-93C5-EF71597BB914} = {AFC02E6D-676F-4823-BED5-21A0009D75ED}
 		{34E89F09-9C9A-4A15-877A-865F1154F9A2} = {AFC02E6D-676F-4823-BED5-21A0009D75ED}
+		{1BE26C21-1E4D-4D94-93A9-BD8D1E97BF51} = {AFC02E6D-676F-4823-BED5-21A0009D75ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2F7DA77-7F38-43C3-A17E-7FF323CDA37C}
