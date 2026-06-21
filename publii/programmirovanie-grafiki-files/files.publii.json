@@ -115,6 +115,11 @@
         "md5": "3c237999c21a8a721c74de48d522d55a"
     },
     {
+        "path": "drag.webp",
+        "type": "file",
+        "md5": "c36087f5ed119477d538c369de44bf79"
+    },
+    {
         "path": "feed.json",
         "type": "file",
         "md5": "17568cacbd8809f30a33bc4e993680b2"
@@ -145,9 +150,29 @@
         "md5": "20f75d624051e21236b8316d44993d47"
     },
     {
+        "path": "glavnaya/algoritmy/algoritm-shnurovki-ploshchad-gaussa",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/algoritmy/algoritm-shnurovki-ploshchad-gaussa/index.html",
+        "type": "file",
+        "md5": "05bb1c56b44bbc1c6a15b30c226ba3b1"
+    },
+    {
         "path": "/glavnaya/algoritmy/index.html",
         "type": "file",
-        "md5": "c15112e407e2567bc56ddfc6219fb5c6"
+        "md5": "35b71218072104deca063d5f5f2f94e9"
+    },
+    {
+        "path": "glavnaya/algoritmy/pnpoly",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/algoritmy/pnpoly/index.html",
+        "type": "file",
+        "md5": "e191b5844e03cf8ac3eff3af248486b7"
     },
     {
         "path": "glavnaya/algoritmy/poisk-v-shirinu-volnovoy-poisk",
@@ -782,7 +807,7 @@
     {
         "path": "/glavnaya/interaktivnye-mehaniki/drag-pryamougolnika/index.html",
         "type": "file",
-        "md5": "14830f4fbf4dd0cc75d2b530cda0d919"
+        "md5": "b566d166dffab32b08c50c71f0e83491"
     },
     {
         "path": "glavnaya/interaktivnye-mehaniki/dvizhenie-sharika-v-storonu-kursora",
@@ -827,7 +852,7 @@
     {
         "path": "/glavnaya/interaktivnye-mehaniki/risovalka-paint/index.html",
         "type": "file",
-        "md5": "53dca7a2c5ba3e8f74f9f005ce7ce1ba"
+        "md5": "e139d959743d9c8cd95b33224850049d"
     },
     {
         "path": "glavnaya/interaktivnye-mehaniki/zumming",
@@ -1178,6 +1203,11 @@
         "path": "/media/files/coin.webp",
         "type": "file",
         "md5": "d2592e6d119dfd17782c255cec8795a8"
+    },
+    {
+        "path": "/media/files/drag.webp",
+        "type": "file",
+        "md5": "c36087f5ed119477d538c369de44bf79"
     },
     {
         "path": "/media/files/github.png",
@@ -3452,7 +3482,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "16a871a9eae88dcca7fea39914dcaee5"
+        "md5": "0d06ecb978dcbdb0c06f942016ab56ca"
     },
     {
         "path": "sitemap.xsl",
