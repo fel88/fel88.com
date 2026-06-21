@@ -1,4 +1,4 @@
-namespace Hover
+namespace DragRectangle
 {
     internal static class Program
     {

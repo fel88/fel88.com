@@ -1,4 +1,4 @@
-﻿namespace Hover
+﻿namespace DragRectangle
 {
     partial class Form1
     {
@@ -34,10 +34,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(384, 311);
+            ClientSize = new Size(580, 492);
             Name = "Form1";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "fel88.com - Hover rectangle";
+            Text = "fel88.com - drag rectangle";
             ResumeLayout(false);
         }
 
