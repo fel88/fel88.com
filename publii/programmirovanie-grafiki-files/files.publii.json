@@ -157,7 +157,7 @@
     {
         "path": "/glavnaya/algoritmy/index.html",
         "type": "file",
-        "md5": "35b71218072104deca063d5f5f2f94e9"
+        "md5": "30efa1982acc08c2aad68b414101c875"
     },
     {
         "path": "glavnaya/algoritmy/pnpoly",
@@ -168,6 +168,16 @@
         "path": "/glavnaya/algoritmy/pnpoly/index.html",
         "type": "file",
         "md5": "e191b5844e03cf8ac3eff3af248486b7"
+    },
+    {
+        "path": "glavnaya/algoritmy/poisk-v-glubinu-dfs",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/algoritmy/poisk-v-glubinu-dfs/index.html",
+        "type": "file",
+        "md5": "22bb10677786aacea3d53762680c600b"
     },
     {
         "path": "glavnaya/algoritmy/poisk-v-shirinu-volnovoy-poisk",
@@ -662,7 +672,7 @@
     {
         "path": "/glavnaya/geometriya/grafika/sprayty/index.html",
         "type": "file",
-        "md5": "28587b79f1fc412e5ebdf063dc12cd14"
+        "md5": "afa535cb9dace7e434948f12ef8fd944"
     },
     {
         "path": "glavnaya/geometriya/grafika/taylset",
@@ -757,7 +767,7 @@
     {
         "path": "/glavnaya/igrovye-mehaniki/index.html",
         "type": "file",
-        "md5": "f74d10f9910d7886f17a2fe3f36ca51f"
+        "md5": "1305116d687132127c0a697c428d6129"
     },
     {
         "path": "glavnaya/igrovye-mehaniki/strategii-rts",
@@ -765,9 +775,39 @@
         "md5": false
     },
     {
+        "path": "glavnaya/igrovye-mehaniki/strategii-rts/generaciya-taylovoy-karty",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/igrovye-mehaniki/strategii-rts/generaciya-taylovoy-karty/index.html",
+        "type": "file",
+        "md5": "d2672e180ecd527670151e95a2573afa"
+    },
+    {
         "path": "/glavnaya/igrovye-mehaniki/strategii-rts/index.html",
         "type": "file",
-        "md5": "43432aa9a2b50534e6de5349cd7c0193"
+        "md5": "8298211978c721fb57204fe41fc17b6c"
+    },
+    {
+        "path": "glavnaya/igrovye-mehaniki/strategii-rts/izvlechenie-pravil-sosedstva-taylov-dlya-igry-warcraft-2",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/igrovye-mehaniki/strategii-rts/izvlechenie-pravil-sosedstva-taylov-dlya-igry-warcraft-2/index.html",
+        "type": "file",
+        "md5": "37675efede889cd80e7cc72234ff68e2"
+    },
+    {
+        "path": "glavnaya/igrovye-mehaniki/strategii-rts/poisk-puti-na-karte",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/igrovye-mehaniki/strategii-rts/poisk-puti-na-karte/index.html",
+        "type": "file",
+        "md5": "8fca49ebfee20ecba6de0d566a2e7309"
     },
     {
         "path": "glavnaya/igrovye-mehaniki/strategii-rts/skrolling-karty",
@@ -777,7 +817,7 @@
     {
         "path": "/glavnaya/igrovye-mehaniki/strategii-rts/skrolling-karty/index.html",
         "type": "file",
-        "md5": "a88a83ba46d5ea405619e36d207abd1b"
+        "md5": "ecccf2bf2084490167b66cc7fa697596"
     },
     {
         "path": "glavnaya/interaktivnye-mehaniki",
@@ -817,7 +857,7 @@
     {
         "path": "/glavnaya/interaktivnye-mehaniki/index.html",
         "type": "file",
-        "md5": "f984ced66600b1f4d7f58500a430592c"
+        "md5": "f00550e08ab0c61d5e6494566c9b19a0"
     },
     {
         "path": "glavnaya/interaktivnye-mehaniki/labirint-klaviatura",
@@ -927,7 +967,7 @@
     {
         "path": "/glavnaya/mini-igry/index.html",
         "type": "file",
-        "md5": "188076177bb6f4271a859e3e85bd72df"
+        "md5": "fc28afdff94b6bf6a25f32abf4eb20ae"
     },
     {
         "path": "glavnaya/mini-igry/krestiki-noliki",
@@ -1125,6 +1165,11 @@
         "md5": "caf3cfc71e86931315c59cc35701e455"
     },
     {
+        "path": "index_map8.xml",
+        "type": "file",
+        "md5": "2b47c4232a37cd2fed0cf0af26710334"
+    },
+    {
         "path": "integralnyy-filtr",
         "type": "directory",
         "md5": false
@@ -1228,6 +1273,11 @@
         "path": "/media/files/maze_wave.webp",
         "type": "file",
         "md5": "fa12a2e7d978871fd3f35598c9173ffd"
+    },
+    {
+        "path": "/media/files/rts_map_rules.webp",
+        "type": "file",
+        "md5": "aea1d97018c0dfd45f626e852f0290d6"
     },
     {
         "path": "media/plugins",
@@ -1728,6 +1778,141 @@
         "path": "/media/posts/12/responsive/img-xs.jpg",
         "type": "file",
         "md5": "289494ab154d01b64c3d3c2825a2357b"
+    },
+    {
+        "path": "media/posts/127",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/127/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/127/responsive/rts_generated_map-lg.png",
+        "type": "file",
+        "md5": "dae12b16f372e4022c775bcef1bab02a"
+    },
+    {
+        "path": "/media/posts/127/responsive/rts_generated_map-md.png",
+        "type": "file",
+        "md5": "dae12b16f372e4022c775bcef1bab02a"
+    },
+    {
+        "path": "/media/posts/127/responsive/rts_generated_map-sm.png",
+        "type": "file",
+        "md5": "94f244b7ef579c70425e88945ab0ef95"
+    },
+    {
+        "path": "/media/posts/127/responsive/rts_generated_map-xs.png",
+        "type": "file",
+        "md5": "84bf164393c6e5a2ffe50474ecb376df"
+    },
+    {
+        "path": "/media/posts/127/responsive/rts_map1-2-lg.png",
+        "type": "file",
+        "md5": "db62c4fd9afa51cc8ab3ac586e669c1d"
+    },
+    {
+        "path": "/media/posts/127/responsive/rts_map1-2-md.png",
+        "type": "file",
+        "md5": "db62c4fd9afa51cc8ab3ac586e669c1d"
+    },
+    {
+        "path": "/media/posts/127/responsive/rts_map1-2-sm.png",
+        "type": "file",
+        "md5": "5631683a47f0826c3a0128c90f06a1e7"
+    },
+    {
+        "path": "/media/posts/127/responsive/rts_map1-2-xs.png",
+        "type": "file",
+        "md5": "5cccb00af1bd9a054d0edf19c0b8657e"
+    },
+    {
+        "path": "/media/posts/127/responsive/tile_rules-lg.png",
+        "type": "file",
+        "md5": "c247523793d63df8e64fb659fccc5321"
+    },
+    {
+        "path": "/media/posts/127/responsive/tile_rules-md.png",
+        "type": "file",
+        "md5": "c247523793d63df8e64fb659fccc5321"
+    },
+    {
+        "path": "/media/posts/127/responsive/tile_rules-sm.png",
+        "type": "file",
+        "md5": "8010bda28cc8a444066c1c64d2f7bd61"
+    },
+    {
+        "path": "/media/posts/127/responsive/tile_rules-xs.png",
+        "type": "file",
+        "md5": "6d6967cb12aeac027026fdf60da2c91f"
+    },
+    {
+        "path": "/media/posts/127/responsive/warcraft2_logo-lg.png",
+        "type": "file",
+        "md5": "b513deaeaa69591ccbb7db829c3a73ae"
+    },
+    {
+        "path": "/media/posts/127/responsive/warcraft2_logo-md.png",
+        "type": "file",
+        "md5": "b513deaeaa69591ccbb7db829c3a73ae"
+    },
+    {
+        "path": "/media/posts/127/responsive/warcraft2_logo-sm.png",
+        "type": "file",
+        "md5": "2c3922a3950f2acbbd45f1abd8343a3a"
+    },
+    {
+        "path": "/media/posts/127/responsive/warcraft2_logo-xs.png",
+        "type": "file",
+        "md5": "af1988920239c578fa776ded8875aefd"
+    },
+    {
+        "path": "/media/posts/127/responsive/warcraft_tileset-2-lg.png",
+        "type": "file",
+        "md5": "d8c8185a28a8dcfc4889909b8e59544b"
+    },
+    {
+        "path": "/media/posts/127/responsive/warcraft_tileset-2-md.png",
+        "type": "file",
+        "md5": "d8c8185a28a8dcfc4889909b8e59544b"
+    },
+    {
+        "path": "/media/posts/127/responsive/warcraft_tileset-2-sm.png",
+        "type": "file",
+        "md5": "40690f46aa4d2e4209fec48060ece242"
+    },
+    {
+        "path": "/media/posts/127/responsive/warcraft_tileset-2-xs.png",
+        "type": "file",
+        "md5": "30f973186ac663f98fdbe8a9339e39a5"
+    },
+    {
+        "path": "/media/posts/127/rts_generated_map.png",
+        "type": "file",
+        "md5": "dd17a32adc82d96f279bae175f826bea"
+    },
+    {
+        "path": "/media/posts/127/rts_map1-2.png",
+        "type": "file",
+        "md5": "3e2dbe0befe0c2053c4a1dac02eeffc1"
+    },
+    {
+        "path": "/media/posts/127/tile_rules.png",
+        "type": "file",
+        "md5": "fea41d1ccb8d56e2f722f3728247cc79"
+    },
+    {
+        "path": "/media/posts/127/warcraft2_logo.png",
+        "type": "file",
+        "md5": "3ad1f64409493b52e925b6fc84825d84"
+    },
+    {
+        "path": "/media/posts/127/warcraft_tileset-2.png",
+        "type": "file",
+        "md5": "06b21cc957f01f57a0798979ce4d40d5"
     },
     {
         "path": "media/posts/13",
@@ -3545,6 +3730,16 @@
         "md5": "9fa625d9ac3e905eeca95d681c2aabf8"
     },
     {
+        "path": "pushka-strelyayushchaya-sharikami",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/pushka-strelyayushchaya-sharikami/index.html",
+        "type": "file",
+        "md5": "61a0f559a58864924124d1be6759d418"
+    },
+    {
         "path": "radiany-i-gradusy",
         "type": "directory",
         "md5": false
@@ -3570,9 +3765,14 @@
         "md5": "202c8fc64dbbcf5580943ddfddbc6b7f"
     },
     {
+        "path": "rules.xml",
+        "type": "file",
+        "md5": "7c934d22a09449bdc5ada42529cdd9f4"
+    },
+    {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "0d06ecb978dcbdb0c06f942016ab56ca"
+        "md5": "fd62bfdce71bfd0a95cc5123eb5f514a"
     },
     {
         "path": "sitemap.xsl",
@@ -3587,7 +3787,7 @@
     {
         "path": "/struktury-dannyh/index.html",
         "type": "file",
-        "md5": "ac32277d5317ca956c3b39dd42bbe5ec"
+        "md5": "6b0d489f9cae5c194807c37f04fb429d"
     },
     {
         "path": "struktury-dannyh/ochered",
@@ -3598,6 +3798,16 @@
         "path": "/struktury-dannyh/ochered/index.html",
         "type": "file",
         "md5": "a7527689096753191249b0093b97a488"
+    },
+    {
+        "path": "struktury-dannyh/stek",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/struktury-dannyh/stek/index.html",
+        "type": "file",
+        "md5": "8c6b146f7d296201a18ebe1e528aa411"
     },
     {
         "path": "tags",
@@ -3618,6 +3828,16 @@
         "path": "/testovaya-statya-1/index.html",
         "type": "file",
         "md5": "591510e467319c8f65ab629f167568fb"
+    },
+    {
+        "path": "tetris",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tetris/index.html",
+        "type": "file",
+        "md5": "cca5ef4cd8e04834d74406b1e2ee99af"
     },
     {
         "path": "zakrashivanie-krugami",
