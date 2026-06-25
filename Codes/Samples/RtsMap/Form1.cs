@@ -15,45 +15,164 @@ namespace RtsMap
 
             LoadTileSet(tileset, TileSize);
 
-            ClientSize = new Size(TileSize * MapCols, TileSize * MapRows);
+            ClientSize = new Size(TileSize * InitMapCols, TileSize * InitMapRows);
             Paint += Form1_Paint;
             GenerateMap();
         }
 
-        const int MapRows = 20;
-        const int MapCols = 20;
+        const int InitMapRows = 20;
+        const int InitMapCols = 20;
 
-        int[,] map = new int[MapCols, MapRows];
+        int[,] map = new int[InitMapCols, InitMapRows];
 
         Random rand = new Random();
         const int TileSize = 32;
         List<Bitmap> tiles = new List<Bitmap>();
         int[][] rights;
         int[][] downs;
-
+        bool LegengVisible = true;
+        bool AnimateSearchEnabled = false;
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.R)
+            if (keyData == Keys.A)
             {
-                if (rights != null)
-                    GenerateMapWithRules();
-                else
-                    GenerateMap();
+                AnimateSearchEnabled = !AnimateSearchEnabled;
                 Invalidate();
             }
-            if (keyData == Keys.O)
+
+            else if (keyData == Keys.L)
+                LoadMap();
+
+            else if (keyData == Keys.V)
             {
-                OpenFileDialog ofd = new OpenFileDialog();
-                ofd.Filter = "xml files (*.xml)|*.xml";
-                if (ofd.ShowDialog() == DialogResult.OK)
+                LegengVisible = !LegengVisible;
+                Invalidate();
+            }
+            else if (keyData == Keys.R)
+                RegenerateMap();
+
+            else
+            if (keyData == Keys.B)
+                SaveMapToBitmap();
+            else
+            if (keyData == Keys.S)
+                SaveMapToXml();
+
+            else
+            if (keyData == Keys.O)
+                LoadRules();
+            else
+            if (keyData == Keys.G)
+            {
+                GridVisible = !GridVisible;
+                Invalidate();
+            }
+
+            else
+            if (keyData == Keys.C)
+            {
+                var d = AutoDialog.DialogHelpers.StartDialog();
+                d.AddInt("w", "Width", map.GetLength(0), 2, 96);
+                d.AddInt("h", "Height", map.GetLength(1), 2, 96);
+                if (d.ShowDialog())
                 {
-                    var doc = XDocument.Load(ofd.FileName);
-                    ExtractRules(doc);
-                    GenerateMapWithRules();
-                    Invalidate();
+                    map = new int[d.GetInt("w"), d.GetInt("h")];
+                    ClientSize = new Size(TileSize * map.GetLength(0), TileSize * map.GetLength(1));
+
+                    RegenerateMap();
+                }
+
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void LoadMap()
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "xml files (*.xml)|*.xml";
+            if (ofd.ShowDialog() != DialogResult.OK)
+                return;
+
+            var doc = XDocument.Load(ofd.FileName);
+            var mapEl = doc.Root.Element("map");
+            var rows = int.Parse(mapEl.Attribute("rows").Value);
+            var cols = int.Parse(mapEl.Attribute("cols").Value);
+            map = new int[cols, rows];
+            foreach (var item in mapEl.Elements("cell"))
+            {
+                var x = int.Parse(item.Attribute("x").Value);
+                var y = int.Parse(item.Attribute("y").Value);
+                var tileIdx = int.Parse(item.Attribute("tileIdx").Value);
+                map[x, y] = tileIdx;
+            }
+            ClientSize = new Size(TileSize * map.GetLength(0), TileSize * map.GetLength(1));
+            Invalidate();
+        }
+
+        bool GridVisible = false;
+
+        private void RegenerateMap()
+        {
+            if (rights != null)
+                GenerateMapWithRules();
+            else
+                GenerateMap();
+            Invalidate();
+        }
+
+        private void LoadRules()
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "xml files (*.xml)|*.xml";
+            if (ofd.ShowDialog() != DialogResult.OK)
+                return;
+
+            var doc = XDocument.Load(ofd.FileName);
+            ExtractRules(doc);
+            GenerateMapWithRules();
+            Invalidate();
+
+        }
+
+        private void SaveMapToXml()
+        {
+            XElement root = new XElement("root");
+            XElement mapNode = new XElement("map");
+            root.Add(mapNode);
+            mapNode.Add(new XAttribute("rows", map.GetLength(1)));
+            mapNode.Add(new XAttribute("cols", map.GetLength(0)));
+            for (int i = 0; i < map.GetLength(0); i++)
+            {
+                for (int j = 0; j < map.GetLength(1); j++)
+                {
+                    XElement el = new XElement("cell");
+                    el.Add(new XAttribute("x", i));
+                    el.Add(new XAttribute("y", j));
+                    el.Add(new XAttribute("tileIdx", map[i, j]));
+                    mapNode.Add(el);
                 }
             }
-            return base.ProcessCmdKey(ref msg, keyData);
+
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "xml files (*.xml)|*.xml";
+            if (sfd.ShowDialog() != DialogResult.OK)
+                return;
+
+            root.Save(sfd.FileName);
+        }
+
+        private void SaveMapToBitmap()
+        {
+            using Bitmap output = new Bitmap(map.GetLength(0) * TileSize, map.GetLength(1) * TileSize);
+            using Graphics graphics = Graphics.FromImage(output);
+            DrawMap(graphics);
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "png images (*.png)|*.png|jpeg images (*.jpg)|*.jpg";
+            if (sfd.ShowDialog() != DialogResult.OK)
+                return;
+
+            output.Save(sfd.FileName);
         }
 
         private List<int> Shuffle(List<int> list)
@@ -66,14 +185,15 @@ namespace RtsMap
             var shuffle = tiles.OrderBy(z => rand.Next(1000)).ToArray();
             bool found = false;
 
-            
+
             for (int k = 0; k < tiles.Count; k++)
             {
+                Fill(map, 0);
                 map[0, 0] = tiles.IndexOf(shuffle[k]);
                 Stack<(int, int, int[,])> stack = new Stack<(int, int, int[,])>();
                 stack.Push((0, 1, map));
                 int iteration = 0;
-                const int IterationsLimit = 1_000_000;
+                const int IterationsLimit = 100_000;
                 while (stack.Any())
                 {
                     iteration++;
@@ -83,6 +203,9 @@ namespace RtsMap
                     var i = s.Item1;
                     var j = s.Item2;
                     map = s.Item3;
+
+                    if (AnimateSearchEnabled)
+                        Invoke(() => { Application.DoEvents(); Invalidate(); });
 
                     List<int> allowed = new List<int>();
                     if (i > 0)
@@ -114,7 +237,9 @@ namespace RtsMap
                     allowed = Shuffle(allowed);
                     foreach (var item in allowed)
                     {
+
                         map[i, j] = item;
+
                         if (j == map.GetLength(1) - 1)
                             stack.Push((i + 1, 0, (int[,])map.Clone()));
                         else
@@ -130,7 +255,40 @@ namespace RtsMap
             }
             Invalidate();
         }
-    
+
+        private Point GetFirstEmptyCell(int[,] map)
+        {
+            Point minCell = new Point(map.GetLength(0) - 1, map.GetLength(1) - 1);
+            for (int i = 0; i < map.GetLength(0); i++)
+            {
+                for (int j = 0; j < map.GetLength(1); j++)
+                {
+                    if (map[i, j] != 0)
+                        continue;
+                    if (i > 0 && map[i - 1, j] == 0)
+                        continue;
+
+                    if (j > 0 && map[i, j - 1] == 0)
+                        continue;
+
+                    var score = minCell.X + minCell.Y;
+                    if ((i + j) < score)
+                    {
+                        minCell = new Point(i, j);
+                    }
+                }
+            }
+            return minCell;
+        }
+
+        private void Fill(int[,] map, int v)
+        {
+            for (int i = 0; i < map.GetLength(0); i++)
+                for (int j = 0; j < map.GetLength(1); j++)
+                    map[i, j] = v;
+
+        }
+
         private void ExtractRules(XDocument doc)
         {
             rights = new int[tiles.Count][];
@@ -185,11 +343,42 @@ namespace RtsMap
 
         private void Form1_Paint(object? sender, PaintEventArgs e)
         {
-            DrawMap(e.Graphics);
+            var gr = e.Graphics;
+            DrawMap(gr);
+            if (GridVisible)
+                DrawGrid(gr);
+
+            if (!LegengVisible)
+                return;
+
+            var font = new Font("Consolas", 10);
+            var brush = Brushes.Yellow;
+            gr.FillRectangle(new SolidBrush(Color.FromArgb(164, Color.Silver)), 0, 0, 200, 110);
+            gr.DrawString("R - re-generate map", font, brush, 5, 5);
+            gr.DrawString("O - load rules.xml file", font, brush, 5, 15);
+            gr.DrawString("S - save map to xml", font, brush, 5, 25);
+            gr.DrawString("B - save map to bmp", font, brush, 5, 35);
+            gr.DrawString("C - change map size", font, brush, 5, 45);
+            gr.DrawString("G - grid visible", font, brush, 5, 55);
+            gr.DrawString("L - load map", font, brush, 5, 65);
+            gr.DrawString("V - legend visible", font, brush, 5, 75);
+            gr.DrawString($"A - animate search ({(AnimateSearchEnabled ? "on" : "off")})", font, brush, 5, 85);
+        }
+
+        private void DrawGrid(Graphics gr)
+        {
+            for (int i = 0; i < map.GetLength(0); i++)
+            {
+                for (int j = 0; j < map.GetLength(1); j++)
+                {
+                    gr.DrawRectangle(Pens.Gray, i * TileSize, j * TileSize, TileSize, TileSize);
+                }
+            }
         }
 
         void DrawMap(Graphics gr)
         {
+            var temp = gr.CompositingMode;
             gr.CompositingMode = CompositingMode.SourceCopy;
             for (int i = 0; i < map.GetLength(0); i++)
             {
@@ -198,6 +387,7 @@ namespace RtsMap
                     gr.DrawImageUnscaled(tiles[map[i, j]], i * TileSize, j * TileSize);
                 }
             }
+            gr.CompositingMode = temp;
         }
 
     }

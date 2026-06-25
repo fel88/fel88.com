@@ -782,7 +782,7 @@
     {
         "path": "/glavnaya/igrovye-mehaniki/strategii-rts/generaciya-taylovoy-karty/index.html",
         "type": "file",
-        "md5": "d2672e180ecd527670151e95a2573afa"
+        "md5": "30ee984473b69aca6eab4b593000f531"
     },
     {
         "path": "/glavnaya/igrovye-mehaniki/strategii-rts/index.html",
@@ -3767,7 +3767,7 @@
     {
         "path": "rules.xml",
         "type": "file",
-        "md5": "7c934d22a09449bdc5ada42529cdd9f4"
+        "md5": "a7eb43d066242602189c2f61df1f88e7"
     },
     {
         "path": "sitemap.xml",
@@ -3838,6 +3838,16 @@
         "path": "/tetris/index.html",
         "type": "file",
         "md5": "cca5ef4cd8e04834d74406b1e2ee99af"
+    },
+    {
+        "path": "warcraft_map1.xml",
+        "type": "file",
+        "md5": "581e6444dd657f258a57139b168f2006"
+    },
+    {
+        "path": "warcraft_map2.xml",
+        "type": "file",
+        "md5": "4803cd93320158996f6087174cff93b9"
     },
     {
         "path": "zakrashivanie-krugami",

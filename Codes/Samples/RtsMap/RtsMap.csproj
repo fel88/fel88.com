@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoDialog" Version="1.0.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="tileset.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
