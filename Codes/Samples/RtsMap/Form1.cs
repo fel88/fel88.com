@@ -329,7 +329,10 @@ namespace RtsMap
             {
                 for (int i = 0; i < cols; i++)
                 {
-                    tiles.Add(tileset.Clone(new Rectangle(i * tileSize + i, j + j * tileSize, tileSize, tileSize), System.Drawing.Imaging.PixelFormat.Format32bppArgb));
+                    Bitmap b = new Bitmap(TileSize, tileSize);
+                    using var gr2 = Graphics.FromImage(b);
+                    gr2.DrawImage(tileset, new Rectangle(0, 0, TileSize, TileSize), new Rectangle(i * tileSize + i, j + j * tileSize, tileSize, tileSize), GraphicsUnit.Pixel);
+                    tiles.Add(b);                    
                 }
             }
 
