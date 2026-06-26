@@ -17,16 +17,24 @@ namespace Tetris1BlockAnimation
             Paint += Form1_Paint;
             MaximizeBox = false;
             MinimizeBox = false;
-            ClientSize = new Size(BrickSize * 6, BrickSize * 8);
-            wall = new int[(int)(ClientRectangle.Width / BrickSize), (int)(ClientRectangle.Height / BrickSize)];
-            BrickX = Random.Next(wall.GetLength(0));
+            ClientSize = new Size(BlockSize * 6, BlockSize * 8);
+            wall = new int[(int)(ClientRectangle.Width / BlockSize), (int)(ClientRectangle.Height / BlockSize)];
+            ResetGame();
+
         }
 
         Timer timer = new Timer();
 
-        Color[] colors = new Color[] { Color.LimeGreen, Color.DeepPink, Color.Blue, Color.Chocolate, Color.Orange };
-        int colorIdx = 1;
-        int BrickSize = 40;
+        Brush[] brushes = [
+            Brushes.LimeGreen,
+            Brushes.DeepPink,
+            Brushes.Blue, 
+            Brushes.Chocolate, 
+            Brushes.Orange
+        ];
+
+        int brushIdx = 1;
+        int BlockSize = 40;
         int[,] wall;
 
         int BrickX = 0;
@@ -36,46 +44,46 @@ namespace Tetris1BlockAnimation
 
         bool IsLineFilled(int lineIdx)
         {
-            bool allFilled = true;
+            bool filled = true;
             for (int i = 0; i < wall.GetLength(0); i++)
             {
-                if (wall[i, lineIdx] == 0)
+                if (wall[i, lineIdx] < 0)
                 {
-                    allFilled = false;
+                    filled = false;
                     break;
                 }
             }
-            return allFilled;
+            return filled;
         }
 
 
-        private void DrawBlock(Graphics gr, int col, int row, int colorIndex)
+        private void DrawBlock(Graphics gr, int col, int row, Brush brush)
         {
-            gr.FillRectangle(new SolidBrush(colors[colorIndex]), col * BrickSize, row * BrickSize, BrickSize, BrickSize);
+            gr.FillRectangle(brush, col * BlockSize, row * BlockSize, BlockSize, BlockSize);
             int gap = 5;
-            gr.FillRectangle(new SolidBrush(Color.FromArgb(64, Color.White)), col * BrickSize + gap, row * BrickSize + gap, BrickSize - gap * 2, BrickSize - gap * 2);
+            gr.FillRectangle(new SolidBrush(Color.FromArgb(64, Color.White)), col * BlockSize + gap, row * BlockSize + gap, BlockSize - gap * 2, BlockSize - gap * 2);
 
             gr.FillPolygon(new SolidBrush(Color.FromArgb(128, Color.Black)), [
-                new PointF((col+1) * BrickSize - gap,row*BrickSize+gap),
-                new PointF((col+1) * BrickSize ,row*BrickSize),
-                new PointF((col+1) * BrickSize ,(row+1)*BrickSize),
-                new PointF((col+1) * BrickSize-gap ,(row+1)*BrickSize-gap),
+                new PointF((col+1) * BlockSize - gap,row*BlockSize+gap),
+                new PointF((col+1) * BlockSize ,row*BlockSize),
+                new PointF((col+1) * BlockSize ,(row+1)*BlockSize),
+                new PointF((col+1) * BlockSize-gap ,(row+1)*BlockSize-gap),
             ]);
 
             gr.FillPolygon(new SolidBrush(Color.FromArgb(64, Color.Black)), [
 
-                new PointF((col+1) * BrickSize ,(row+1)*BrickSize),
-                new PointF((col+1) * BrickSize-gap ,(row+1)*BrickSize-gap),
-                new PointF((col) * BrickSize+gap ,(row+1)*BrickSize-gap),
-                new PointF((col) * BrickSize ,(row+1)*BrickSize),
+                new PointF((col+1) * BlockSize ,(row+1)*BlockSize),
+                new PointF((col+1) * BlockSize-gap ,(row+1)*BlockSize-gap),
+                new PointF((col) * BlockSize+gap ,(row+1)*BlockSize-gap),
+                new PointF((col) * BlockSize ,(row+1)*BlockSize),
             ]);
 
             gr.FillPolygon(new SolidBrush(Color.FromArgb(128, Color.White)), [
 
-                new PointF((col+1) * BrickSize ,(row)*BrickSize),
-                new PointF((col+1) * BrickSize-gap ,(row)*BrickSize+gap),
-                new PointF((col) * BrickSize+gap ,(row)*BrickSize+gap),
-                new PointF((col) * BrickSize ,(row)*BrickSize),
+                new PointF((col+1) * BlockSize ,(row)*BlockSize),
+                new PointF((col+1) * BlockSize-gap ,(row)*BlockSize+gap),
+                new PointF((col) * BlockSize+gap ,(row)*BlockSize+gap),
+                new PointF((col) * BlockSize ,(row)*BlockSize),
             ]);
         }
 
@@ -83,7 +91,8 @@ namespace Tetris1BlockAnimation
         {
             if (gameOver && keyData == Keys.R)
             {
-                ResetGame();
+                gameOver = false;
+                //ResetGame();
             }
             return base.ProcessCmdKey(ref msg, keyData);
         }
@@ -95,7 +104,7 @@ namespace Tetris1BlockAnimation
             {
                 for (int j = 0; j < wall.GetLength(1); j++)
                 {
-                    wall[i, j] = 0;
+                    wall[i, j] = -1;
                 }
             }
 
@@ -112,7 +121,7 @@ namespace Tetris1BlockAnimation
             e.Graphics.Clear(Color.Black);
             var gr = e.Graphics;
 
-            DrawBlock(gr, BrickX, BrickY, colorIdx);
+            DrawBlock(gr, BrickX, BrickY, brushes[brushIdx]);
 
             DrawBlocks(gr);
 
@@ -137,7 +146,7 @@ namespace Tetris1BlockAnimation
             //clear first line
             for (int i = 0; i < wall.GetLength(0); i++)
             {
-                wall[i, 0] = 0;
+                wall[i, 0] = -1;
             }
         }
 
@@ -145,33 +154,29 @@ namespace Tetris1BlockAnimation
         {
             for (int i = 0; i < wall.GetLength(0); i++)
                 for (int j = 0; j < wall.GetLength(1); j++)
-                {
-                    if (wall[i, j] != 0)
-                    {
-                        DrawBlock(gr, i, j, wall[i, j] - 1);
-                    }
-
-                }
+                    if (wall[i, j] >= 0)
+                        DrawBlock(gr, i, j, brushes[wall[i, j]]);
         }
 
-        bool gameOver = false;
+        bool gameOver = true;
         public void UpdateScene()
         {
-            if (BrickY != wall.GetLength(1) - 1 && wall[BrickX, BrickY + 1] == 0)
+            if (BrickY != wall.GetLength(1) - 1 && wall[BrickX, BrickY + 1] < 0)
             {
                 BrickY++;
                 return;
             }
 
-            wall[BrickX, BrickY] = colorIdx + 1;
-            colorIdx = Random.Next(colors.Length);
+            wall[BrickX, BrickY] = brushIdx;
+            brushIdx = Random.Next(brushes.Length);
+
             if (!IsLineFilled(0))
             {
                 BrickY = 0;
                 do
                 {
                     BrickX = Random.Next(wall.GetLength(0));
-                } while (wall[BrickX, BrickY] != 0);
+                } while (wall[BrickX, BrickY] >= 0);
             }
         }
 

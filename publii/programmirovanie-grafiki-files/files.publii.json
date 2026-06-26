@@ -222,7 +222,7 @@
     {
         "path": "/glavnaya/animaciya/animaciya-zapolnenie-steny-kirpichami/index.html",
         "type": "file",
-        "md5": "cef3ce649739a06963663f9170a17abe"
+        "md5": "89e1f119420c3505f59302a3b1bdb883"
     },
     {
         "path": "glavnaya/animaciya/chasy",
@@ -237,7 +237,7 @@
     {
         "path": "/glavnaya/animaciya/index.html",
         "type": "file",
-        "md5": "95ad9cd501e33c736b65d91211df4685"
+        "md5": "cea0c59830ae92ef2186cf68370b5c0d"
     },
     {
         "path": "glavnaya/animaciya/monetka",
@@ -248,6 +248,16 @@
         "path": "/glavnaya/animaciya/monetka/index.html",
         "type": "file",
         "md5": "52e27e254cb8d58008351bbbba045dc6"
+    },
+    {
+        "path": "glavnaya/animaciya/tetris-animaciya",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/animaciya/tetris-animaciya/index.html",
+        "type": "file",
+        "md5": "91e2cfab527c9d69e1ee981c93fa1f01"
     },
     {
         "path": "glavnaya/animaciya/zvezdy-2d",
@@ -967,7 +977,7 @@
     {
         "path": "/glavnaya/mini-igry/index.html",
         "type": "file",
-        "md5": "fc28afdff94b6bf6a25f32abf4eb20ae"
+        "md5": "3698d02580d4433e83155b427f52bbe0"
     },
     {
         "path": "glavnaya/mini-igry/krestiki-noliki",
@@ -1162,7 +1172,7 @@
     {
         "path": "index.html",
         "type": "file",
-        "md5": "caf3cfc71e86931315c59cc35701e455"
+        "md5": "a48c2efc0c678a95764851a1d0cb3366"
     },
     {
         "path": "index_map8.xml",
@@ -1278,6 +1288,16 @@
         "path": "/media/files/rts_map_rules.webp",
         "type": "file",
         "md5": "aea1d97018c0dfd45f626e852f0290d6"
+    },
+    {
+        "path": "/media/files/tetris_animation_1.webp",
+        "type": "file",
+        "md5": "237a2a80177fc0b5c749a21a3fe56b3d"
+    },
+    {
+        "path": "/media/files/tetris_animation_2.webp",
+        "type": "file",
+        "md5": "415588e04d2d173ddb9b20dd3d42a169"
     },
     {
         "path": "media/plugins",
@@ -1923,6 +1943,41 @@
         "path": "/media/posts/13/circle_animation.gif",
         "type": "file",
         "md5": "d8400ced0c8b54acca20f1d2c407e618"
+    },
+    {
+        "path": "media/posts/133",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/133/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/133/responsive/tetris_animation_1-lg.png",
+        "type": "file",
+        "md5": "76ad3e337bfeaec442d6e5ab368f234a"
+    },
+    {
+        "path": "/media/posts/133/responsive/tetris_animation_1-md.png",
+        "type": "file",
+        "md5": "76ad3e337bfeaec442d6e5ab368f234a"
+    },
+    {
+        "path": "/media/posts/133/responsive/tetris_animation_1-sm.png",
+        "type": "file",
+        "md5": "76ad3e337bfeaec442d6e5ab368f234a"
+    },
+    {
+        "path": "/media/posts/133/responsive/tetris_animation_1-xs.png",
+        "type": "file",
+        "md5": "76ad3e337bfeaec442d6e5ab368f234a"
+    },
+    {
+        "path": "/media/posts/133/tetris_animation_1.png",
+        "type": "file",
+        "md5": "a85fe49cb6c35bf0e7fbabd0f3c47cbb"
     },
     {
         "path": "media/posts/14",
@@ -3772,7 +3827,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "fd62bfdce71bfd0a95cc5123eb5f514a"
+        "md5": "49cbaaf7171e3d5c443f050c8d8103df"
     },
     {
         "path": "sitemap.xsl",
