@@ -525,6 +525,26 @@
         "md5": false
     },
     {
+        "path": "glavnaya/geometriya/anti-patterny-programmirovaniya",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/anti-patterny-programmirovaniya/index.html",
+        "type": "file",
+        "md5": "7cf7b0719ec2a63f10710d21534e3567"
+    },
+    {
+        "path": "glavnaya/geometriya/anti-patterny-programmirovaniya/magicheskoe-chislo",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/anti-patterny-programmirovaniya/magicheskoe-chislo/index.html",
+        "type": "file",
+        "md5": "e4de43a5932ffded85a6333ac462a654"
+    },
+    {
         "path": "glavnaya/geometriya/c",
         "type": "directory",
         "md5": false
@@ -542,7 +562,7 @@
     {
         "path": "/glavnaya/geometriya/c/index.html",
         "type": "file",
-        "md5": "41d2ffdc76e681244de3f7b2b062ae18"
+        "md5": "f0d8109cd8efe4a71942574ed70e4954"
     },
     {
         "path": "glavnaya/geometriya/c/linq",
@@ -553,6 +573,16 @@
         "path": "/glavnaya/geometriya/c/linq/index.html",
         "type": "file",
         "md5": "2ade14ca7c002245be136c24563ba981"
+    },
+    {
+        "path": "glavnaya/geometriya/c/perechisleniya-enum",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/geometriya/c/perechisleniya-enum/index.html",
+        "type": "file",
+        "md5": "3ce2cc81f24b954372196751b45e76e2"
     },
     {
         "path": "glavnaya/geometriya/c/privedenie-tipov",
@@ -775,9 +805,29 @@
         "md5": false
     },
     {
+        "path": "glavnaya/igrovye-mehaniki/generaciya-urovney-v-ogranicheniyah",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/igrovye-mehaniki/generaciya-urovney-v-ogranicheniyah/index.html",
+        "type": "file",
+        "md5": "aff9013acdb1dba1a895814f4ec469f8"
+    },
+    {
         "path": "/glavnaya/igrovye-mehaniki/index.html",
         "type": "file",
-        "md5": "1305116d687132127c0a697c428d6129"
+        "md5": "c3450a4f034a499d1463ce535704978c"
+    },
+    {
+        "path": "glavnaya/igrovye-mehaniki/mashina-sostoyaniy",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/igrovye-mehaniki/mashina-sostoyaniy/index.html",
+        "type": "file",
+        "md5": "4b1a822d353003d16af9b96f56f0299c"
     },
     {
         "path": "glavnaya/igrovye-mehaniki/strategii-rts",
@@ -792,12 +842,12 @@
     {
         "path": "/glavnaya/igrovye-mehaniki/strategii-rts/generaciya-taylovoy-karty/index.html",
         "type": "file",
-        "md5": "30ee984473b69aca6eab4b593000f531"
+        "md5": "40e974af884760e9cc3843e0cc95987e"
     },
     {
         "path": "/glavnaya/igrovye-mehaniki/strategii-rts/index.html",
         "type": "file",
-        "md5": "8298211978c721fb57204fe41fc17b6c"
+        "md5": "f1d79bf0d3b8ea87ef8b10c59d65b103"
     },
     {
         "path": "glavnaya/igrovye-mehaniki/strategii-rts/izvlechenie-pravil-sosedstva-taylov-dlya-igry-warcraft-2",
@@ -977,7 +1027,7 @@
     {
         "path": "/glavnaya/mini-igry/index.html",
         "type": "file",
-        "md5": "3698d02580d4433e83155b427f52bbe0"
+        "md5": "3f45e867b6813a5135c089366c261824"
     },
     {
         "path": "glavnaya/mini-igry/krestiki-noliki",
@@ -987,7 +1037,7 @@
     {
         "path": "/glavnaya/mini-igry/krestiki-noliki/index.html",
         "type": "file",
-        "md5": "e23a7352b6b15cbb95871f5faceb3ef9"
+        "md5": "383fe68500ca1de40dbde39c01c21e06"
     },
     {
         "path": "glavnaya/mini-igry/linii",
@@ -997,7 +1047,17 @@
     {
         "path": "/glavnaya/mini-igry/linii/index.html",
         "type": "file",
-        "md5": "e39a232a767546d3d4881b50e339da30"
+        "md5": "03a54114eb44406cba759df447d23522"
+    },
+    {
+        "path": "glavnaya/mini-igry/pyatnashki",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/mini-igry/pyatnashki/index.html",
+        "type": "file",
+        "md5": "b850746835b98c5f7feb6c3207b630cd"
     },
     {
         "path": "glavnaya/mini-igry/zmeyka",
@@ -1172,7 +1232,7 @@
     {
         "path": "index.html",
         "type": "file",
-        "md5": "a48c2efc0c678a95764851a1d0cb3366"
+        "md5": "edfd495a0b8bcd66d9ffb40aaf61fc03"
     },
     {
         "path": "index_map8.xml",
@@ -1298,6 +1358,11 @@
         "path": "/media/files/tetris_animation_2.webp",
         "type": "file",
         "md5": "415588e04d2d173ddb9b20dd3d42a169"
+    },
+    {
+        "path": "/media/files/xox.webp",
+        "type": "file",
+        "md5": "f24392fcfa1fba8c16cd4c09e8423281"
     },
     {
         "path": "media/plugins",
@@ -1628,6 +1693,41 @@
         "path": "/media/posts/110/responsive/maze_wave-xs.png",
         "type": "file",
         "md5": "69e84c3d462f558cca9122715dab3cfd"
+    },
+    {
+        "path": "media/posts/111",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/111/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/111/responsive/tic-tac-lg.png",
+        "type": "file",
+        "md5": "ff291a053e73c2f48ad9b0904e8d8ad1"
+    },
+    {
+        "path": "/media/posts/111/responsive/tic-tac-md.png",
+        "type": "file",
+        "md5": "ff291a053e73c2f48ad9b0904e8d8ad1"
+    },
+    {
+        "path": "/media/posts/111/responsive/tic-tac-sm.png",
+        "type": "file",
+        "md5": "ff291a053e73c2f48ad9b0904e8d8ad1"
+    },
+    {
+        "path": "/media/posts/111/responsive/tic-tac-xs.png",
+        "type": "file",
+        "md5": "39826ec8efa77fd142c94d0468857095"
+    },
+    {
+        "path": "/media/posts/111/tic-tac.png",
+        "type": "file",
+        "md5": "a8448dd56fe95a53ee7e870af0724f4b"
     },
     {
         "path": "media/posts/117",
@@ -3827,7 +3927,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "49cbaaf7171e3d5c443f050c8d8103df"
+        "md5": "c3674d3a6ff5ca342eea93a1af169ea3"
     },
     {
         "path": "sitemap.xsl",
@@ -3893,6 +3993,16 @@
         "path": "/tetris/index.html",
         "type": "file",
         "md5": "cca5ef4cd8e04834d74406b1e2ee99af"
+    },
+    {
+        "path": "tuman-voyny",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tuman-voyny/index.html",
+        "type": "file",
+        "md5": "ac1198b82f1f5adbd07d8f6ed6d81bb9"
     },
     {
         "path": "warcraft_map1.xml",

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Крестики-нолики - Программирование графики</title><meta name="description" content="Подводящее упражнение 1 Давайте сделаем вывод сетки 3х3 и при нажатии на нее будем ставить или убирать крестик с ячейки. "><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="stylesheet" href="https://fel88.com/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://fel88.com/glavnaya/mini-igry/krestiki-noliki/"><link rel="alternate" type="application/atom+xml" href="https://fel88.com/feed.xml" title="Программирование графики - RSS"><link rel="alternate" type="application/json" href="https://fel88.com/feed.json" title="Программирование графики - JSON"><meta property="og:title" content="Крестики-нолики"><meta property="og:site_name" content="Программирование графики"><meta property="og:description" content="Подводящее упражнение 1 Давайте сделаем вывод сетки 3х3 и при нажатии на нее будем ставить или убирать крестик с ячейки. "><meta property="og:url" content="https://fel88.com/glavnaya/mini-igry/krestiki-noliki/"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://fel88.com/media/website/favicon.ico" type="image/x-icon"><link rel="preload" href="https://fel88.com/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://fel88.com/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://fel88.com/assets/css/style.css?v=eb9ffbf1d847326244ea7868f3e6f6c7"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://fel88.com/glavnaya/mini-igry/krestiki-noliki/"},"headline":"Крестики-нолики","datePublished":"2026-06-19T22:17+03:00","dateModified":"2026-06-19T22:17+03:00","description":"Подводящее упражнение 1 Давайте сделаем вывод сетки 3х3 и при нажатии на нее будем ставить или убирать крестик с ячейки. ","author":{"@type":"Person","name":"fel88","url":"https://fel88.com/authors/fel88/"},"publisher":{"@type":"Organization","name":"fel88"}}</script><noscript><style>img[loading] {
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Крестики-нолики - Программирование графики</title><meta name="description" content="Главная :: Мини-игры :: Крестики-нолики Крестики нолики всем известная игра. Давайте реализуем ее. Крестики-нолики интересна нам с связи с тем, что является весьма простой (простое&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="stylesheet" href="https://fel88.com/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://fel88.com/glavnaya/mini-igry/krestiki-noliki/"><link rel="alternate" type="application/atom+xml" href="https://fel88.com/feed.xml" title="Программирование графики - RSS"><link rel="alternate" type="application/json" href="https://fel88.com/feed.json" title="Программирование графики - JSON"><meta property="og:title" content="Крестики-нолики"><meta property="og:site_name" content="Программирование графики"><meta property="og:description" content="Главная :: Мини-игры :: Крестики-нолики Крестики нолики всем известная игра. Давайте реализуем ее. Крестики-нолики интересна нам с связи с тем, что является весьма простой (простое&hellip;"><meta property="og:url" content="https://fel88.com/glavnaya/mini-igry/krestiki-noliki/"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://fel88.com/media/website/favicon.ico" type="image/x-icon"><link rel="preload" href="https://fel88.com/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://fel88.com/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://fel88.com/assets/css/style.css?v=eb9ffbf1d847326244ea7868f3e6f6c7"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://fel88.com/glavnaya/mini-igry/krestiki-noliki/"},"headline":"Крестики-нолики","datePublished":"2026-06-19T22:17+03:00","dateModified":"2026-06-28T12:29+03:00","description":"Главная :: Мини-игры :: Крестики-нолики Крестики нолики всем известная игра. Давайте реализуем ее. Крестики-нолики интересна нам с связи с тем, что является весьма простой (простое&hellip;","author":{"@type":"Person","name":"fel88","url":"https://fel88.com/authors/fel88/"},"publisher":{"@type":"Organization","name":"fel88"}}</script><noscript><style>img[loading] {
                     opacity: 1;
                 }</style></noscript><meta name="yandex-verification" content="f6d7f1429821447e"><script type="text/javascript">(function(m,e,t,r,i,k,a){
         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -7,7 +7,209 @@
         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
     })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109802830', 'ym');
 
-    ym(109802830, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/109802830" style="position:absolute; left:-9999px;" alt=""></div></noscript><style>.ti{fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}</style></head><body class="page-template"><div class="container container--center"><header class="header"><div class="header__logo"><a class="logo" href="https://fel88.com/">Программирование графики</a></div><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li class="has-submenu"><a href="https://fel88.com/" target="_self" aria-haspopup="true">Основы</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://fel88.com/glavnaya/pervye-shagi/" target="_self">Первые шаги</a></li><li><a href="https://fel88.com/glavnaya/prostaya-otrisovka/" target="_self">Азы: учимся рисовать</a></li><li><a href="https://fel88.com/glavnaya/azy-konsol/" target="_self">Азы: консоль</a></li><li><a href="https://fel88.com/glavnaya/vetvleniya/" target="_self">Ветвления</a></li><li><a href="https://fel88.com/glavnaya/cikly/" target="_self">Циклы</a></li><li><a href="https://fel88.com/glavnaya/massivy/" target="_self">Массивы</a></li><li><a href="https://fel88.com/glavnaya/animaciya/" target="_self">Анимация</a></li><li><a href="https://fel88.com/glavnaya/interaktivnye-mehaniki/" target="_self">Интерактивные механики</a></li><li><a href="https://fel88.com/glavnaya/igrovye-mehaniki/" target="_self">Игровые механики</a></li><li><a href="https://fel88.com/glavnaya/graficheskiy-interfeys/" target="_self">Графический интерфейс</a></li><li><a href="https://fel88.com/glavnaya/geometriya/" target="_self">Общая информация</a></li></ul></li><li><a href="https://fel88.com/glavnaya/mini-igry/" target="_self">Мини-игры</a></li><li><a href="https://fel88.com/o-kurse/" target="_self">О курсе</a></li><li><a href="https://fel88.com/poisk-po-saytu/" target="_self">Поиск</a></li></ul></nav></header><main class="content page"><article class="post"><header><h1 class="post__title">Крестики-нолики</h1></header><div class="post__entry"><p>Подводящее упражнение 1</p><p>Давайте сделаем вывод сетки 3х3 и при нажатии на нее будем ставить или убирать крестик с ячейки. </p></div></article></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2026 Powered by Publii CMS :: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Theme</a> ported by the <a href="https://getpublii.com/customization-service/" target="_blank" rel="noopener">Publii Team</a></p></div></div></footer></div><script defer="defer" src="https://fel88.com/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+    ym(109802830, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/109802830" style="position:absolute; left:-9999px;" alt=""></div></noscript><style>.ti{fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}</style></head><body class="page-template"><div class="container container--center"><header class="header"><div class="header__logo"><a class="logo" href="https://fel88.com/">Программирование графики</a></div><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li class="has-submenu"><a href="https://fel88.com/" target="_self" aria-haspopup="true">Основы</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://fel88.com/glavnaya/pervye-shagi/" target="_self">Первые шаги</a></li><li><a href="https://fel88.com/glavnaya/prostaya-otrisovka/" target="_self">Азы: учимся рисовать</a></li><li><a href="https://fel88.com/glavnaya/azy-konsol/" target="_self">Азы: консоль</a></li><li><a href="https://fel88.com/glavnaya/vetvleniya/" target="_self">Ветвления</a></li><li><a href="https://fel88.com/glavnaya/cikly/" target="_self">Циклы</a></li><li><a href="https://fel88.com/glavnaya/massivy/" target="_self">Массивы</a></li><li><a href="https://fel88.com/glavnaya/animaciya/" target="_self">Анимация</a></li><li><a href="https://fel88.com/glavnaya/interaktivnye-mehaniki/" target="_self">Интерактивные механики</a></li><li><a href="https://fel88.com/glavnaya/igrovye-mehaniki/" target="_self">Игровые механики</a></li><li><a href="https://fel88.com/glavnaya/graficheskiy-interfeys/" target="_self">Графический интерфейс</a></li><li><a href="https://fel88.com/glavnaya/geometriya/" target="_self">Общая информация</a></li></ul></li><li><a href="https://fel88.com/glavnaya/mini-igry/" target="_self">Мини-игры</a></li><li><a href="https://fel88.com/o-kurse/" target="_self">О курсе</a></li><li><a href="https://fel88.com/poisk-po-saytu/" target="_self">Поиск</a></li></ul></nav></header><main class="content page"><article class="post"><header><h1 class="post__title">Крестики-нолики</h1></header><div class="post__entry"><div class="breadcrumbs"><a href="https://fel88.com/">Главная</a> :: <a href="https://fel88.com/glavnaya/mini-igry/">Мини-игры</a> :: Крестики-нолики</div><figure class="post__image post__image--center"><img loading="lazy" src="https://fel88.com/media/posts/111/tic-tac.png" alt="" width="266" height="269" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://fel88.com/media/posts/111/responsive/tic-tac-xs.png 300w, https://fel88.com/media/posts/111/responsive/tic-tac-sm.png 480w, https://fel88.com/media/posts/111/responsive/tic-tac-md.png 768w, https://fel88.com/media/posts/111/responsive/tic-tac-lg.png 1024w"></figure><p>Крестики нолики всем известная игра. Давайте реализуем ее.</p><p>Крестики-нолики интересна нам с связи с тем, что является весьма простой (простое игровое поле всего 3 на 3 ячейки), но в том же время полной законченной мини-игрой с наличием двух игроков, условий победы и поражения.</p><p><span style="text-decoration: underline;">Игровое поле</span>: квадратная сетка 3 на 3 ячейки, каждая ячейка может принимать 3 состояния, либо она пуста, либо в ней устанволен </p><p><span style="text-decoration: underline;">Условия победы</span>: расположить в линию 3 подряд своих знака (крестиков или ноликов)</p><p><span style="text-decoration: underline;">Условия окончания игры</span>: либо один из игроков победил, либо не осталось свободных ячеек для хода</p><p>Объявим переменные для представления игры:</p><pre class="language-csharp"><code>int[,] board = new int[3, 3];  // игровое поле
+bool gameOver = false; // признак окончания игры</code></pre><p>Также объъявим дополнительные переменные для отрисовки игры:</p><pre class="language-csharp"><code>const int CellGap = 25; // зазор внутри ячейки до крестика (или нолика) в пикселях
+const int WinLineGap = 10; // зазор победной линии 
+const int CellWidth = 100; // ширина одной ячейки в пикселях
+Random rand = new Random(); // генератор псевдо-случайных чисел
+const int PenThickness = 5; // толщина линий
+
+Pen borderPen = new Pen(Color.Silver, PenThickness); // карандаш границы
+Pen winLinePen = new Pen(Color.White, PenThickness) // карандаш победной линии
+{
+// делать скругление на обох концах
+    EndCap = LineCap.Round,  
+    StartCap = LineCap.Round
+};
+
+Pen penX = new Pen(Color.LimeGreen, PenThickness) // карандаш крестика
+{
+// делать скругление на обох концах
+    EndCap = LineCap.Round,
+    StartCap = LineCap.Round
+};
+
+Pen penO = new Pen(Color.Red, PenThickness); // карандаш для нолика
+</code></pre><p>Напишем конструктор:</p><pre class="language-csharp"><code>public Form1()
+{
+    InitializeComponent();
+// включам двойную буфферизацию, что исключить мерцание (фликеринг)
+    DoubleBuffered = true;
+// стартовая позиция окна - по центру экрана
+    StartPosition = FormStartPosition.CenterScreen;
+// жестко зададим размер окна, привяжем еще к размеру ячеек
+    ClientSize = new Size(CellWidth * 3, CellWidth * 3);
+// подпишемся на событие отрисовки формы
+    Paint += Form1_Paint;
+// создадим таймер отрисовки сцены
+    var timer = new System.Windows.Forms.Timer();
+    timer.Interval = 10;
+    timer.Tick += Timer_Tick;
+    timer.Start();
+
+//запретим максимизировать окно
+    MaximizeBox = false;
+//запретим изменять размер окна
+    FormBorderStyle = FormBorderStyle.FixedSingle;
+//подпишемся на событие нажатия мышки
+    MouseUp += Form1_MouseUp;
+//сбросим игру
+    ResetGame();
+}
+</code></pre><p>Напишем функцию сброса игры</p><pre class="language-csharp"><code>private void ResetGame()
+{
+    gameOver = false; // сбрасываем флаг окончания игры
+// проходимся по игровому полю и очищаем его
+    for (int i = 0; i &lt; 3; i++)    
+        for (int j = 0; j &lt; 3; j++)        
+            board[i, j] = 0;
+
+// с вероятностью ~50% компьютер делает первых ход
+    if (rand.Next(100) &gt; 50)
+        ComputerMove();
+}
+</code></pre><p>Напишем функцию отрисовки поля:</p><pre class="language-csharp"><code>public void DrawBoard(Graphics gr)
+{
+    for (int i = 0; i &lt; 3; i++) // пройдемся по 3 столбцам (X)
+    {
+        for (int j = 0; j &lt; 3; j++) // пройдемся по 3 строкам (Y) в каждом столбце 
+        {
+            // рисуем обводку ячейки
+            gr.DrawRectangle(borderPen, i * CellWidth, j * CellWidth, CellWidth, CellWidth);
+            if (board[i, j] == 1) // рисуем X            
+                DrawX(gr, i, j);
+            
+            else if (board[i, j] == 2) // рисуем O            
+                DrawO(gr, i, j);            
+        }
+    }
+}
+</code></pre><p>Функция отрисовки крестика</p><pre class="language-csharp"><code>private void DrawX(Graphics gr, int i, int j)
+{
+// рисуем две линии крестика с нужными отступами
+    gr.DrawLine(penX, i * CellWidth + CellGap, j * CellWidth + CellGap, (i + 1) * CellWidth - CellGap, (j + 1) * CellWidth - CellGap);
+    gr.DrawLine(penX, i * CellWidth + CellGap, (j + 1) * CellWidth - CellGap, (i + 1) * CellWidth - CellGap, j * CellWidth + CellGap);
+}
+</code></pre><p>Функция отрисовки нолика:</p><pre class="language-csharp"><code>private void DrawO(Graphics gr, int i, int j)
+{
+    gr.DrawEllipse(penO, i * CellWidth + CellGap, j * CellWidth + CellGap, CellWidth - CellGap * 2, CellWidth - CellGap * 2);
+}
+</code></pre><p> </p><p>Напишем игровой цикл:</p><pre class="language-csharp"><code>private void Form1_Paint(object? sender, PaintEventArgs e)
+{
+    var gr = e.Graphics;
+    gr.SmoothingMode = SmoothingMode.AntiAlias;
+// проверяем окончена игра или нет
+    gameOver = IsGameOver();
+
+// очищаем область рисования черным цветом
+    gr.Clear(Color.Black);
+//рисуем игровое поле (обводка, крестики и нолики)
+    DrawBoard(gr);
+// рисуем линию в случае победы одного из игроков
+    DrawWinLine(gr);
+}
+</code></pre><h3><span style="text-decoration: underline;">Добавляем ходы игроков при нажатии мышки</span></h3><p>Давайте сделаем вывод сетки 3х3 и при нажатии на нее будем ставить или убирать крестик с ячейки. </p><p>Функция обработки нажатия мыши:</p><pre class="language-csharp"><code>private void Form1_MouseUp(object? sender, MouseEventArgs e)
+{
+    if (gameOver) // если игра окончена и нажали кнопку мыши, то сбросить игру
+    {
+        ResetGame();
+        return;
+    }
+
+// вычисляем колонку и строку куда нажали
+    var col = e.Location.X / CellWidth;
+    var row = e.Location.Y / CellWidth;
+
+// если нажатая ячейка не пустая, то выходим
+    if (board[col, row] != 0)
+        return;
+
+// ставим крестик в пустую нажтую ячейку
+    board[col, row] = 1;
+    if (!IsGameOver()) // если игра не окончена
+        ComputerMove(); // то компьютер делает ход
+}
+</code></pre><p>Напишем функцию которая будет подсчитывать сколько свободных ячеек осталось на поле:</p><pre class="language-csharp"><code>private int FreeCells()
+{
+    int count = 0; //аккумулятор 
+//проходим по игровому полю двумя циклами
+    for (int i = 0; i &lt; 3; i++)
+    {
+        for (int j = 0; j &lt; 3; j++)
+        {
+            if (board[i, j] == 0)
+                count++; // если ячейка пустая то инкрементируем аккумулятор
+        }
+    }
+    return count; // возвращаем посчитанное количество
+}
+</code></pre><p> </p><h3><span style="text-decoration: underline;">Добавляем проверку зачекрнутости линий</span></h3><p>Для того чтобы проверять условия что какая либо из линий содержит по 3 одинаковых элемента, давайте напишем отдельные функции для проверки заполненности строки, столбца, диагонали и обратной диагонали</p><pre class="language-csharp"><code>bool AreNumbersEqual(int v1, int v2, int v3) =&gt; v1 == v2 &amp;&amp; v2 == v3;
+
+bool IsRowWin(int row) =&gt; board[0, row] != 0 &amp;&amp; AreNumbersEqual(board[0, row], board[1, row], board[2, row]);
+
+bool IsColumnWin(int column) =&gt; board[column, 0] != 0 &amp;&amp; AreNumbersEqual(board[column, 0], board[column, 1], board[column, 2]);
+
+bool IsDiagWin() =&gt; board[0, 0] != 0 &amp;&amp; AreNumbersEqual(board[0, 0], board[1, 1], board[2, 2]);
+
+bool IsBackDiagWin() =&gt; board[2, 0] != 0 &amp;&amp; AreNumbersEqual(board[2, 0], board[1, 1], board[0, 2]);
+</code></pre><p>Как вы видите каждая функция в отдельности является весьма примитивной.  Все они используют вспомогательную функцию <span style="text-decoration: underline;">AreNumbersEqual </span>котороая проверяет что три переданных в нее числа равны друг другу. Обратите внимание ,что для записи функций мы использовали упрощенный способ объявления методов (вместо скобок и return используется стрелка =&gt;), это позволяет сократить запись, чтобы все выглядело более лакончино.</p><p>Используя эти функции давайте напишем функцию проверки окончания игры. Окончанием игры считается если какая либо из линия заполнена либо если не осталось свободных ячеек для совершения хода</p><pre class="language-csharp"><code>private bool IsGameOver()
+{
+// проверим есть ли заполненные строка или столбец
+    for (int i = 0; i &lt; 3; i++)    
+        if (IsRowWin(i) || IsColumnWin(i))        
+            return true;
+
+// проверяем обе диагонали
+    if (IsDiagWin() || IsBackDiagWin())
+        return true;
+
+// проверяем количество свободных ячеек
+    if (FreeCells() == 0)
+        return true;
+
+    return false;
+}
+</code></pre><h3><span style="text-decoration: underline;">Добавляем ход компьютера</span></h3><p>Напишем функцию которая будет ставить нолик в случайную пустую ячейку нашего игрового поля</p><pre class="language-csharp"><code>void ComputerMove()
+{
+    int x;
+    int y;
+// проверяем сколько пустых ячеек на поле
+    int qty = FreeCells();
+    if (qty == 0) // если пустых ячеек не осталось, то выходм ничего не делая
+        return;
+    do //генерируем в цикле случайные позиции до тех пор пока не найдем свободную
+    {
+        x = rand.Next(3);
+        y = rand.Next(3);
+
+    } while (board[x, y] != 0);
+
+    board[x, y] = 2; // устанавливаем нолик в свободную ячейку
+}
+</code></pre><p>Добавим отрисовку победных линий (который зачеркивают выигрышную серию значков)</p><pre class="language-csharp"><code>void DrawWinLine(Graphics gr)
+{
+    for (int i = 0; i &lt; 3; i++)
+    {
+        if (IsRowWin(i))
+            gr.DrawLine(winLinePen, WinLineGap, i * CellWidth + CellWidth / 2, ClientSize.Width - WinLineGap, i * CellWidth + CellWidth / 2);
+
+        if (IsColumnWin(i))
+            gr.DrawLine(winLinePen, i * CellWidth + CellWidth / 2, WinLineGap, i * CellWidth + CellWidth / 2, ClientSize.Height - WinLineGap);
+    }
+
+    if (IsDiagWin())
+        gr.DrawLine(winLinePen, WinLineGap, WinLineGap, ClientSize.Width - WinLineGap, ClientSize.Height - WinLineGap);
+
+    if (IsBackDiagWin())
+        gr.DrawLine(winLinePen, WinLineGap, ClientSize.Height - WinLineGap, ClientSize.Width - WinLineGap, WinLineGap);
+}
+
+</code></pre><p>Запустим и проверим что получилось</p><figure class="post__image post__image--center"><img loading="lazy" src="https://fel88.com/media/files/xox.webp" data-is-external-image="true"></figure><p> </p><h3><span style="text-decoration: underline;">Задания:</span></h3><ol><li><p>Ввести явную <a href="https://fel88.com/glavnaya/igrovye-mehaniki/mashina-sostoyaniy/">машину состояний</a> игры,  с помощью <a href="https://fel88.com/glavnaya/geometriya/c/perechisleniya-enum/">перечисления</a> например такую</p><pre class="language-csharp"><code>public enum GameState
+{
+    PlayerMove, 
+    ComputerMove, 
+    GameOver
+}</code></pre><p>Удалить переменную gameOver, ввести переменную текущего состояния игры (GameState state), пределать всю логику игры на использование машины состояний.</p></li><li><p>Увеличить размер поля до 5х5</p></li><li><p>Сделать большие крестики нолики, размер поля 9х9 , для победы нужно чтобы линии было 5 подряд крестиков или ноликов</p></li><li><p>Сделать Супер крестики нолики, с 9 полями, более подробно читай в <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%83%D0%BF%D0%B5%D1%80-%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D0%B8-%D0%BD%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8">википедии</a> </p></li><li><p>Добавить подсчет очков и выводить их на экран.</p></li><li><p>Сделать чтобы в игру можно было играть вдвоем, передавая мышку на каждом шагу (<a href="https://en.wikipedia.org/wiki/Hotseat_(multiplayer_mode)">hotseat</a>)</p></li><li><p>Сделать игровое меню чтобы при старте игры можно было выбирать режим игры: игра с компьютером либо игра со вторым игроком </p></li><li><p>Сделать сетевую игру</p></li><li>Ввести <a href="https://fel88.com/glavnaya/geometriya/c/perechisleniya-enum/">перечисление </a>для состояние ячейки (ячейка пустая, установлен Х, установле О) и заменить всю логику игры на использование этого перечисления</li></ol></div></article></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2026 Powered by Publii CMS :: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Theme</a> ported by the <a href="https://getpublii.com/customization-service/" target="_blank" rel="noopener">Publii Team</a></p></div></div></footer></div><script defer="defer" src="https://fel88.com/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
         for (var i = 0; i < images.length; i++) {
             if (images[i].complete) {
                 images[i].classList.add('is-loaded');
