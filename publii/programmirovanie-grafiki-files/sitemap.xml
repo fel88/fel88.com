@@ -288,6 +288,9 @@
 <loc>https://fel88.com/glavnaya/mini-igry/pyatnashki/</loc>
 </url>
 <url>
+<loc>https://fel88.com/glavnaya/mini-igry/tetris/</loc>
+</url>
+<url>
 <loc>https://fel88.com/glavnaya/mini-igry/zmeyka/</loc>
 </url>
 <url>
@@ -414,10 +417,6 @@
 <image:loc>https://fel88.com/media/posts/1/neznaika_new.bmp</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
-</url>
-<url>
-<loc>https://fel88.com/tetris/</loc>
-<lastmod>2026-06-23T19:01:12+03:00</lastmod>
 </url>
 <url>
 <loc>https://fel88.com/tuman-voyny/</loc>

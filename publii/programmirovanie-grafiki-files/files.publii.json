@@ -157,7 +157,7 @@
     {
         "path": "/glavnaya/algoritmy/index.html",
         "type": "file",
-        "md5": "30efa1982acc08c2aad68b414101c875"
+        "md5": "cdeacd4ec878790cc137b41fe45d15c3"
     },
     {
         "path": "glavnaya/algoritmy/pnpoly",
@@ -257,7 +257,7 @@
     {
         "path": "/glavnaya/animaciya/tetris-animaciya/index.html",
         "type": "file",
-        "md5": "91e2cfab527c9d69e1ee981c93fa1f01"
+        "md5": "fc1f6e63f4b74be6e86d7c4fe2585f6d"
     },
     {
         "path": "glavnaya/animaciya/zvezdy-2d",
@@ -637,7 +637,7 @@
     {
         "path": "/glavnaya/geometriya/grafika/alfa-kanal/index.html",
         "type": "file",
-        "md5": "21fe3e3493753ce2c43cc89e5e211bdc"
+        "md5": "1db765ceb336abe87a505360da7e2d55"
     },
     {
         "path": "glavnaya/geometriya/grafika/approksimaciya-okruzhnosti-poliliniey",
@@ -657,7 +657,7 @@
     {
         "path": "/glavnaya/geometriya/grafika/blending/index.html",
         "type": "file",
-        "md5": "b1e1cf89d2394cc145c55e5d4692cf99"
+        "md5": "13ce79a783b8b3b75ee8d3af61a9f6fe"
     },
     {
         "path": "glavnaya/geometriya/grafika/dizering",
@@ -1027,7 +1027,7 @@
     {
         "path": "/glavnaya/mini-igry/index.html",
         "type": "file",
-        "md5": "3f45e867b6813a5135c089366c261824"
+        "md5": "cdbcc86b0c9cd450053e375023780ac9"
     },
     {
         "path": "glavnaya/mini-igry/krestiki-noliki",
@@ -1037,7 +1037,7 @@
     {
         "path": "/glavnaya/mini-igry/krestiki-noliki/index.html",
         "type": "file",
-        "md5": "383fe68500ca1de40dbde39c01c21e06"
+        "md5": "672d2a11ffe77acfe3ec1400b8997e10"
     },
     {
         "path": "glavnaya/mini-igry/linii",
@@ -1057,7 +1057,17 @@
     {
         "path": "/glavnaya/mini-igry/pyatnashki/index.html",
         "type": "file",
-        "md5": "b850746835b98c5f7feb6c3207b630cd"
+        "md5": "ac85b56640505a26937a09fcdab017c0"
+    },
+    {
+        "path": "glavnaya/mini-igry/tetris",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/glavnaya/mini-igry/tetris/index.html",
+        "type": "file",
+        "md5": "caa3e0362abb11015864d60486208040"
     },
     {
         "path": "glavnaya/mini-igry/zmeyka",
@@ -1167,7 +1177,7 @@
     {
         "path": "/glavnaya/prostaya-otrisovka/vyvodim-tekst/index.html",
         "type": "file",
-        "md5": "30dd0d6a050767494d2e8254ef0400c9"
+        "md5": "46b754bcca1f7a0116d67a6456bd4404"
     },
     {
         "path": "glavnaya/vetvleniya",
@@ -1343,6 +1353,16 @@
         "path": "/media/files/maze_wave.webp",
         "type": "file",
         "md5": "fa12a2e7d978871fd3f35598c9173ffd"
+    },
+    {
+        "path": "/media/files/p15_presample_1.webp",
+        "type": "file",
+        "md5": "7a508c45f9cefdf01f868fba5e64dbf2"
+    },
+    {
+        "path": "/media/files/p15_presample_2.webp",
+        "type": "file",
+        "md5": "728859b0ae1a42bfb6745d109f99fc00"
     },
     {
         "path": "/media/files/rts_map_rules.webp",
@@ -1870,34 +1890,69 @@
         "md5": false
     },
     {
-        "path": "/media/posts/12/img.jpg",
-        "type": "file",
-        "md5": "6773044cbd9bcbb316e2f769b8a24420"
-    },
-    {
         "path": "media/posts/12/responsive",
         "type": "directory",
         "md5": false
     },
     {
-        "path": "/media/posts/12/responsive/img-lg.jpg",
+        "path": "/media/posts/12/responsive/tetris_logo-lg.jpg",
         "type": "file",
-        "md5": "347d387ee6b7833b92ce447309953399"
+        "md5": "b15d79641939a94bad62838450d7ef0f"
     },
     {
-        "path": "/media/posts/12/responsive/img-md.jpg",
+        "path": "/media/posts/12/responsive/tetris_logo-md.jpg",
+        "type": "file",
+        "md5": "b15d79641939a94bad62838450d7ef0f"
+    },
+    {
+        "path": "/media/posts/12/responsive/tetris_logo-sm.jpg",
+        "type": "file",
+        "md5": "7b4cbb8cadadab4c265e40317f353630"
+    },
+    {
+        "path": "/media/posts/12/responsive/tetris_logo-xs.jpg",
+        "type": "file",
+        "md5": "6ce287b435cf5074eae26c1a30d9c44b"
+    },
+    {
+        "path": "/media/posts/12/tetris_logo.jpg",
         "type": "file",
         "md5": "7bdd522bc5a49337f18f8860e8c30e3d"
     },
     {
-        "path": "/media/posts/12/responsive/img-sm.jpg",
-        "type": "file",
-        "md5": "2cbef31d25e77b2b0a25e877060a33d5"
+        "path": "media/posts/126",
+        "type": "directory",
+        "md5": false
     },
     {
-        "path": "/media/posts/12/responsive/img-xs.jpg",
+        "path": "media/posts/126/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/126/responsive/tetris_nes-lg.png",
         "type": "file",
-        "md5": "289494ab154d01b64c3d3c2825a2357b"
+        "md5": "15f6c8dcf42b0ec11c0fec6b24b0b569"
+    },
+    {
+        "path": "/media/posts/126/responsive/tetris_nes-md.png",
+        "type": "file",
+        "md5": "f5fd0d4897120e7dbf5b419e5faf1407"
+    },
+    {
+        "path": "/media/posts/126/responsive/tetris_nes-sm.png",
+        "type": "file",
+        "md5": "ca615e6ac123b19d118e7ffd6dbbe9e5"
+    },
+    {
+        "path": "/media/posts/126/responsive/tetris_nes-xs.png",
+        "type": "file",
+        "md5": "afa6e5ab058fc4120baa52a5ab447c5b"
+    },
+    {
+        "path": "/media/posts/126/tetris_nes.png",
+        "type": "file",
+        "md5": "0eaad2cf54dd7525f561bf743148a616"
     },
     {
         "path": "media/posts/127",
@@ -2078,6 +2133,41 @@
         "path": "/media/posts/133/tetris_animation_1.png",
         "type": "file",
         "md5": "a85fe49cb6c35bf0e7fbabd0f3c47cbb"
+    },
+    {
+        "path": "media/posts/139",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/139/puzzle_15_1.png",
+        "type": "file",
+        "md5": "0e071581a023c74069ff5ba33acae208"
+    },
+    {
+        "path": "media/posts/139/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/139/responsive/puzzle_15_1-lg.png",
+        "type": "file",
+        "md5": "db4dd7b8151f52f82e9eb6d6e75ef6a6"
+    },
+    {
+        "path": "/media/posts/139/responsive/puzzle_15_1-md.png",
+        "type": "file",
+        "md5": "db4dd7b8151f52f82e9eb6d6e75ef6a6"
+    },
+    {
+        "path": "/media/posts/139/responsive/puzzle_15_1-sm.png",
+        "type": "file",
+        "md5": "db4dd7b8151f52f82e9eb6d6e75ef6a6"
+    },
+    {
+        "path": "/media/posts/139/responsive/puzzle_15_1-xs.png",
+        "type": "file",
+        "md5": "039c0c2881504b52f7d61bf281c42ebb"
     },
     {
         "path": "media/posts/14",
@@ -3927,7 +4017,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "c3674d3a6ff5ca342eea93a1af169ea3"
+        "md5": "8f1686dab46089437baecd0e824749f8"
     },
     {
         "path": "sitemap.xsl",
@@ -3983,16 +4073,6 @@
         "path": "/testovaya-statya-1/index.html",
         "type": "file",
         "md5": "591510e467319c8f65ab629f167568fb"
-    },
-    {
-        "path": "tetris",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/tetris/index.html",
-        "type": "file",
-        "md5": "cca5ef4cd8e04834d74406b1e2ee99af"
     },
     {
         "path": "tuman-voyny",
