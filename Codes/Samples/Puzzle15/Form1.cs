@@ -1,3 +1,6 @@
+using System.ComponentModel.Design;
+using System.Text;
+
 namespace Puzzle15
 {
     public partial class Form1 : Form
@@ -14,8 +17,11 @@ namespace Puzzle15
             timer.Start();
             Paint += Form1_Paint;
             MouseUp += Form1_MouseUp;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             ClientSize = new Size(4 * CellSize, 4 * CellSize);
-            InitBoard();
+            ResetGame();
+            Text = $"fel88.com - puzzle 15 (level: {difficultyLevel})";
+
         }
 
         private void Form1_MouseUp(object? sender, MouseEventArgs e)
@@ -30,6 +36,64 @@ namespace Puzzle15
 
             Turn(col, row);
         }
+
+        
+        static int findEmptyRowIdx(int[,] puzzle)
+        {            
+            for (int i = puzzle.GetUpperBound(0); i >= 0; i--)
+            {
+                for (int j = puzzle.GetUpperBound(1); j >= 0; j--)
+                {
+                    if (puzzle[i, j] == 0)
+                        return puzzle.GetUpperBound(0) - i;
+                }
+            }
+            return -1;
+        }
+                
+
+        static bool isSolvable(int[,] puzzle)
+        {
+            List<int> puzzle1D = new List<int>();
+            for (int i = 0; i < puzzle.GetLength(0); i++)
+            {
+                for (int j = 0; j < puzzle.GetLength(1); j++)
+                {
+                    if (puzzle[i, j] == 0)
+                        continue;
+
+                    puzzle1D.Add(puzzle[i, j]);
+                }
+            }
+
+            //calc inversions
+            int invQty = 0;
+            for (int i = 0; i < puzzle1D.Count; i++)
+            {
+                for (int j = i + 1; j < puzzle1D.Count; j++)
+                {
+                    if (puzzle1D[i] > puzzle1D[j])
+                        invQty++;
+                }
+            }
+            
+            return (findEmptyRowIdx(puzzle) + invQty) % 2 == 0;            
+        }
+
+
+        private Point? GetEmptyPoint(int[,] board)
+        {
+            for (int i = 0; i < board.GetLength(0); i++)
+            {
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    if (board[i, j] == 0)
+                        return new Point(i, j);
+                }
+            }
+            return null;
+        }
+
 
 
         public void Turn(int col, int row)
@@ -61,10 +125,59 @@ namespace Puzzle15
             }
         }
 
+        int difficultyLevel = 0;
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.R)
+            {
+                ResetGame();
+            }
+            if (keyData == Keys.D)
+            {
+                difficultyLevel++;
+                difficultyLevel %= 3;
+                Text = $"fel88.com - puzzle 15 (level: {difficultyLevel})";
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        const int EasyLevelTurnsQty = 30;
+        const int MediumLevelTurnsQty = 200;
         private void ResetGame()
         {
             gameOver = false;
             InitBoard();
+            if (difficultyLevel == 0)
+                RandomMoves(EasyLevelTurnsQty);
+
+            else
+            if (difficultyLevel == 1)
+                RandomMoves(MediumLevelTurnsQty);
+
+            else
+                do
+                {
+                    MakeRandomBoard();
+                } while (!isSolvable(board));
+        }
+
+        private void MakeRandomBoard()
+        {
+            List<int> remains = new List<int>();
+            for (int i = 0; i < 16; i++)
+            {
+                remains.Add(i);
+            }
+
+            //shuffle
+            remains = remains.OrderBy(z => rand.Next(100)).ToList();
+            //assign
+            for (int i = 0; i < remains.Count; i++)
+            {
+                int col = i / 4;
+                int row = i % 4;
+                board[col, row] = remains[i];
+            }
         }
 
         bool IsGameOver()
@@ -81,7 +194,7 @@ namespace Puzzle15
         }
 
         bool gameOver = false;
-        const int InitMovesQty = 200;
+
         private void InitBoard()
         {
             for (int i = 0; i < 15; i++)
@@ -90,12 +203,25 @@ namespace Puzzle15
                 int col = i % 4;
                 board[col, row] = i + 1;
             }
+            board[3, 3] = 0;
+        }
 
-            for (int i = 0; i < InitMovesQty; i++)
+        public void RandomMoves(int N)
+        {
+            for (int i = 0; i < N; i++)
             {
-                int x = rand.Next(4);
-                int y = rand.Next(4);
-                Turn(x, y);
+                var empty = GetEmptyPoint(board).Value;
+
+                var up = new Point(empty.X, empty.Y - 1);
+                var down = new Point(empty.X, empty.Y + 1);
+                var left = new Point(empty.X - 1, empty.Y);
+                var right = new Point(empty.X + 1, empty.Y);
+                Point[] moves = new[] { up, down, left, right };
+                moves = moves.Where(z => z.X >= 0 && z.X <= board.GetUpperBound(0)
+                && z.Y >= 0 && z.Y <= board.GetUpperBound(1)
+                ).ToArray();
+                var move = moves[rand.Next(moves.Length)];
+                Turn(move.X, move.Y);
             }
         }
 
@@ -110,14 +236,14 @@ namespace Puzzle15
             {
                 e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(200, Color.Black)), 0, 0, ClientSize.Width, ClientSize.Height);
 
-                DrawCentredString(e.Graphics, "Game Over", new Font("Press Start 2P", 24), Brushes.Orange, ClientSize.Width / 2, ClientSize.Height / 2);                
+                DrawCentredString(e.Graphics, "Game Over", new Font("Press Start 2P", 24), Brushes.Orange, ClientSize.Width / 2, ClientSize.Height / 2);
             }
         }
 
         private void DrawBlock(Graphics gr, int col, int row, Brush brush, int gap)
-        {            
+        {
             gr.FillRectangle(brush, col * CellSize, row * CellSize, CellSize, CellSize);
-            
+
             gr.FillRectangle(new SolidBrush(Color.FromArgb(64, Color.White)), col * CellSize + gap, row * CellSize + gap, CellSize - gap * 2, CellSize - gap * 2);
 
             gr.FillPolygon(new SolidBrush(Color.FromArgb(128, Color.Black)), [
@@ -168,7 +294,7 @@ namespace Puzzle15
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
-                {              
+                {
                     //gr.DrawRectangle(borderPen, i * CellSize, j * CellSize, CellSize, CellSize);
 
                     if (board[i, j] == 0)
