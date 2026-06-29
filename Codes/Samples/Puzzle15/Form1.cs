@@ -37,9 +37,9 @@ namespace Puzzle15
             Turn(col, row);
         }
 
-        
+
         static int findEmptyRowIdx(int[,] puzzle)
-        {            
+        {
             for (int i = puzzle.GetUpperBound(0); i >= 0; i--)
             {
                 for (int j = puzzle.GetUpperBound(1); j >= 0; j--)
@@ -50,7 +50,7 @@ namespace Puzzle15
             }
             return -1;
         }
-                
+
 
         static bool isSolvable(int[,] puzzle)
         {
@@ -76,8 +76,8 @@ namespace Puzzle15
                         invQty++;
                 }
             }
-            
-            return (findEmptyRowIdx(puzzle) + invQty) % 2 == 0;            
+
+            return (findEmptyRowIdx(puzzle) + invQty) % 2 == 0;
         }
 
 
@@ -155,11 +155,35 @@ namespace Puzzle15
                 RandomMoves(MediumLevelTurnsQty);
 
             else
-                do
-                {
-                    MakeRandomBoard();
-                } while (!isSolvable(board));
+            {
+                if (rand.Next(100) > 80)                
+                    SetBoard(hardBoard);                
+                else
+                    do
+                    {
+                        MakeRandomBoard();
+                    } while (!isSolvable(board));
+            }
         }
+
+        void SetBoard(int[] b)
+        {
+            int index = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    board[j, i] = b[index++];
+                }
+            }
+        }
+
+        int[] hardBoard = new int[] { // 80 moves board
+                0,12,9,13,
+                15,11,10,14,
+                3,7,2,5,
+                4,8,6,1
+            };
 
         private void MakeRandomBoard()
         {

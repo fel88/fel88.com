@@ -1057,7 +1057,7 @@
     {
         "path": "/glavnaya/mini-igry/pyatnashki/index.html",
         "type": "file",
-        "md5": "c15dc8c2849472177e322b22926d0137"
+        "md5": "fcde0e1177b8f9b0aad0a5bebd174ed2"
     },
     {
         "path": "glavnaya/mini-igry/tetris",
@@ -2140,6 +2140,11 @@
         "md5": false
     },
     {
+        "path": "/media/posts/139/fifteen_solver_2.png",
+        "type": "file",
+        "md5": "70c94b28691d242cd9e7fadb9f695028"
+    },
+    {
         "path": "/media/posts/139/puzzle_15_1.png",
         "type": "file",
         "md5": "0e071581a023c74069ff5ba33acae208"
@@ -2148,6 +2153,26 @@
         "path": "media/posts/139/responsive",
         "type": "directory",
         "md5": false
+    },
+    {
+        "path": "/media/posts/139/responsive/fifteen_solver_2-lg.png",
+        "type": "file",
+        "md5": "77258496c0fbb407b06f1ab42b770604"
+    },
+    {
+        "path": "/media/posts/139/responsive/fifteen_solver_2-md.png",
+        "type": "file",
+        "md5": "b9d9c19a9d5ccfb16a81234f8aa5e19f"
+    },
+    {
+        "path": "/media/posts/139/responsive/fifteen_solver_2-sm.png",
+        "type": "file",
+        "md5": "0b1324ec3eb08e337597cd4fc6340cc8"
+    },
+    {
+        "path": "/media/posts/139/responsive/fifteen_solver_2-xs.png",
+        "type": "file",
+        "md5": "6eebbe7667dcf131baee4db4f8306386"
     },
     {
         "path": "/media/posts/139/responsive/puzzle_15_1-lg.png",
